@@ -1,0 +1,62 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="第 1 页" id="BYkJrgj81DMKMFr14DFx">
+    <mxGraphModel dx="1000" dy="1000" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <!-- Presentation Layer -->
+        <mxCell id="layer1" value="表现层 (Presentation Layer)" style="swimlane;whiteSpace=wrap;html=1;startSize=23;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="120" y="40" width="560" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="react_app" value="&lt;b&gt;React 前端应用&lt;/b&gt;&lt;br&gt;(独立部署 / 浏览器渲染)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;" vertex="1" parent="layer1">
+          <mxGeometry x="180" y="45" width="200" height="60" as="geometry" />
+        </mxCell>
+        <!-- Business Logic Layer -->
+        <mxCell id="layer2" value="业务逻辑层 (Business Logic Layer)" style="swimlane;whiteSpace=wrap;html=1;startSize=23;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="120" y="240" width="560" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="springboot_service" value="&lt;b&gt;SpringBoot 后端服务&lt;/b&gt;&lt;br&gt;(RESTful API)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;" vertex="1" parent="layer2">
+          <mxGeometry x="40" y="40" width="480" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="module1" value="用户认证" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="layer2">
+          <mxGeometry x="40" y="100" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="module2" value="宠物信息管理" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="layer2">
+          <mxGeometry x="165" y="100" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="module3" value="领养流程控制" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="layer2">
+          <mxGeometry x="295" y="100" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="module4" value="智能推荐计算" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="layer2">
+          <mxGeometry x="420" y="100" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="api_contract" value="API 契约 / 业务逻辑处理" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;dashed=1;" vertex="1" parent="layer2">
+          <mxGeometry x="180" y="160" width="200" height="30" as="geometry" />
+        </mxCell>
+        <!-- Data Layer -->
+        <mxCell id="layer3" value="数据持久层 (Data Persistence Layer)" style="swimlane;whiteSpace=wrap;html=1;startSize=23;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="120" y="540" width="560" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="mysql_db" value="&lt;b&gt;MySQL 关系型数据库&lt;/b&gt;&lt;br&gt;(结构化数据存储)" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#ffffff;strokeColor=#d6b656;" vertex="1" parent="layer3">
+          <mxGeometry x="210" y="35" width="140" height="70" as="geometry" />
+        </mxCell>
+        <!-- Connectors -->
+        <mxCell id="conn1" value="HTTP / RESTful API" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="react_app" target="springboot_service">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="400" y="200" />
+              <mxPoint x="400" y="200" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="conn2" value="JDBC / ORM" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="layer2" target="mysql_db">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <!-- Labels -->
+        <mxCell id="bs_label" value="B/S 模式前后端分离架构" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="280" y="5" width="240" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
