@@ -1,0 +1,54 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="第 1 页" id="6k2rwkJYstX2z_dzQHtU">
+    <mxGraphModel dx="1000" dy="1000" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <!-- 系统边界 -->
+        <mxCell id="system" value="用户认证与管理模块" style="swimlane;whiteSpace=wrap;html=1;fillColor=#f5f7fa;strokeColor=#666666;startSize=30;verticalAlign=top;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="240" y="80" width="320" height="460" as="geometry" />
+        </mxCell>
+        <!-- 用例 UC-01 -->
+        <mxCell id="uc1" value="UC-01 用户注册与登录" style="ellipse;whiteSpace=wrap;html=1;fillColor=#e8f4f8;strokeColor=#2385bb;" vertex="1" parent="system">
+          <mxGeometry x="70" y="60" width="180" height="70" as="geometry" />
+        </mxCell>
+        <!-- 用例 UC-02 -->
+        <mxCell id="uc2" value="UC-02 个人信息管理" style="ellipse;whiteSpace=wrap;html=1;fillColor=#e8f4f8;strokeColor=#2385bb;" vertex="1" parent="system">
+          <mxGeometry x="70" y="160" width="180" height="70" as="geometry" />
+        </mxCell>
+        <!-- 用例 UC-03 -->
+        <mxCell id="uc3" value="UC-03 密码重置与找回" style="ellipse;whiteSpace=wrap;html=1;fillColor=#e8f4f8;strokeColor=#2385bb;" vertex="1" parent="system">
+          <mxGeometry x="70" y="260" width="180" height="70" as="geometry" />
+        </mxCell>
+        <!-- 用例 UC-04 -->
+        <mxCell id="uc4" value="UC-04 用户账号权限管理" style="ellipse;whiteSpace=wrap;html=1;fillColor=#e8f4f8;strokeColor=#2385bb;" vertex="1" parent="system">
+          <mxGeometry x="70" y="360" width="180" height="70" as="geometry" />
+        </mxCell>
+        <!-- 角色：普通用户 -->
+        <mxCell id="actor1" value="普通用户" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="80" y="180" width="30" height="60" as="geometry" />
+        </mxCell>
+        <!-- 角色：系统管理员 -->
+        <mxCell id="actor2" value="系统管理员" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="80" y="380" width="30" height="60" as="geometry" />
+        </mxCell>
+        <!-- 关联线 -->
+        <mxCell id="line1" value="" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="actor1" target="uc1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="line2" value="" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="actor1" target="uc2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="line3" value="" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="actor1" target="uc3">
+          <mxGeometry width="50" height="50" relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="line4" value="" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="actor2" target="uc1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="line5" value="" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="actor2" target="uc4">
+          <mxGeometry width="50" height="50" relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
