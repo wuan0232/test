@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0" pages="13">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0" pages="12">
   <diagram id="adopt-state" name="Adopt Drawer State">
     <mxGraphModel dx="994" dy="686" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="900" math="0" shadow="0">
       <root>
@@ -518,59 +518,99 @@
       </root>
     </mxGraphModel>
   </diagram>
-  <diagram id="L62Ue55NEaZl1ReGTQys" name="第 9 页">
-    <mxGraphModel dx="845" dy="583" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
-      <root>
-        <mxCell id="0" />
-        <mxCell id="1" parent="0" />
-      </root>
-    </mxGraphModel>
-  </diagram>
   <diagram id="91xeUwwdEB6aJmxUjYka" name="第 10 页">
     <mxGraphModel dx="1207" dy="833" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="fz7G5zL5DG-U7GrcR5sE-1" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=18;fontStyle=1" value="宠物信息模块 - 类图" vertex="1">
-          <mxGeometry height="40" width="640" x="644" y="235" as="geometry" />
+        <mxCell id="RrxAik776kgUROhEc4Ks-1" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=18;fontStyle=1" value="UML 类图：宠物信息模块" vertex="1">
+          <mxGeometry height="40" width="680" x="601" y="293" as="geometry" />
         </mxCell>
-        <mxCell id="fz7G5zL5DG-U7GrcR5sE-2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontStyle=1" value="PetController&#xa;- save() / update() / delete()&#xa;- getById() / list()&#xa;- autoRecommend(count)" vertex="1">
-          <mxGeometry height="150" width="300" x="344" y="345" as="geometry" />
+        <mxCell id="RrxAik776kgUROhEc4Ks-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="260" width="460" x="458" y="394" as="geometry" />
         </mxCell>
-        <mxCell id="fz7G5zL5DG-U7GrcR5sE-3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;fontStyle=1" value="PetService（接口）&#xa;- getById()&#xa;- list()&#xa;- autoRecommend()" vertex="1">
-          <mxGeometry height="120" width="280" x="694" y="345" as="geometry" />
+        <mxCell id="RrxAik776kgUROhEc4Ks-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;align=center;verticalAlign=middle;fontStyle=1;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;PetController&lt;/font&gt;" vertex="1">
+          <mxGeometry height="35" width="460" x="458" y="394" as="geometry" />
         </mxCell>
-        <mxCell id="fz7G5zL5DG-U7GrcR5sE-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656" value="PetServiceImpl&#xa;- petMapper&#xa;- activeNetMapper&#xa;- userBasedCFUtil" vertex="1">
-          <mxGeometry height="120" width="280" x="694" y="505" as="geometry" />
+        <mxCell id="RrxAik776kgUROhEc4Ks-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;" value="&lt;div style=&quot;font-family: monospace;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;+ petService : PetService&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="35" width="460" x="458" y="429" as="geometry" />
         </mxCell>
-        <mxCell id="fz7G5zL5DG-U7GrcR5sE-5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;fontStyle=1" value="PetMapper" vertex="1">
-          <mxGeometry height="70" width="240" x="1024" y="505" as="geometry" />
+        <mxCell id="RrxAik776kgUROhEc4Ks-5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;" value="&lt;div style=&quot;font-family: monospace; line-height: 16px;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;+ save(pet) : Result&lt;br&gt;+ update(pet) : Result&lt;br&gt;+ deleteById(id) : Result&lt;br&gt;+ getById(id) : Result&lt;br&gt;+ list(queryDto) : Result&lt;br&gt;+ autoRecommend(count) : Result&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="190" width="460" x="458" y="464" as="geometry" />
         </mxCell>
-        <mxCell id="fz7G5zL5DG-U7GrcR5sE-6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E1D5E7;strokeColor=#9673A6;fontStyle=1" value="ActiveNetMapper&#xa;（行为记录DAO）" vertex="1">
-          <mxGeometry height="70" width="240" x="1024" y="595" as="geometry" />
+        <mxCell id="RrxAik776kgUROhEc4Ks-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="260" width="420" x="958" y="394" as="geometry" />
         </mxCell>
-        <mxCell id="fz7G5zL5DG-U7GrcR5sE-7" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#999999;fontStyle=1" value="UserBasedCFUtil&#xa;（协同过滤推荐工具）" vertex="1">
-          <mxGeometry height="70" width="240" x="1024" y="685" as="geometry" />
+        <mxCell id="RrxAik776kgUROhEc4Ks-7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;align=center;verticalAlign=middle;fontStyle=1;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;&amp;lt;&amp;gt; PetService&lt;/font&gt;" vertex="1">
+          <mxGeometry height="35" width="420" x="958" y="394" as="geometry" />
         </mxCell>
-        <mxCell id="fz7G5zL5DG-U7GrcR5sE-8" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#999999" value="实体/VO&#xa;Pet / PetVO / PetListItemVO" vertex="1">
-          <mxGeometry height="80" width="280" x="694" y="645" as="geometry" />
+        <mxCell id="RrxAik776kgUROhEc4Ks-8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;" value="&lt;div style=&quot;font-family: monospace;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;（无成员属性）&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="35" width="420" x="958" y="429" as="geometry" />
         </mxCell>
-        <mxCell id="fz7G5zL5DG-U7GrcR5sE-9" edge="1" parent="1" source="fz7G5zL5DG-U7GrcR5sE-2" style="endArrow=block;html=1;strokeWidth=2" target="fz7G5zL5DG-U7GrcR5sE-3">
+        <mxCell id="RrxAik776kgUROhEc4Ks-9" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;" value="&lt;div style=&quot;font-family: monospace; line-height: 16px;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;+ save(pet) : void&lt;br&gt;+ update(pet) : void&lt;br&gt;+ deleteById(id) : void&lt;br&gt;+ getById(id) : PetVO&lt;br&gt;+ list(queryDto) : Page&lt;br&gt;+ autoRecommend(count) : List&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="190" width="420" x="958" y="464" as="geometry" />
+        </mxCell>
+        <mxCell id="RrxAik776kgUROhEc4Ks-10" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="270" width="420" x="958" y="731" as="geometry" />
+        </mxCell>
+        <mxCell id="RrxAik776kgUROhEc4Ks-11" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;align=center;verticalAlign=middle;fontStyle=1;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;PetServiceImpl&lt;/font&gt;" vertex="1">
+          <mxGeometry height="35" width="420" x="958" y="731" as="geometry" />
+        </mxCell>
+        <mxCell id="RrxAik776kgUROhEc4Ks-12" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;" value="&lt;div style=&quot;font-family: monospace; line-height: 16px;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;- petMapper : PetMapper&lt;br&gt;- activeNetMapper : ActiveNetMapper&lt;br&gt;- cfUtil : UserBasedCFUtil&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="65" width="420" x="958" y="766" as="geometry" />
+        </mxCell>
+        <mxCell id="RrxAik776kgUROhEc4Ks-13" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;" value="&lt;div style=&quot;font-family: monospace; line-height: 16px;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;+ getById(id) : PetVO&lt;br&gt;+ list(queryDto) : Page&lt;br&gt;+ autoRecommend(count) : List&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="170" width="420" x="958" y="831" as="geometry" />
+        </mxCell>
+        <mxCell id="RrxAik776kgUROhEc4Ks-14" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="160" width="360" x="1206" y="1055" as="geometry" />
+        </mxCell>
+        <mxCell id="RrxAik776kgUROhEc4Ks-15" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;align=center;verticalAlign=middle;fontStyle=1;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;&amp;lt;&amp;gt; PetMapper&lt;/font&gt;" vertex="1">
+          <mxGeometry height="35" width="360" x="1206" y="1055" as="geometry" />
+        </mxCell>
+        <mxCell id="RrxAik776kgUROhEc4Ks-16" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;" value="&lt;div style=&quot;font-family: monospace;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;（无成员属性）&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="35" width="360" x="1206" y="1090" as="geometry" />
+        </mxCell>
+        <mxCell id="RrxAik776kgUROhEc4Ks-17" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;" value="&lt;div style=&quot;font-family: monospace; line-height: 16px;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;+ selectById(id) : Pet&lt;br&gt;+ queryAllIds() : List&lt;br&gt;+ queryListItemByIds(ids) : List&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="90" width="360" x="1206" y="1125" as="geometry" />
+        </mxCell>
+        <mxCell id="RrxAik776kgUROhEc4Ks-18" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E1D5E7;strokeColor=#9673A6;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="180" width="360" x="708" y="1035" as="geometry" />
+        </mxCell>
+        <mxCell id="RrxAik776kgUROhEc4Ks-19" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;align=center;verticalAlign=middle;fontStyle=1;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;&amp;lt;&amp;gt; ActiveNetMapper&lt;/font&gt;" vertex="1">
+          <mxGeometry height="35" width="360" x="708" y="1035" as="geometry" />
+        </mxCell>
+        <mxCell id="RrxAik776kgUROhEc4Ks-20" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;" value="&lt;div style=&quot;font-family: monospace;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;（无成员属性）&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="35" width="360" x="708" y="1070" as="geometry" />
+        </mxCell>
+        <mxCell id="RrxAik776kgUROhEc4Ks-21" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;" value="&lt;div style=&quot;font-family: monospace; line-height: 16px;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;+ insert(activeNet) : int&lt;br&gt;+ queryScore(contentType) : List&lt;br&gt;+ hotTopN(contentType, n) : List&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="110" width="360" x="708" y="1105" as="geometry" />
+        </mxCell>
+        <mxCell id="RrxAik776kgUROhEc4Ks-22" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#999999;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="140" width="460" x="409" y="800" as="geometry" />
+        </mxCell>
+        <mxCell id="RrxAik776kgUROhEc4Ks-23" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;align=center;verticalAlign=middle;fontStyle=1;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;UserBasedCFUtil&lt;/font&gt;" vertex="1">
+          <mxGeometry height="35" width="460" x="409" y="800" as="geometry" />
+        </mxCell>
+        <mxCell id="RrxAik776kgUROhEc4Ks-24" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;" value="&lt;div style=&quot;font-family: monospace;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;（无成员属性）&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="35" width="460" x="409" y="835" as="geometry" />
+        </mxCell>
+        <mxCell id="RrxAik776kgUROhEc4Ks-25" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;" value="&lt;div style=&quot;font-family: monospace; line-height: 16px;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;+ buildUserItemMatrix(scores) : Matrix&lt;br&gt;+ recommendItems(matrix, count) : List&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="70" width="460" x="409" y="870" as="geometry" />
+        </mxCell>
+        <mxCell id="RrxAik776kgUROhEc4Ks-26" edge="1" parent="1" source="RrxAik776kgUROhEc4Ks-5" style="endArrow=block;html=1;strokeWidth=2;exitX=1;exitY=0.25;exitDx=0;exitDy=0;" target="RrxAik776kgUROhEc4Ks-9">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="fz7G5zL5DG-U7GrcR5sE-10" edge="1" parent="1" source="fz7G5zL5DG-U7GrcR5sE-4" style="endArrow=block;html=1;strokeWidth=2;dashed=1" target="fz7G5zL5DG-U7GrcR5sE-3" value="实现">
+        <mxCell id="RrxAik776kgUROhEc4Ks-27" edge="1" parent="1" source="RrxAik776kgUROhEc4Ks-11" style="endArrow=block;endFill=0;endSize=14;html=1;strokeWidth=2;dashed=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="RrxAik776kgUROhEc4Ks-9" value="&lt;font style=&quot;font-size: 17px;&quot;&gt;implements&lt;/font&gt;">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="fz7G5zL5DG-U7GrcR5sE-11" edge="1" parent="1" source="fz7G5zL5DG-U7GrcR5sE-4" style="endArrow=block;html=1;strokeWidth=2" target="fz7G5zL5DG-U7GrcR5sE-5">
+        <mxCell id="RrxAik776kgUROhEc4Ks-28" edge="1" parent="1" source="RrxAik776kgUROhEc4Ks-13" style="endArrow=block;html=1;strokeWidth=2;exitX=0.75;exitY=1;exitDx=0;exitDy=0;" target="RrxAik776kgUROhEc4Ks-15">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="fz7G5zL5DG-U7GrcR5sE-12" edge="1" parent="1" source="fz7G5zL5DG-U7GrcR5sE-4" style="endArrow=block;html=1;strokeWidth=2" target="fz7G5zL5DG-U7GrcR5sE-6">
+        <mxCell id="RrxAik776kgUROhEc4Ks-29" edge="1" parent="1" source="RrxAik776kgUROhEc4Ks-13" style="endArrow=block;html=1;strokeWidth=2;exitX=0.25;exitY=1;exitDx=0;exitDy=0;" target="RrxAik776kgUROhEc4Ks-19">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="fz7G5zL5DG-U7GrcR5sE-13" edge="1" parent="1" source="fz7G5zL5DG-U7GrcR5sE-4" style="endArrow=block;html=1;strokeWidth=2" target="fz7G5zL5DG-U7GrcR5sE-7">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="fz7G5zL5DG-U7GrcR5sE-14" edge="1" parent="1" source="fz7G5zL5DG-U7GrcR5sE-4" style="endArrow=block;html=1;strokeWidth=2;dashed=1" target="fz7G5zL5DG-U7GrcR5sE-8">
+        <mxCell id="RrxAik776kgUROhEc4Ks-30" edge="1" parent="1" source="RrxAik776kgUROhEc4Ks-13" style="endArrow=block;html=1;strokeWidth=2;entryX=1;entryY=1;entryDx=0;entryDy=0;" target="RrxAik776kgUROhEc4Ks-24">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
