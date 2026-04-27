@@ -1,0 +1,71 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="第 1 页" id="Zw4GrA-TFW1lKSvq5XIs">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="800" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <!-- Title -->
+        <mxCell id="t1" value="宠物领养系统前端总体架构（React + TypeScript + Vite）" style="text;html=1;align=center;verticalAlign=middle;fontSize=18;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="200" y="20" width="800" height="40" as="geometry" />
+        </mxCell>
+        <!-- Container -->
+        <mxCell id="c0" value="Front-End Application" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#ffffff;strokeColor=#2F5597;fontStyle=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="80" y="80" width="1040" height="640" as="geometry" />
+        </mxCell>
+        <!-- Layers -->
+        <mxCell id="c1" value="Presentation Layer（页面/组件层）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E7F3FF;strokeColor=#2F5597;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="120" y="140" width="980" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="c2" value="State &amp; Routing Layer（路由/状态层）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#7F6000;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="120" y="360" width="980" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="c3" value="Infrastructure Layer（基础能力层）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E2F0D9;strokeColor=#385723;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="120" y="520" width="980" height="170" as="geometry" />
+        </mxCell>
+        <!-- Presentation: views -->
+        <mxCell id="v1" value="views/（页面视图）&#xa;- user/ 用户端&#xa;- admin/ 管理端&#xa;- login/ register/&#xa;- view/ 公共页面" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#2F5597" vertex="1" parent="1">
+          <mxGeometry x="160" y="190" width="420" height="120" as="geometry" />
+        </mxCell>
+        <!-- Presentation: components -->
+        <mxCell id="v2" value="components/（公共组件）&#xa;- Menu / Logo / Tab&#xa;- Editor（Quill）&#xa;- Charts（ECharts）&#xa;- Carousel / Evaluations" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#2F5597" vertex="1" parent="1">
+          <mxGeometry x="620" y="190" width="440" height="120" as="geometry" />
+        </mxCell>
+        <!-- State & Routing -->
+        <mxCell id="r1" value="router/（React Router）&#xa;- 公共路由&#xa;- 用户端路由&#xa;- 管理端路由&#xa;- 路由守卫（登录/角色）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#7F6000" vertex="1" parent="1">
+          <mxGeometry x="160" y="395" width="420" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="s1" value="store/（Redux Toolkit）&#xa;- userSlice（用户/权限/Token）&#xa;- petSlice（宠物列表/当前宠物）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#7F6000" vertex="1" parent="1">
+          <mxGeometry x="620" y="395" width="440" height="90" as="geometry" />
+        </mxCell>
+        <!-- Infrastructure -->
+        <mxCell id="u1" value="utils/request.ts（Axios封装）&#xa;- baseURL/headers&#xa;- 请求拦截：Token注入&#xa;- 响应拦截：统一错误处理" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#385723" vertex="1" parent="1">
+          <mxGeometry x="160" y="560" width="420" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="u2" value="utils/（工具库）&#xa;- storage.ts（本地缓存）&#xa;- date.ts（日期处理）&#xa;- md5.ts（加密）&#xa;- types/（类型定义）&#xa;- assets/（样式与资源）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#385723" vertex="1" parent="1">
+          <mxGeometry x="620" y="560" width="440" height="110" as="geometry" />
+        </mxCell>
+        <!-- Arrows: views/components -> router/store -->
+        <mxCell id="e1" style="endArrow=block;html=1;strokeColor=#2F5597;strokeWidth=2" edge="1" parent="1" source="v1" target="r1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" style="endArrow=block;html=1;strokeColor=#2F5597;strokeWidth=2" edge="1" parent="1" source="v2" target="s1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <!-- Arrows: router/store -> request -->
+        <mxCell id="e3" value="API调用" style="endArrow=block;html=1;strokeColor=#7F6000;strokeWidth=2" edge="1" parent="1" source="r1" target="u1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" value="异步请求/状态更新" style="endArrow=block;html=1;strokeColor=#7F6000;strokeWidth=2" edge="1" parent="1" source="s1" target="u1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <!-- Arrow: request -> backend (virtual) -->
+        <mxCell id="b1" value="后端API服务" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F8CECC;strokeColor=#B85450;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="420" y="705" width="360" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" value="HTTP（REST）" style="endArrow=block;html=1;strokeColor=#385723;strokeWidth=2" edge="1" parent="1" source="u1" target="b1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
