@@ -1,56 +1,71 @@
-<mxfile host="app.diagrams.net" modified="2026-04-27T19:30:00.000Z" agent="Mozilla/5.0" version="22.1.0">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0" pages="2">
   <diagram id="adopt-state" name="Adopt Drawer State">
-    <mxGraphModel dx="1400" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="900" math="0" shadow="0">
+    <mxGraphModel dx="994" dy="686" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="900" math="0" shadow="0">
       <root>
-        <mxCell id="0"/><mxCell id="1" parent="0"/>
-
-        <mxCell id="t" value="领养申请抽屉 - 界面状态转换图" style="text;html=1;align=center;verticalAlign=middle;fontSize=18;fontStyle=1" vertex="1" parent="1">
-          <mxGeometry x="320" y="20" width="760" height="40" as="geometry"/>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="t" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=18;fontStyle=1" value="领养申请抽屉 - 界面状态转换图" vertex="1">
+          <mxGeometry height="40" width="760" x="177" y="17" as="geometry" />
         </mxCell>
-
-        <mxCell id="st0" value="抽屉关闭&#xa;（详情页正常显示）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontStyle=1" vertex="1" parent="1">
-          <mxGeometry x="120" y="180" width="220" height="70" as="geometry"/>
+        <mxCell id="st0" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1" value="抽屉关闭&#xa;（详情页正常显示）" vertex="1">
+          <mxGeometry height="70" width="220" x="110" y="140" as="geometry" />
         </mxCell>
-
-        <mxCell id="st1" value="步骤一：确认信息&#xa;上一步禁用" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;fontStyle=1" vertex="1" parent="1">
-          <mxGeometry x="420" y="140" width="240" height="70" as="geometry"/>
+        <mxCell id="st1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1" value="步骤一：确认信息&#xa;上一步禁用" vertex="1">
+          <mxGeometry height="70" width="240" x="437" y="140" as="geometry" />
         </mxCell>
-
-        <mxCell id="st2" value="步骤二：填写材料&#xa;校验材料非空" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;fontStyle=1" vertex="1" parent="1">
-          <mxGeometry x="720" y="140" width="240" height="70" as="geometry"/>
+        <mxCell id="st2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1" value="步骤二：填写材料&#xa;校验材料非空" vertex="1">
+          <mxGeometry height="70" width="240" x="780" y="140" as="geometry" />
         </mxCell>
-
-        <mxCell id="st3" value="步骤三：选择地址&#xa;校验必须选择" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;fontStyle=1" vertex="1" parent="1">
-          <mxGeometry x="720" y="260" width="240" height="70" as="geometry"/>
+        <mxCell id="st3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1" value="步骤三：选择地址&#xa;校验必须选择" vertex="1">
+          <mxGeometry height="70" width="240" x="782" y="260" as="geometry" />
         </mxCell>
-
-        <mxCell id="st4" value="提交中&#xa;按钮禁用 + Loading" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E1D5E7;strokeColor=#9673A6;fontStyle=1" vertex="1" parent="1">
-          <mxGeometry x="420" y="260" width="240" height="70" as="geometry"/>
+        <mxCell id="st4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1" value="提交中&#xa;按钮禁用 + Loading" vertex="1">
+          <mxGeometry height="70" width="240" x="441" y="260" as="geometry" />
         </mxCell>
-
-        <mxCell id="st5" value="提交成功&#xa;提示成功 + 关闭抽屉" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;fontStyle=1" vertex="1" parent="1">
-          <mxGeometry x="120" y="300" width="220" height="80" as="geometry"/>
+        <mxCell id="st5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1" value="提交成功&#xa;提示成功 + 关闭抽屉" vertex="1">
+          <mxGeometry height="80" width="220" x="110" y="255" as="geometry" />
         </mxCell>
-
-        <mxCell id="st6" value="提交失败&#xa;提示错误 + 保持步骤三" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F8CECC;strokeColor=#B85450;fontStyle=1" vertex="1" parent="1">
-          <mxGeometry x="420" y="360" width="240" height="80" as="geometry"/>
+        <mxCell id="st6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1" value="提交失败&#xa;提示错误 + 保持步骤三" vertex="1">
+          <mxGeometry height="80" width="240" x="611" y="403" as="geometry" />
         </mxCell>
-
-        <!-- Edges -->
-        <mxCell id="e1" value="点击申请领养" style="endArrow=block;html=1;strokeWidth=2" edge="1" parent="1" source="st0" target="st1"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="e2" value="下一步" style="endArrow=block;html=1;strokeWidth=2" edge="1" parent="1" source="st1" target="st2"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="e3" value="下一步（材料通过）" style="endArrow=block;html=1;strokeWidth=2" edge="1" parent="1" source="st2" target="st3"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="e4" value="提交" style="endArrow=block;html=1;strokeWidth=2" edge="1" parent="1" source="st3" target="st4"><mxGeometry relative="1" as="geometry"/></mxCell>
-
-        <mxCell id="e5" value="成功" style="endArrow=block;html=1;strokeWidth=2" edge="1" parent="1" source="st4" target="st5"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="e6" value="失败" style="endArrow=block;html=1;strokeWidth=2" edge="1" parent="1" source="st4" target="st6"><mxGeometry relative="1" as="geometry"/></mxCell>
-
-        <mxCell id="e7" value="回到步骤三重试" style="endArrow=block;html=1;strokeWidth=2;dashed=1" edge="1" parent="1" source="st6" target="st3"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="e8" value="关闭后回到初始" style="endArrow=block;html=1;strokeWidth=2" edge="1" parent="1" source="st5" target="st0"><mxGeometry relative="1" as="geometry"/></mxCell>
-
-        <mxCell id="e9" value="上一步" style="endArrow=block;html=1;strokeWidth=2;dashed=1" edge="1" parent="1" source="st3" target="st2"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="e10" value="上一步" style="endArrow=block;html=1;strokeWidth=2;dashed=1" edge="1" parent="1" source="st2" target="st1"><mxGeometry relative="1" as="geometry"/></mxCell>
-
+        <mxCell id="e1" edge="1" parent="1" source="st0" style="endArrow=block;html=1;strokeWidth=2" target="st1" value="点击申请领养">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="st1" style="endArrow=block;html=1;strokeWidth=2" target="st2" value="下一步">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="st2" style="endArrow=block;html=1;strokeWidth=2" target="st3" value="下一步（材料通过）">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="st3" style="endArrow=block;html=1;strokeWidth=2" target="st4" value="提交">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" source="st4" style="endArrow=block;html=1;strokeWidth=2" target="st5" value="成功">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" edge="1" parent="1" source="st4" style="endArrow=block;html=1;strokeWidth=2" target="st6" value="失败">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e7" edge="1" parent="1" source="st6" style="endArrow=block;html=1;strokeWidth=2;dashed=1" target="st3" value="回到步骤三重试">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e8" edge="1" parent="1" source="st5" style="endArrow=block;html=1;strokeWidth=2" target="st0" value="关闭后回到初始">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e9" edge="1" parent="1" source="st3" style="endArrow=block;html=1;strokeWidth=2;dashed=1" target="st2" value="上一步">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e10" edge="1" parent="1" source="st2" style="endArrow=block;html=1;strokeWidth=2;dashed=1" target="st1" value="上一步">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="bJbw48DebTZ3-Z17V_Cp" name="第 2 页">
+    <mxGraphModel grid="0" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
       </root>
     </mxGraphModel>
   </diagram>
