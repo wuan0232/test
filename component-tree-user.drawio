@@ -1,0 +1,150 @@
+<mxfile host="app.diagrams.net" modified="2026-04-27T18:42:00.000Z" agent="Mozilla/5.0" version="22.1.0">
+  <diagram id="user-component-tree" name="User Component Tree">
+    <mxGraphModel dx="1400" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
+        <!-- Title -->
+        <mxCell id="title" value="用户端组件树图（/user/*）" style="text;html=1;align=center;verticalAlign=middle;fontSize=18;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="240" y="20" width="920" height="40" as="geometry"/>
+        </mxCell>
+
+        <!-- Legend -->
+        <mxCell id="legend" value="图例：&#xa;灰色=基础框架节点（Provider/Router/Outlet）&#xa;蓝色=页面级组件（User Views）&#xa;绿色=业务组件（Business Components）&#xa;紫色=通用/公共组件（Common Components）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#999999;fontSize=12;align=left" vertex="1" parent="1">
+          <mxGeometry x="1040" y="80" width="340" height="120" as="geometry"/>
+        </mxCell>
+
+        <!-- Framework chain -->
+        <mxCell id="main" value="main.tsx" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EEEEEE;strokeColor=#666666;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="60" y="90" width="160" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="config" value="ConfigProvider" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EEEEEE;strokeColor=#666666" vertex="1" parent="1">
+          <mxGeometry x="240" y="90" width="180" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="router" value="RouterProvider" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EEEEEE;strokeColor=#666666" vertex="1" parent="1">
+          <mxGeometry x="440" y="90" width="180" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="app" value="App" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EEEEEE;strokeColor=#666666;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="640" y="90" width="140" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="outlet" value="Outlet" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EEEEEE;strokeColor=#666666" vertex="1" parent="1">
+          <mxGeometry x="800" y="90" width="160" height="50" as="geometry"/>
+        </mxCell>
+
+        <!-- User pages -->
+        <mxCell id="userPages" value="用户端页面级组件（views/user/*）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="60" y="180" width="560" height="60" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="userMain" value="UserMain（用户主页布局）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#6C8EBF;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="60" y="260" width="260" height="45" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="petList" value="PetList（宠物列表）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#6C8EBF" vertex="1" parent="1">
+          <mxGeometry x="60" y="315" width="260" height="45" as="geometry"/>
+        </mxCell>
+        <mxCell id="petDetail" value="PetDetail（宠物详情）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#6C8EBF;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="60" y="370" width="260" height="45" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="petPost" value="PetPost（帖子列表）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#6C8EBF" vertex="1" parent="1">
+          <mxGeometry x="60" y="425" width="260" height="45" as="geometry"/>
+        </mxCell>
+        <mxCell id="petPostDetail" value="PetPostDetail（帖子详情）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#6C8EBF" vertex="1" parent="1">
+          <mxGeometry x="60" y="480" width="260" height="45" as="geometry"/>
+        </mxCell>
+        <mxCell id="createPost" value="CreatePetPost（创建帖子）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#6C8EBF" vertex="1" parent="1">
+          <mxGeometry x="60" y="535" width="260" height="45" as="geometry"/>
+        </mxCell>
+        <mxCell id="updatePost" value="UpdatePetPost（更新帖子）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#6C8EBF" vertex="1" parent="1">
+          <mxGeometry x="60" y="590" width="260" height="45" as="geometry"/>
+        </mxCell>
+        <mxCell id="postUser" value="PetPostUser（用户帖子管理）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#6C8EBF" vertex="1" parent="1">
+          <mxGeometry x="60" y="645" width="260" height="45" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="myOrder" value="MyPetAdoptOrder（领养订单）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#6C8EBF" vertex="1" parent="1">
+          <mxGeometry x="340" y="315" width="280" height="45" as="geometry"/>
+        </mxCell>
+        <mxCell id="notice" value="Notice（公告列表）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#6C8EBF" vertex="1" parent="1">
+          <mxGeometry x="340" y="370" width="280" height="45" as="geometry"/>
+        </mxCell>
+        <mxCell id="noticeDetail" value="NoticeDetail（公告详情）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#6C8EBF" vertex="1" parent="1">
+          <mxGeometry x="340" y="425" width="280" height="45" as="geometry"/>
+        </mxCell>
+        <mxCell id="address" value="Address（地址管理）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#6C8EBF" vertex="1" parent="1">
+          <mxGeometry x="340" y="480" width="280" height="45" as="geometry"/>
+        </mxCell>
+        <mxCell id="feedback" value="ProposalFeedback（意见反馈）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#6C8EBF" vertex="1" parent="1">
+          <mxGeometry x="340" y="535" width="280" height="45" as="geometry"/>
+        </mxCell>
+
+        <!-- Business components -->
+        <mxCell id="biz" value="业务组件（用户端常用）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="680" y="180" width="320" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="b1" value="PetCard（宠物卡片）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F3FFF3;strokeColor=#82B366" vertex="1" parent="1">
+          <mxGeometry x="680" y="260" width="320" height="45" as="geometry"/>
+        </mxCell>
+        <mxCell id="b2" value="OrderItem（订单项）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F3FFF3;strokeColor=#82B366" vertex="1" parent="1">
+          <mxGeometry x="680" y="315" width="320" height="45" as="geometry"/>
+        </mxCell>
+        <mxCell id="b3" value="PostItem（帖子项）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F3FFF3;strokeColor=#82B366" vertex="1" parent="1">
+          <mxGeometry x="680" y="370" width="320" height="45" as="geometry"/>
+        </mxCell>
+        <mxCell id="b4" value="AddressItem（地址项）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F3FFF3;strokeColor=#82B366" vertex="1" parent="1">
+          <mxGeometry x="680" y="425" width="320" height="45" as="geometry"/>
+        </mxCell>
+        <mxCell id="b5" value="NoticeItem（公告项）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F3FFF3;strokeColor=#82B366" vertex="1" parent="1">
+          <mxGeometry x="680" y="480" width="320" height="45" as="geometry"/>
+        </mxCell>
+
+        <!-- Common components -->
+        <mxCell id="common" value="通用/公共组件（跨页面复用）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E1D5E7;strokeColor=#9673A6;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="1040" y="180" width="340" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="c1" value="Carousel（轮播图）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F7F0FF;strokeColor=#9673A6" vertex="1" parent="1">
+          <mxGeometry x="1040" y="260" width="340" height="45" as="geometry"/>
+        </mxCell>
+        <mxCell id="c2" value="Editor（富文本编辑器）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F7F0FF;strokeColor=#9673A6" vertex="1" parent="1">
+          <mxGeometry x="1040" y="315" width="340" height="45" as="geometry"/>
+        </mxCell>
+        <mxCell id="c3" value="Evaluations（评论组件）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F7F0FF;strokeColor=#9673A6;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="1040" y="370" width="340" height="45" as="geometry"/>
+        </mxCell>
+        <mxCell id="c4" value="Tab / Logo / LevelHeader / AutoInput / TocItem" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F7F0FF;strokeColor=#9673A6" vertex="1" parent="1">
+          <mxGeometry x="1040" y="425" width="340" height="55" as="geometry"/>
+        </mxCell>
+
+        <!-- Edges -->
+        <mxCell id="e1" style="endArrow=block;html=1;strokeWidth=2;strokeColor=#666666" edge="1" parent="1" source="main" target="config"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e2" style="endArrow=block;html=1;strokeWidth=2;strokeColor=#666666" edge="1" parent="1" source="config" target="router"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e3" style="endArrow=block;html=1;strokeWidth=2;strokeColor=#666666" edge="1" parent="1" source="router" target="app"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e4" style="endArrow=block;html=1;strokeWidth=2;strokeColor=#666666" edge="1" parent="1" source="app" target="outlet"><mxGeometry relative="1" as="geometry"/></mxCell>
+
+        <mxCell id="e5" value="路由渲染" style="endArrow=block;html=1;strokeWidth=2;strokeColor=#6C8EBF" edge="1" parent="1" source="outlet" target="userPages"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e6" value="复用" style="endArrow=block;html=1;strokeWidth=2;strokeColor=#82B366" edge="1" parent="1" source="outlet" target="biz"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e7" value="复用" style="endArrow=block;html=1;strokeWidth=2;strokeColor=#9673A6" edge="1" parent="1" source="outlet" target="common"><mxGeometry relative="1" as="geometry"/></mxCell>
+
+        <mxCell id="e8" style="endArrow=block;html=1;strokeColor=#6C8EBF" edge="1" parent="1" source="userPages" target="userMain"><mxGeometry relative="1" as="geometry"/></mxCell>
+
+        <!-- UserMain children -->
+        <mxCell id="e9" style="endArrow=block;html=1;strokeColor=#6C8EBF" edge="1" parent="1" source="userMain" target="petList"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e10" style="endArrow=block;html=1;strokeColor=#6C8EBF" edge="1" parent="1" source="userMain" target="petDetail"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e11" style="endArrow=block;html=1;strokeColor=#6C8EBF" edge="1" parent="1" source="userMain" target="petPost"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e12" style="endArrow=block;html=1;strokeColor=#6C8EBF" edge="1" parent="1" source="userMain" target="petPostDetail"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e13" style="endArrow=block;html=1;strokeColor=#6C8EBF" edge="1" parent="1" source="userMain" target="createPost"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e14" style="endArrow=block;html=1;strokeColor=#6C8EBF" edge="1" parent="1" source="userMain" target="updatePost"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e15" style="endArrow=block;html=1;strokeColor=#6C8EBF" edge="1" parent="1" source="userMain" target="postUser"><mxGeometry relative="1" as="geometry"/></mxCell>
+
+        <mxCell id="e16" style="endArrow=block;html=1;strokeColor=#6C8EBF" edge="1" parent="1" source="userMain" target="myOrder"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e17" style="endArrow=block;html=1;strokeColor=#6C8EBF" edge="1" parent="1" source="userMain" target="notice"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e18" style="endArrow=block;html=1;strokeColor=#6C8EBF" edge="1" parent="1" source="userMain" target="noticeDetail"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e19" style="endArrow=block;html=1;strokeColor=#6C8EBF" edge="1" parent="1" source="userMain" target="address"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e20" style="endArrow=block;html=1;strokeColor=#6C8EBF" edge="1" parent="1" source="userMain" target="feedback"><mxGeometry relative="1" as="geometry"/></mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
