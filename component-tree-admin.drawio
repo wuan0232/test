@@ -1,135 +1,161 @@
-<mxfile host="app.diagrams.net" modified="2026-04-27T18:42:00.000Z" agent="Mozilla/5.0" version="22.1.0">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0" pages="2">
   <diagram id="admin-component-tree" name="Admin Component Tree">
-    <mxGraphModel dx="1400" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="900" math="0" shadow="0">
+    <mxGraphModel dx="2808" dy="972" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="900" math="0" shadow="0">
       <root>
-        <mxCell id="0"/>
-        <mxCell id="1" parent="0"/>
-
-        <!-- Title -->
-        <mxCell id="title" value="管理端组件树图（/admin/*）" style="text;html=1;align=center;verticalAlign=middle;fontSize=18;fontStyle=1" vertex="1" parent="1">
-          <mxGeometry x="240" y="20" width="920" height="40" as="geometry"/>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=18;fontStyle=1" value="管理端组件树图（/admin/*）" vertex="1">
+          <mxGeometry height="40" width="920" x="240" y="20" as="geometry" />
         </mxCell>
-
-        <!-- Legend -->
-        <mxCell id="legend" value="图例：&#xa;灰色=基础框架节点（Provider/Router/Outlet）&#xa;蓝色=页面级组件（Admin Views）&#xa;绿色=业务组件（Business Components）&#xa;紫色=通用/公共组件（Common Components）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#999999;fontSize=12;align=left" vertex="1" parent="1">
-          <mxGeometry x="1040" y="80" width="340" height="120" as="geometry"/>
+        <mxCell id="main" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EEEEEE;strokeColor=#666666;fontStyle=1" value="main.tsx" vertex="1">
+          <mxGeometry height="50" width="160" x="60" y="90" as="geometry" />
         </mxCell>
-
-        <!-- Framework chain -->
-        <mxCell id="main" value="main.tsx" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EEEEEE;strokeColor=#666666;fontStyle=1" vertex="1" parent="1">
-          <mxGeometry x="60" y="90" width="160" height="50" as="geometry"/>
+        <mxCell id="config" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EEEEEE;strokeColor=#666666" value="ConfigProvider" vertex="1">
+          <mxGeometry height="50" width="180" x="240" y="90" as="geometry" />
         </mxCell>
-        <mxCell id="config" value="ConfigProvider" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EEEEEE;strokeColor=#666666" vertex="1" parent="1">
-          <mxGeometry x="240" y="90" width="180" height="50" as="geometry"/>
+        <mxCell id="router" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EEEEEE;strokeColor=#666666" value="RouterProvider" vertex="1">
+          <mxGeometry height="50" width="180" x="440" y="90" as="geometry" />
         </mxCell>
-        <mxCell id="router" value="RouterProvider" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EEEEEE;strokeColor=#666666" vertex="1" parent="1">
-          <mxGeometry x="440" y="90" width="180" height="50" as="geometry"/>
+        <mxCell id="app" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EEEEEE;strokeColor=#666666;fontStyle=1" value="App" vertex="1">
+          <mxGeometry height="50" width="140" x="640" y="90" as="geometry" />
         </mxCell>
-        <mxCell id="app" value="App" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EEEEEE;strokeColor=#666666;fontStyle=1" vertex="1" parent="1">
-          <mxGeometry x="640" y="90" width="140" height="50" as="geometry"/>
+        <mxCell id="outlet" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EEEEEE;strokeColor=#666666" value="Outlet" vertex="1">
+          <mxGeometry height="50" width="160" x="800" y="90" as="geometry" />
         </mxCell>
-        <mxCell id="outlet" value="Outlet" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EEEEEE;strokeColor=#666666" vertex="1" parent="1">
-          <mxGeometry x="800" y="90" width="160" height="50" as="geometry"/>
+        <mxCell id="adminPages" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontStyle=1" value="管理端页面级组件（views/admin/*）" vertex="1">
+          <mxGeometry height="60" width="560" x="60" y="180" as="geometry" />
         </mxCell>
-
-        <!-- Admin pages -->
-        <mxCell id="adminPages" value="管理端页面级组件（views/admin/*）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontStyle=1" vertex="1" parent="1">
-          <mxGeometry x="60" y="180" width="560" height="60" as="geometry"/>
+        <mxCell id="adminHome" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#6C8EBF;fontStyle=1" value="AdminHome（管理端布局）" vertex="1">
+          <mxGeometry height="45" width="260" x="60" y="260" as="geometry" />
         </mxCell>
-
-        <mxCell id="adminHome" value="AdminHome（管理端布局）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#6C8EBF;fontStyle=1" vertex="1" parent="1">
-          <mxGeometry x="60" y="260" width="260" height="45" as="geometry"/>
+        <mxCell id="dash" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#6C8EBF" value="Main（仪表盘）" vertex="1">
+          <mxGeometry height="45" width="260" x="-20" y="341" as="geometry" />
         </mxCell>
-
-        <mxCell id="dash" value="Main（仪表盘）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#6C8EBF" vertex="1" parent="1">
-          <mxGeometry x="60" y="315" width="260" height="45" as="geometry"/>
+        <mxCell id="userManage" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#6C8EBF" value="UserManage（用户管理）" vertex="1">
+          <mxGeometry height="45" width="260" x="-17" y="409" as="geometry" />
         </mxCell>
-        <mxCell id="userManage" value="UserManage（用户管理）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#6C8EBF" vertex="1" parent="1">
-          <mxGeometry x="60" y="370" width="260" height="45" as="geometry"/>
+        <mxCell id="petManage" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#6C8EBF" value="PetManage（宠物管理）" vertex="1">
+          <mxGeometry height="45" width="260" x="-20" y="472" as="geometry" />
         </mxCell>
-        <mxCell id="petManage" value="PetManage（宠物管理）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#6C8EBF" vertex="1" parent="1">
-          <mxGeometry x="60" y="425" width="260" height="45" as="geometry"/>
+        <mxCell id="postManage" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#6C8EBF" value="PetPostManage（帖子管理）" vertex="1">
+          <mxGeometry height="45" width="260" x="-17" y="598" as="geometry" />
         </mxCell>
-        <mxCell id="petType" value="PetTypeManage（宠物类型管理）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#6C8EBF" vertex="1" parent="1">
-          <mxGeometry x="60" y="480" width="260" height="45" as="geometry"/>
+        <mxCell id="orderManage" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#6C8EBF" value="PetAdoptOrderManage（订单管理）" vertex="1">
+          <mxGeometry height="45" width="280" x="340" y="315" as="geometry" />
         </mxCell>
-        <mxCell id="postManage" value="PetPostManage（帖子管理）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#6C8EBF" vertex="1" parent="1">
-          <mxGeometry x="60" y="535" width="260" height="45" as="geometry"/>
+        <mxCell id="noticeManage" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#6C8EBF" value="NoticeManage（公告管理）" vertex="1">
+          <mxGeometry height="45" width="280" x="340" y="370" as="geometry" />
         </mxCell>
-
-        <mxCell id="orderManage" value="PetAdoptOrderManage（订单管理）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#6C8EBF" vertex="1" parent="1">
-          <mxGeometry x="340" y="315" width="280" height="45" as="geometry"/>
+        <mxCell id="feedbackManage" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#6C8EBF" value="ProposalFeedbackManage（反馈管理）" vertex="1">
+          <mxGeometry height="45" width="280" x="340" y="425" as="geometry" />
         </mxCell>
-        <mxCell id="noticeManage" value="NoticeManage（公告管理）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#6C8EBF" vertex="1" parent="1">
-          <mxGeometry x="340" y="370" width="280" height="45" as="geometry"/>
+        <mxCell id="evalManage" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#6C8EBF" value="EvaluationsManage（评价管理）" vertex="1">
+          <mxGeometry height="45" width="280" x="340" y="480" as="geometry" />
         </mxCell>
-        <mxCell id="feedbackManage" value="ProposalFeedbackManage（反馈管理）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#6C8EBF" vertex="1" parent="1">
-          <mxGeometry x="340" y="425" width="280" height="45" as="geometry"/>
+        <mxCell id="updatePwd" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#6C8EBF" value="UpdatePassword（修改密码）" vertex="1">
+          <mxGeometry height="45" width="280" x="340" y="535" as="geometry" />
         </mxCell>
-        <mxCell id="evalManage" value="EvaluationsManage（评价管理）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#6C8EBF" vertex="1" parent="1">
-          <mxGeometry x="340" y="480" width="280" height="45" as="geometry"/>
+        <mxCell id="viewPet" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#6C8EBF" value="ViewPetDetailAdmin（管理员查看宠物详情）" vertex="1">
+          <mxGeometry height="55" width="280" x="340" y="590" as="geometry" />
         </mxCell>
-        <mxCell id="updatePwd" value="UpdatePassword（修改密码）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#6C8EBF" vertex="1" parent="1">
-          <mxGeometry x="340" y="535" width="280" height="45" as="geometry"/>
+        <mxCell id="biz" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;fontStyle=1" value="业务组件（管理端常用）" vertex="1">
+          <mxGeometry height="60" width="320" x="680" y="180" as="geometry" />
         </mxCell>
-        <mxCell id="viewPet" value="ViewPetDetailAdmin（管理员查看宠物详情）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#6C8EBF" vertex="1" parent="1">
-          <mxGeometry x="340" y="590" width="280" height="55" as="geometry"/>
+        <mxCell id="b1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F3FFF3;strokeColor=#82B366" value="NoticeItem（公告项）" vertex="1">
+          <mxGeometry height="45" width="320" x="680" y="260" as="geometry" />
         </mxCell>
-
-        <!-- Business components -->
-        <mxCell id="biz" value="业务组件（管理端常用）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;fontStyle=1" vertex="1" parent="1">
-          <mxGeometry x="680" y="180" width="320" height="60" as="geometry"/>
+        <mxCell id="b2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F3FFF3;strokeColor=#82B366" value="CommentItem（评论项）" vertex="1">
+          <mxGeometry height="45" width="320" x="680" y="315" as="geometry" />
         </mxCell>
-        <mxCell id="b1" value="NoticeItem（公告项）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F3FFF3;strokeColor=#82B366" vertex="1" parent="1">
-          <mxGeometry x="680" y="260" width="320" height="45" as="geometry"/>
+        <mxCell id="b3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F3FFF3;strokeColor=#82B366" value="OrderItem（订单项，复用）" vertex="1">
+          <mxGeometry height="45" width="320" x="680" y="370" as="geometry" />
         </mxCell>
-        <mxCell id="b2" value="CommentItem（评论项）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F3FFF3;strokeColor=#82B366" vertex="1" parent="1">
-          <mxGeometry x="680" y="315" width="320" height="45" as="geometry"/>
+        <mxCell id="common" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E1D5E7;strokeColor=#9673A6;fontStyle=1" value="通用/公共组件（跨页面复用）" vertex="1">
+          <mxGeometry height="60" width="340" x="1040" y="180" as="geometry" />
         </mxCell>
-        <mxCell id="b3" value="OrderItem（订单项，复用）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F3FFF3;strokeColor=#82B366" vertex="1" parent="1">
-          <mxGeometry x="680" y="370" width="320" height="45" as="geometry"/>
+        <mxCell id="c1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F7F0FF;strokeColor=#9673A6;fontStyle=1" value="Menu（侧边栏菜单，动态过滤 show!==false）" vertex="1">
+          <mxGeometry height="55" width="340" x="1040" y="260" as="geometry" />
         </mxCell>
-
-        <!-- Common components -->
-        <mxCell id="common" value="通用/公共组件（跨页面复用）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E1D5E7;strokeColor=#9673A6;fontStyle=1" vertex="1" parent="1">
-          <mxGeometry x="1040" y="180" width="340" height="60" as="geometry"/>
+        <mxCell id="c2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F7F0FF;strokeColor=#9673A6" value="Charts（ECharts）：Bar/Line/Pie" vertex="1">
+          <mxGeometry height="45" width="340" x="1040" y="320" as="geometry" />
         </mxCell>
-        <mxCell id="c1" value="Menu（侧边栏菜单，动态过滤 show!==false）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F7F0FF;strokeColor=#9673A6;fontStyle=1" vertex="1" parent="1">
-          <mxGeometry x="1040" y="260" width="340" height="55" as="geometry"/>
+        <mxCell id="c3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F7F0FF;strokeColor=#9673A6" value="Logo / Tab / LevelHeader / AutoInput" vertex="1">
+          <mxGeometry height="55" width="340" x="1040" y="370" as="geometry" />
         </mxCell>
-        <mxCell id="c2" value="Charts（ECharts）：Bar/Line/Pie" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F7F0FF;strokeColor=#9673A6" vertex="1" parent="1">
-          <mxGeometry x="1040" y="320" width="340" height="45" as="geometry"/>
+        <mxCell id="e1" edge="1" parent="1" source="main" style="endArrow=block;html=1;strokeWidth=2;strokeColor=#666666" target="config">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="c3" value="Logo / Tab / LevelHeader / AutoInput" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F7F0FF;strokeColor=#9673A6" vertex="1" parent="1">
-          <mxGeometry x="1040" y="370" width="340" height="55" as="geometry"/>
+        <mxCell id="e2" edge="1" parent="1" source="config" style="endArrow=block;html=1;strokeWidth=2;strokeColor=#666666" target="router">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-
-        <!-- Edges -->
-        <mxCell id="e1" style="endArrow=block;html=1;strokeWidth=2;strokeColor=#666666" edge="1" parent="1" source="main" target="config"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="e2" style="endArrow=block;html=1;strokeWidth=2;strokeColor=#666666" edge="1" parent="1" source="config" target="router"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="e3" style="endArrow=block;html=1;strokeWidth=2;strokeColor=#666666" edge="1" parent="1" source="router" target="app"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="e4" style="endArrow=block;html=1;strokeWidth=2;strokeColor=#666666" edge="1" parent="1" source="app" target="outlet"><mxGeometry relative="1" as="geometry"/></mxCell>
-
-        <mxCell id="e5" value="路由渲染" style="endArrow=block;html=1;strokeWidth=2;strokeColor=#6C8EBF" edge="1" parent="1" source="outlet" target="adminPages"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="e6" value="复用" style="endArrow=block;html=1;strokeWidth=2;strokeColor=#82B366" edge="1" parent="1" source="outlet" target="biz"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="e7" value="复用" style="endArrow=block;html=1;strokeWidth=2;strokeColor=#9673A6" edge="1" parent="1" source="outlet" target="common"><mxGeometry relative="1" as="geometry"/></mxCell>
-
-        <mxCell id="e8" style="endArrow=block;html=1;strokeColor=#6C8EBF" edge="1" parent="1" source="adminPages" target="adminHome"><mxGeometry relative="1" as="geometry"/></mxCell>
-
-        <!-- AdminHome children -->
-        <mxCell id="e9" style="endArrow=block;html=1;strokeColor=#6C8EBF" edge="1" parent="1" source="adminHome" target="dash"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="e10" style="endArrow=block;html=1;strokeColor=#6C8EBF" edge="1" parent="1" source="adminHome" target="userManage"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="e11" style="endArrow=block;html=1;strokeColor=#6C8EBF" edge="1" parent="1" source="adminHome" target="petManage"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="e12" style="endArrow=block;html=1;strokeColor=#6C8EBF" edge="1" parent="1" source="adminHome" target="petType"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="e13" style="endArrow=block;html=1;strokeColor=#6C8EBF" edge="1" parent="1" source="adminHome" target="postManage"><mxGeometry relative="1" as="geometry"/></mxCell>
-
-        <mxCell id="e14" style="endArrow=block;html=1;strokeColor=#6C8EBF" edge="1" parent="1" source="adminHome" target="orderManage"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="e15" style="endArrow=block;html=1;strokeColor=#6C8EBF" edge="1" parent="1" source="adminHome" target="noticeManage"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="e16" style="endArrow=block;html=1;strokeColor=#6C8EBF" edge="1" parent="1" source="adminHome" target="feedbackManage"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="e17" style="endArrow=block;html=1;strokeColor=#6C8EBF" edge="1" parent="1" source="adminHome" target="evalManage"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="e18" style="endArrow=block;html=1;strokeColor=#6C8EBF" edge="1" parent="1" source="adminHome" target="updatePwd"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="e19" style="endArrow=block;html=1;strokeColor=#6C8EBF" edge="1" parent="1" source="adminHome" target="viewPet"><mxGeometry relative="1" as="geometry"/></mxCell>
-
+        <mxCell id="e3" edge="1" parent="1" source="router" style="endArrow=block;html=1;strokeWidth=2;strokeColor=#666666" target="app">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="app" style="endArrow=block;html=1;strokeWidth=2;strokeColor=#666666" target="outlet">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" source="outlet" style="endArrow=block;html=1;strokeWidth=2;strokeColor=#6C8EBF" target="adminPages" value="路由渲染">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" edge="1" parent="1" source="outlet" style="endArrow=block;html=1;strokeWidth=2;strokeColor=#82B366" target="biz" value="复用">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e7" edge="1" parent="1" source="outlet" style="endArrow=block;html=1;strokeWidth=2;strokeColor=#9673A6" target="common" value="复用">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e8" edge="1" parent="1" source="adminPages" style="endArrow=block;html=1;strokeColor=#6C8EBF" target="adminHome">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e9" edge="1" parent="1" source="adminHome" style="endArrow=block;html=1;strokeColor=#6C8EBF" target="dash">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e10" edge="1" parent="1" source="adminHome" style="endArrow=block;html=1;strokeColor=#6C8EBF" target="userManage">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e11" edge="1" parent="1" source="adminHome" style="endArrow=block;html=1;strokeColor=#6C8EBF" target="petManage">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e12" edge="1" parent="1" source="adminHome" style="endArrow=block;html=1;strokeColor=#6C8EBF" target="petType">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e13" edge="1" parent="1" source="petType" style="endArrow=block;html=1;strokeColor=#6C8EBF" target="postManage">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e14" edge="1" parent="1" source="adminHome" style="endArrow=block;html=1;strokeColor=#6C8EBF" target="orderManage">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e15" edge="1" parent="1" source="adminHome" style="endArrow=block;html=1;strokeColor=#6C8EBF" target="noticeManage">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e16" edge="1" parent="1" source="adminHome" style="endArrow=block;html=1;strokeColor=#6C8EBF" target="feedbackManage">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e17" edge="1" parent="1" source="adminHome" style="endArrow=block;html=1;strokeColor=#6C8EBF" target="evalManage">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e18" edge="1" parent="1" source="adminHome" style="endArrow=block;html=1;strokeColor=#6C8EBF" target="updatePwd">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e19" edge="1" parent="1" source="adminHome" style="endArrow=block;html=1;strokeColor=#6C8EBF" target="viewPet">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PYKEsr8XWipaGMTFT7N8-1" edge="1" parent="1" source="adminHome" style="endArrow=block;html=1;strokeColor=#6C8EBF" target="petType" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="186" y="305" as="sourcePoint" />
+            <mxPoint x="127" y="604" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="petType" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#6C8EBF" value="PetTypeManage（宠物类型管理）" vertex="1">
+          <mxGeometry height="45" width="260" x="-20" y="535" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="YKSHL4aHj7jAvN0VWrE1" name="第 2 页">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
       </root>
     </mxGraphModel>
   </diagram>
