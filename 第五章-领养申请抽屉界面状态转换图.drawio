@@ -1322,7 +1322,7 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="kl7Fcwth7EXdDo1KABAB-1" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=16;fontStyle=1" value="宠物信息模块时序图&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+        <mxCell id="kl7Fcwth7EXdDo1KABAB-1" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=16;fontStyle=1" value="宠物信息（智能推荐）模块时序图&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="30" width="1140" x="622" y="536" as="geometry" />
         </mxCell>
         <mxCell id="kl7Fcwth7EXdDo1KABAB-2" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="用户" vertex="1">
