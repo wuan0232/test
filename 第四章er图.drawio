@@ -534,7 +534,7 @@
         <mxCell id="eTWQi5auSVDy6JanxRzP-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;strokeColor=#000000;fillColor=none;align=center;verticalAlign=top;fontStyle=1;spacing=10" value="宠物展示与智能互动模块" vertex="1">
           <mxGeometry height="574" width="807" x="416" y="374" as="geometry" />
         </mxCell>
-        <mxCell id="eTWQi5auSVDy6JanxRzP-3" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="前台用户" vertex="1">
+        <mxCell id="eTWQi5auSVDy6JanxRzP-3" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="用户" vertex="1">
           <mxGeometry height="90" width="50" x="224" y="514" as="geometry" />
         </mxCell>
         <mxCell id="eTWQi5auSVDy6JanxRzP-4" parent="1" style="ellipse;whiteSpace=wrap;html=1;strokeColor=default;fillColor=#DAE8FC;align=center;verticalAlign=top;fontFamily=Helvetica;fontSize=12;fontColor=default;" value="UC-03&#xa;浏览/检索宠物" vertex="1">
