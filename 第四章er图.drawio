@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0" pages="6">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0" pages="7">
   <diagram id="er" name="ER Diagram - Pet Adopt System">
     <mxGraphModel dx="994" dy="686" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1000" math="0" shadow="0">
       <root>
@@ -621,6 +621,47 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="OUPTo--N9U8B68PQGY07-13" edge="1" parent="1" source="OUPTo--N9U8B68PQGY07-5" style="endArrow=open;dashed=1;html=1;strokeWidth=2" target="OUPTo--N9U8B68PQGY07-8" value="&lt;&lt;include&gt;&gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="oM76d12lIdSJiRfW7-OS" name="第 7 页">
+    <mxGraphModel dx="1207" dy="833" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="0XFdnB-kGoopRBaB5eH2-1" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=18;fontStyle=1" value="模块四：社区与经验分享 用例图" vertex="1">
+          <mxGeometry height="40" width="740" x="348.5" y="318" as="geometry" />
+        </mxCell>
+        <mxCell id="0XFdnB-kGoopRBaB5eH2-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;strokeColor=#000000;fillColor=none;align=center;verticalAlign=top;fontStyle=1;spacing=10" value="社区与经验分享模块" vertex="1">
+          <mxGeometry height="455" width="733" x="352" y="377" as="geometry" />
+        </mxCell>
+        <mxCell id="0XFdnB-kGoopRBaB5eH2-3" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="用户" vertex="1">
+          <mxGeometry height="90" width="50" x="192" y="517" as="geometry" />
+        </mxCell>
+        <mxCell id="0XFdnB-kGoopRBaB5eH2-4" parent="1" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#6c8ebf;fillColor=#dae8fc;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;" value="UC-08&#xa;发布/浏览经验贴&#xa;评论/回复/点赞" vertex="1">
+          <mxGeometry height="90" width="320" x="419" y="511" as="geometry" />
+        </mxCell>
+        <mxCell id="0XFdnB-kGoopRBaB5eH2-5" parent="1" style="ellipse;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=12" value="帖子管理&#xa;(pet_post)" vertex="1">
+          <mxGeometry height="55" width="180" x="814" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="0XFdnB-kGoopRBaB5eH2-6" parent="1" style="ellipse;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=12" value="评论/回复&#xa;(evaluations,parent_id)" vertex="1">
+          <mxGeometry height="55" width="230" x="658" y="683" as="geometry" />
+        </mxCell>
+        <mxCell id="0XFdnB-kGoopRBaB5eH2-7" parent="1" style="ellipse;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=12" value="评论点赞&#xa;(evaluations_upvote)" vertex="1">
+          <mxGeometry height="55" width="230" x="817" y="585" as="geometry" />
+        </mxCell>
+        <mxCell id="0XFdnB-kGoopRBaB5eH2-8" edge="1" parent="1" source="0XFdnB-kGoopRBaB5eH2-3" style="endArrow=none;html=1;strokeWidth=2" target="0XFdnB-kGoopRBaB5eH2-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0XFdnB-kGoopRBaB5eH2-9" edge="1" parent="1" source="0XFdnB-kGoopRBaB5eH2-4" style="endArrow=open;dashed=1;html=1;strokeWidth=2" target="0XFdnB-kGoopRBaB5eH2-5" value="&lt;&lt;include&gt;&gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0XFdnB-kGoopRBaB5eH2-10" edge="1" parent="1" source="0XFdnB-kGoopRBaB5eH2-4" style="endArrow=open;dashed=1;html=1;strokeWidth=2" target="0XFdnB-kGoopRBaB5eH2-6" value="&lt;&lt;include&gt;&gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0XFdnB-kGoopRBaB5eH2-11" edge="1" parent="1" source="0XFdnB-kGoopRBaB5eH2-4" style="endArrow=open;dashed=1;html=1;strokeWidth=2" target="0XFdnB-kGoopRBaB5eH2-7" value="&lt;&lt;include&gt;&gt;">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
