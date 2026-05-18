@@ -295,7 +295,7 @@
         <mxCell id="K-oKuWkDg-aQzB1QO6Mc-10" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#D6B656;align=center;verticalAlign=middle;fontSize=17;" value="&lt;font&gt;业务层 Service&lt;br&gt;用户认证 / 宠物 / 订单 / 社区&lt;/font&gt;" vertex="1">
           <mxGeometry height="70" width="230" x="1564" y="423" as="geometry" />
         </mxCell>
-        <mxCell id="K-oKuWkDg-aQzB1QO6Mc-11" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#D6B656;align=center;verticalAlign=middle;fontSize=17;" value="&lt;font&gt;推荐模块&lt;br&gt;UserBasedCFUtil&lt;br&gt;冷启动回退&lt;/font&gt;" vertex="1">
+        <mxCell id="K-oKuWkDg-aQzB1QO6Mc-11" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#D6B656;align=center;verticalAlign=middle;fontSize=17;" value="&lt;font&gt;推荐模块&lt;br&gt;UserBasedCFUtil&lt;br&gt;&lt;/font&gt;" vertex="1">
           <mxGeometry height="80" width="220" x="1030" y="603" as="geometry" />
         </mxCell>
         <mxCell id="K-oKuWkDg-aQzB1QO6Mc-12" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#D6B656;align=center;verticalAlign=middle;fontSize=17;" value="&lt;font&gt;数据访问层 DAO/Mapper&lt;br&gt;MyBatis(-Plus)&lt;/font&gt;" vertex="1">
