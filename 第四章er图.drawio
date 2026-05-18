@@ -227,7 +227,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="C0vujNYd9M_0037MJRUK" name="第 6 页">
-    <mxGraphModel dx="1207" dy="833" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="939" dy="648" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -240,20 +240,11 @@
         <mxCell id="OUPTo--N9U8B68PQGY07-3" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="用户" vertex="1">
           <mxGeometry height="90" width="50" x="414" y="407" as="geometry" />
         </mxCell>
-        <mxCell id="OUPTo--N9U8B68PQGY07-4" parent="1" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#6c8ebf;fillColor=#dae8fc;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;" value="UC-06&#xa;提交领养申请" vertex="1">
+        <mxCell id="OUPTo--N9U8B68PQGY07-4" parent="1" style="ellipse;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;" value="UC-06&#xa;提交领养申请" vertex="1">
           <mxGeometry height="75" width="240" x="714" y="357" as="geometry" />
         </mxCell>
-        <mxCell id="OUPTo--N9U8B68PQGY07-5" parent="1" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#6c8ebf;fillColor=#dae8fc;align=center;verticalAlign=middle" value="UC-07&#xa;订单追踪/再次提交" vertex="1">
+        <mxCell id="OUPTo--N9U8B68PQGY07-5" parent="1" style="ellipse;whiteSpace=wrap;html=1;align=center;verticalAlign=middle" value="UC-07&#xa;订单追踪/再次提交" vertex="1">
           <mxGeometry height="75" width="260" x="707" y="524" as="geometry" />
-        </mxCell>
-        <mxCell id="OUPTo--N9U8B68PQGY07-6" parent="1" style="ellipse;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=12" value="参数校验&#xa;(petId/addressId/detail)" vertex="1">
-          <mxGeometry height="55" width="220" x="1030" y="432" as="geometry" />
-        </mxCell>
-        <mxCell id="OUPTo--N9U8B68PQGY07-7" parent="1" style="ellipse;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=12" value="冲突校验&#xa;(同宠物申请中)" vertex="1">
-          <mxGeometry height="55" width="220" x="1028" y="336" as="geometry" />
-        </mxCell>
-        <mxCell id="OUPTo--N9U8B68PQGY07-8" parent="1" style="ellipse;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=12" value="订单状态流转&#xa;(申请中/通过/驳回/完成)" vertex="1">
-          <mxGeometry height="55" width="260" x="1017" y="541" as="geometry" />
         </mxCell>
         <mxCell id="OUPTo--N9U8B68PQGY07-9" edge="1" parent="1" source="OUPTo--N9U8B68PQGY07-3" style="endArrow=none;html=1;strokeWidth=2" target="OUPTo--N9U8B68PQGY07-4">
           <mxGeometry relative="1" as="geometry" />
@@ -261,14 +252,10 @@
         <mxCell id="OUPTo--N9U8B68PQGY07-10" edge="1" parent="1" source="OUPTo--N9U8B68PQGY07-3" style="endArrow=none;html=1;strokeWidth=2" target="OUPTo--N9U8B68PQGY07-5">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="OUPTo--N9U8B68PQGY07-11" edge="1" parent="1" source="OUPTo--N9U8B68PQGY07-4" style="endArrow=open;dashed=1;html=1;strokeWidth=2" target="OUPTo--N9U8B68PQGY07-6" value="&lt;&lt;include&gt;&gt;">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="OUPTo--N9U8B68PQGY07-12" edge="1" parent="1" source="OUPTo--N9U8B68PQGY07-4" style="endArrow=open;dashed=1;html=1;strokeWidth=2" target="OUPTo--N9U8B68PQGY07-7" value="&lt;&lt;include&gt;&gt;">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="OUPTo--N9U8B68PQGY07-13" edge="1" parent="1" source="OUPTo--N9U8B68PQGY07-5" style="endArrow=open;dashed=1;html=1;strokeWidth=2" target="OUPTo--N9U8B68PQGY07-8" value="&lt;&lt;include&gt;&gt;">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="OUPTo--N9U8B68PQGY07-13" edge="1" parent="1" source="OUPTo--N9U8B68PQGY07-5" style="endArrow=open;dashed=1;html=1;strokeWidth=2;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="OUPTo--N9U8B68PQGY07-4" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1017.6666198578037" y="565.7186369861893" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
