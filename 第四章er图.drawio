@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0" pages="12">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0" pages="13">
   <diagram id="LaGO2NkKO8aIRmskHpOc" name="第 2 页">
     <mxGraphModel grid="0" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -227,7 +227,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="C0vujNYd9M_0037MJRUK" name="第 6 页">
-    <mxGraphModel dx="939" dy="648" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="683" dy="647" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -261,7 +261,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="oM76d12lIdSJiRfW7-OS" name="第 7 页">
-    <mxGraphModel dx="1207" dy="833" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1300" dy="897" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -277,26 +277,24 @@
         <mxCell id="0XFdnB-kGoopRBaB5eH2-4" parent="1" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#6c8ebf;fillColor=#dae8fc;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;" value="UC-08&#xa;发布/浏览经验贴&#xa;评论/回复/点赞" vertex="1">
           <mxGeometry height="90" width="320" x="419" y="511" as="geometry" />
         </mxCell>
-        <mxCell id="0XFdnB-kGoopRBaB5eH2-5" parent="1" style="ellipse;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=12" value="帖子管理&#xa;(pet_post)" vertex="1">
-          <mxGeometry height="55" width="180" x="814" y="440" as="geometry" />
-        </mxCell>
-        <mxCell id="0XFdnB-kGoopRBaB5eH2-6" parent="1" style="ellipse;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=12" value="评论/回复&#xa;(evaluations,parent_id)" vertex="1">
+        <mxCell id="0XFdnB-kGoopRBaB5eH2-6" parent="1" style="ellipse;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=12" value="UC-08&lt;br&gt;发布/浏览经验贴&lt;br&gt;评论/回复/点赞" vertex="1">
           <mxGeometry height="55" width="230" x="658" y="683" as="geometry" />
-        </mxCell>
-        <mxCell id="0XFdnB-kGoopRBaB5eH2-7" parent="1" style="ellipse;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=12" value="评论点赞&#xa;(evaluations_upvote)" vertex="1">
-          <mxGeometry height="55" width="230" x="817" y="585" as="geometry" />
         </mxCell>
         <mxCell id="0XFdnB-kGoopRBaB5eH2-8" edge="1" parent="1" source="0XFdnB-kGoopRBaB5eH2-3" style="endArrow=none;html=1;strokeWidth=2" target="0XFdnB-kGoopRBaB5eH2-4">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="0XFdnB-kGoopRBaB5eH2-9" edge="1" parent="1" source="0XFdnB-kGoopRBaB5eH2-4" style="endArrow=open;dashed=1;html=1;strokeWidth=2" target="0XFdnB-kGoopRBaB5eH2-5" value="&lt;&lt;include&gt;&gt;">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="0XFdnB-kGoopRBaB5eH2-9" edge="1" parent="1" source="0XFdnB-kGoopRBaB5eH2-4" style="endArrow=open;dashed=1;html=1;strokeWidth=2" value="&lt;&lt;include&gt;&gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="836.5731227895399" y="485.714843606617" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="0XFdnB-kGoopRBaB5eH2-10" edge="1" parent="1" source="0XFdnB-kGoopRBaB5eH2-4" style="endArrow=open;dashed=1;html=1;strokeWidth=2" target="0XFdnB-kGoopRBaB5eH2-6" value="&lt;&lt;include&gt;&gt;">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="0XFdnB-kGoopRBaB5eH2-11" edge="1" parent="1" source="0XFdnB-kGoopRBaB5eH2-4" style="endArrow=open;dashed=1;html=1;strokeWidth=2" target="0XFdnB-kGoopRBaB5eH2-7" value="&lt;&lt;include&gt;&gt;">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="0XFdnB-kGoopRBaB5eH2-11" edge="1" parent="1" source="0XFdnB-kGoopRBaB5eH2-4" style="endArrow=open;dashed=1;html=1;strokeWidth=2" value="&lt;&lt;include&gt;&gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="835.9053767041203" y="597.3934216652767" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
@@ -754,6 +752,41 @@
             <mxPoint x="997" y="1086" as="sourcePoint" />
             <mxPoint x="1090" y="1087" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="_iwaId8j6zOs-eMq-XP7" name="第 14 页">
+    <mxGraphModel dx="1536" dy="1060" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="r9m8cARe7vSXzyP3z0Fr-1" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=17;fontStyle=1" value="社区与经验分享用例图" vertex="1">
+          <mxGeometry height="30" width="300" x="559" y="346" as="geometry" />
+        </mxCell>
+        <mxCell id="r9m8cARe7vSXzyP3z0Fr-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;strokeColor=#000000;fillColor=none;align=left;verticalAlign=top;fontStyle=1;spacingLeft=10;spacingTop=8;fontSize=17;" value="" vertex="1">
+          <mxGeometry height="604" width="667" x="364" y="393" as="geometry" />
+        </mxCell>
+        <mxCell id="r9m8cARe7vSXzyP3z0Fr-3" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fontSize=17;" value="前台用户" vertex="1">
+          <mxGeometry height="120" width="60" x="214" y="507" as="geometry" />
+        </mxCell>
+        <mxCell id="r9m8cARe7vSXzyP3z0Fr-4" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fontSize=17;" value="管理员" vertex="1">
+          <mxGeometry height="120" width="60" x="214" y="727" as="geometry" />
+        </mxCell>
+        <mxCell id="r9m8cARe7vSXzyP3z0Fr-5" parent="1" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontSize=17;" value="UC-08&#xa;发布与浏览经验贴、评论互动" vertex="1">
+          <mxGeometry height="90" width="310" x="564" y="487" as="geometry" />
+        </mxCell>
+        <mxCell id="r9m8cARe7vSXzyP3z0Fr-6" parent="1" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontSize=17;" value="UC-09&#xa;审核经验帖" vertex="1">
+          <mxGeometry height="80" width="220" x="616" y="772" as="geometry" />
+        </mxCell>
+        <mxCell id="r9m8cARe7vSXzyP3z0Fr-7" edge="1" parent="1" source="r9m8cARe7vSXzyP3z0Fr-3" style="endArrow=none;html=1;strokeWidth=2;strokeColor=#000000;fontSize=17;" target="r9m8cARe7vSXzyP3z0Fr-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r9m8cARe7vSXzyP3z0Fr-8" edge="1" parent="1" source="r9m8cARe7vSXzyP3z0Fr-4" style="endArrow=none;html=1;strokeWidth=2;strokeColor=#000000;fontSize=17;" target="r9m8cARe7vSXzyP3z0Fr-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r9m8cARe7vSXzyP3z0Fr-9" edge="1" parent="1" source="r9m8cARe7vSXzyP3z0Fr-6" style="endArrow=open;dashed=1;html=1;strokeWidth=2;strokeColor=#000000;fontSize=17;" target="r9m8cARe7vSXzyP3z0Fr-5" value="&amp;lt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
