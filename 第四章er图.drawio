@@ -1277,13 +1277,13 @@
         <mxCell id="m_o7fzf8-z-TOpet-LIH-1" parent="1" style="shape=rectangle;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=16;strokeColor=#000000;fillColor=#ffffff;fontStyle=1" value="领养订单&#xa;pet_adopt_order" vertex="1">
           <mxGeometry height="80" width="200" x="499" y="496" as="geometry" />
         </mxCell>
-        <mxCell id="m_o7fzf8-z-TOpet-LIH-2" parent="1" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#ffffff;" value="PK 订单ID" vertex="1">
+        <mxCell id="m_o7fzf8-z-TOpet-LIH-2" parent="1" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#ffffff;" value="&amp;nbsp;订单ID" vertex="1">
           <mxGeometry height="50" width="120" x="249" y="276" as="geometry" />
         </mxCell>
-        <mxCell id="m_o7fzf8-z-TOpet-LIH-3" parent="1" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#ffffff;" value="FK 用户ID" vertex="1">
+        <mxCell id="m_o7fzf8-z-TOpet-LIH-3" parent="1" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#ffffff;" value="&amp;nbsp;用户ID" vertex="1">
           <mxGeometry height="50" width="120" x="429" y="256" as="geometry" />
         </mxCell>
-        <mxCell id="m_o7fzf8-z-TOpet-LIH-4" parent="1" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#ffffff;" value="FK 宠物ID" vertex="1">
+        <mxCell id="m_o7fzf8-z-TOpet-LIH-4" parent="1" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#ffffff;" value="&amp;nbsp;宠物ID" vertex="1">
           <mxGeometry height="50" width="120" x="639" y="256" as="geometry" />
         </mxCell>
         <mxCell id="m_o7fzf8-z-TOpet-LIH-5" parent="1" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#ffffff;" value="FK 地址ID" vertex="1">
