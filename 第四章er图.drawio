@@ -4,7 +4,7 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="xOmb3_-4hsNR5TOkc7tZ-239" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=18;fontStyle=1" value="宠物领养申请（简化版）活动图" vertex="1">
+        <mxCell id="xOmb3_-4hsNR5TOkc7tZ-239" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=18;fontStyle=1" value="宠物领养申请活动图" vertex="1">
           <mxGeometry height="30" width="400" x="1164" y="456" as="geometry" />
         </mxCell>
         <mxCell id="xOmb3_-4hsNR5TOkc7tZ-240" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#f8f8f8;" value="" vertex="1">
