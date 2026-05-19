@@ -7,7 +7,7 @@
         <mxCell id="t1" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=14;fontStyle=1" value="宠物领养系统前端总体架构（React + TypeScript + Vite）" vertex="1">
           <mxGeometry height="40" width="800" x="190" y="60" as="geometry" />
         </mxCell>
-        <mxCell id="c0" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#ffffff;strokeColor=#2F5597;fontStyle=1;align=center;fontSize=14;" value="Front-End Application" vertex="1">
+        <mxCell id="c0" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#ffffff;strokeColor=#000000;fontStyle=1;align=center;fontSize=14;" value="Front-End Application" vertex="1">
           <mxGeometry height="649" width="1040" x="82" y="113" as="geometry" />
         </mxCell>
         <mxCell id="c1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontStyle=1;fontColor=#333333;fontSize=14;" value="" vertex="1">
@@ -19,37 +19,37 @@
         <mxCell id="c3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontStyle=1;fontColor=#333333;fontSize=14;" value="" vertex="1">
           <mxGeometry height="170" width="980" x="120" y="520" as="geometry" />
         </mxCell>
-        <mxCell id="v1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#2F5597;fontSize=14;" value="views/（页面视图）&#xa;- user/ 用户端&#xa;- admin/ 管理端&#xa;- login/ register/&#xa;- view/ 公共页面" vertex="1">
+        <mxCell id="v1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=14;" value="views/（页面视图）&#xa;- user/ 用户端&#xa;- admin/ 管理端&#xa;- login/ register/&#xa;- view/ 公共页面" vertex="1">
           <mxGeometry height="120" width="420" x="160" y="190" as="geometry" />
         </mxCell>
-        <mxCell id="v2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#2F5597;fontSize=14;" value="components/（公共组件）&#xa;- Menu / Logo / Tab&#xa;- Editor（Quill）&#xa;- Charts（ECharts）&#xa;- Carousel / Evaluations" vertex="1">
+        <mxCell id="v2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=14;" value="components/（公共组件）&#xa;- Menu / Logo / Tab&#xa;- Editor（Quill）&#xa;- Charts（ECharts）&#xa;- Carousel / Evaluations" vertex="1">
           <mxGeometry height="120" width="440" x="620" y="190" as="geometry" />
         </mxCell>
-        <mxCell id="r1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#7F6000;fontSize=14;" value="router/（React Router）&#xa;- 公共路由&#xa;- 用户端路由&#xa;- 管理端路由&#xa;- 路由守卫（登录/角色）" vertex="1">
+        <mxCell id="r1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=light-dark(#000000, #b69b49);fontSize=14;" value="router/（React Router）&#xa;- 公共路由&#xa;- 用户端路由&#xa;- 管理端路由&#xa;- 路由守卫（登录/角色）" vertex="1">
           <mxGeometry height="90" width="420" x="160" y="395" as="geometry" />
         </mxCell>
-        <mxCell id="s1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#7F6000;fontSize=14;" value="store/（Redux Toolkit）&#xa;- userSlice（用户/权限/Token）&#xa;- petSlice（宠物列表/当前宠物）" vertex="1">
+        <mxCell id="s1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=light-dark(#050505, #b69b49);fontSize=14;" value="store/（Redux Toolkit）&#xa;- userSlice（用户/权限/Token）&#xa;- petSlice（宠物列表/当前宠物）" vertex="1">
           <mxGeometry height="90" width="440" x="620" y="395" as="geometry" />
         </mxCell>
-        <mxCell id="u1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#385723;fontSize=14;" value="utils/request.ts（Axios封装）&#xa;- baseURL/headers&#xa;- 请求拦截：Token注入&#xa;- 响应拦截：统一错误处理" vertex="1">
+        <mxCell id="u1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=14;" value="utils/request.ts（Axios封装）&#xa;- baseURL/headers&#xa;- 请求拦截：Token注入&#xa;- 响应拦截：统一错误处理" vertex="1">
           <mxGeometry height="110" width="420" x="160" y="560" as="geometry" />
         </mxCell>
-        <mxCell id="u2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#385723;fontSize=14;" value="utils/（工具库）&#xa;- storage.ts（本地缓存）&#xa;- date.ts（日期处理）&#xa;- md5.ts（加密）&#xa;- types/（类型定义）&#xa;- assets/（样式与资源）" vertex="1">
+        <mxCell id="u2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=14;" value="utils/（工具库）&#xa;- storage.ts（本地缓存）&#xa;- date.ts（日期处理）&#xa;- md5.ts（加密）&#xa;- types/（类型定义）&#xa;- assets/（样式与资源）" vertex="1">
           <mxGeometry height="110" width="440" x="620" y="560" as="geometry" />
         </mxCell>
-        <mxCell id="e1" edge="1" parent="1" source="v1" style="endArrow=block;html=1;strokeColor=#2F5597;strokeWidth=2;fontSize=14;" target="r1">
+        <mxCell id="e1" edge="1" parent="1" source="v1" style="endArrow=block;html=1;strokeColor=#000000;strokeWidth=2;fontSize=14;" target="r1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e2" edge="1" parent="1" source="v2" style="endArrow=block;html=1;strokeColor=#2F5597;strokeWidth=2;fontSize=14;" target="s1">
+        <mxCell id="e2" edge="1" parent="1" source="v2" style="endArrow=block;html=1;strokeColor=#000000;strokeWidth=2;fontSize=14;" target="s1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e3" edge="1" parent="1" source="r1" style="endArrow=block;html=1;strokeColor=#7F6000;strokeWidth=2;fontSize=14;" target="u1" value="API调用">
+        <mxCell id="e3" edge="1" parent="1" source="r1" style="endArrow=block;html=1;strokeColor=#000000;strokeWidth=2;fontSize=14;" target="u1" value="API调用">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e4" edge="1" parent="1" source="s1" style="endArrow=block;html=1;strokeColor=#7F6000;strokeWidth=2;fontSize=14;" target="u1" value="异步请求/状态更新">
+        <mxCell id="e4" edge="1" parent="1" source="s1" style="endArrow=block;html=1;strokeColor=#000000;strokeWidth=2;fontSize=14;" target="u1" value="异步请求/状态更新">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="b1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1;fontSize=14;" value="后端API服务" vertex="1">
+        <mxCell id="b1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1;fontSize=14;strokeColor=#000000;" value="后端API服务" vertex="1">
           <mxGeometry height="40" width="360" x="420" y="705" as="geometry" />
         </mxCell>
         <mxCell id="e5" edge="1" parent="1" source="u1" style="endArrow=block;html=1;strokeColor=#385723;strokeWidth=2;fontSize=14;" target="b1" value="HTTP（REST）">
