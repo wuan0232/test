@@ -121,7 +121,7 @@
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="tufPPPeGvulPmbiTYJBp-1" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=17;fontStyle=1" value="领养申请流程泳道活动图" vertex="1">
-          <mxGeometry height="30" width="320" x="373" y="-303" as="geometry" />
+          <mxGeometry height="30" width="320" x="210" y="-300" as="geometry" />
         </mxCell>
         <mxCell id="tufPPPeGvulPmbiTYJBp-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#f8f8f8;fontSize=17;" value="" vertex="1">
           <mxGeometry height="980" width="460" x="-327" y="-243" as="geometry" />
