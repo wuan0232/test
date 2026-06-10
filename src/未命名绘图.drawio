@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" pages="7">
+<mxfile host="app.diagrams.net" pages="19">
   <diagram name="UML-User-Auth-Standard" id="0IMGFxw8vKXIOmN5F7gW">
     <mxGraphModel dx="1536" dy="1060" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -898,6 +898,1713 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="1-角色概览" id="71oSJ4FYtACSDeE_NOOu">
+    <mxGraphModel dx="994" dy="686" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ov-title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=22;fontStyle=1;fontColor=#333333;" value="AIHNET-User 用户角色与权限矩阵" vertex="1">
+          <mxGeometry height="36" width="520" x="40" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="ov-sub" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=13;fontColor=#666666;" value="基于 src/router、Index.vue、stores、Auth0/Authing 代码审计&amp;nbsp;" vertex="1">
+          <mxGeometry height="24" width="680" x="40" y="58" as="geometry" />
+        </mxCell>
+        <mxCell id="ov-note" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF9E6;strokeColor=#D6B656;align=left;verticalAlign=top;spacing=10;fontSize=12;" value="重要结论&#xa;&#xa;本仓库为【患者端 User App】&#xa;无 Admin / 商家 / Provider 登录角色&#xa;前端仅区分：未登录 vs 已登录&#xa;VIP / membership 字段未用于权限门控" vertex="1">
+          <mxGeometry height="140" width="280" x="40" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="ov-guest-box" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F8CECC;strokeColor=#B85450;align=center;verticalAlign=middle;fontStyle=1;" value="访客 Guest&#xa;未登录" vertex="1">
+          <mxGeometry height="70" width="130" x="360" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="ov-patient-box" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;align=center;verticalAlign=middle;fontStyle=1;" value="已登录用户 Patient&#xa;唯一应用角色" vertex="1">
+          <mxGeometry height="70" width="170" x="520" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="ov-provider-box" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;align=center;verticalAlign=middle;fontStyle=1;" value="指导者 Provider&#xa;非本应用登录角色&#xa;(被关注/聊天对象)" vertex="1">
+          <mxGeometry height="70" width="190" x="720" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="ov-h1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;align=center;verticalAlign=middle;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" value="角色" vertex="1">
+          <mxGeometry height="36" width="130" x="40" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="ov-h2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;fontStyle=1;align=center;verticalAlign=middle;strokeColor=#666666;" value="代码证据" vertex="1">
+          <mxGeometry height="36" width="240" x="170" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="ov-h3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;fontStyle=1;align=center;verticalAlign=middle;strokeColor=#666666;" value="可登录本应用" vertex="1">
+          <mxGeometry height="36" width="120" x="410" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="ov-h4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;fontStyle=1;align=center;verticalAlign=middle;strokeColor=#666666;" value="权限范围" vertex="1">
+          <mxGeometry height="36" width="380" x="530" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="ov-r1c1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E8F8F7;fontStyle=1;align=left;verticalAlign=middle;spacingLeft=8;" value="访客 Guest" vertex="1">
+          <mxGeometry height="36" width="130" x="40" y="306" as="geometry" />
+        </mxCell>
+        <mxCell id="ov-r1c2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=middle;spacingLeft=8;" value="router whiteList + !isAuthenticated" vertex="1">
+          <mxGeometry height="36" width="240" x="170" y="306" as="geometry" />
+        </mxCell>
+        <mxCell id="ov-r1c3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;" value="否" vertex="1">
+          <mxGeometry height="36" width="120" x="410" y="306" as="geometry" />
+        </mxCell>
+        <mxCell id="ov-r1c4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=middle;spacingLeft=8;" value="仅 /login；其余路由重定向到登录页" vertex="1">
+          <mxGeometry height="36" width="380" x="530" y="306" as="geometry" />
+        </mxCell>
+        <mxCell id="ov-r2c1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E8F8F7;fontStyle=1;align=left;verticalAlign=middle;spacingLeft=8;" value="已登录用户 Patient" vertex="1">
+          <mxGeometry height="36" width="130" x="40" y="342" as="geometry" />
+        </mxCell>
+        <mxCell id="ov-r2c2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=middle;spacingLeft=8;" value="userStore.isAuthenticated, 注册 type=0" vertex="1">
+          <mxGeometry height="36" width="240" x="170" y="342" as="geometry" />
+        </mxCell>
+        <mxCell id="ov-r2c3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;" value="是" vertex="1">
+          <mxGeometry height="36" width="120" x="410" y="342" as="geometry" />
+        </mxCell>
+        <mxCell id="ov-r2c4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=middle;spacingLeft=8;" value="全部菜单 + 路由 + 功能（无 VIP/角色分级）" vertex="1">
+          <mxGeometry height="36" width="380" x="530" y="342" as="geometry" />
+        </mxCell>
+        <mxCell id="ov-r3c1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E8F8F7;fontStyle=1;align=left;verticalAlign=middle;spacingLeft=8;" value="指导者 Provider" vertex="1">
+          <mxGeometry height="36" width="130" x="40" y="378" as="geometry" />
+        </mxCell>
+        <mxCell id="ov-r3c2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=middle;spacingLeft=8;" value="postFollowApi, chat API (type=1 搜索)" vertex="1">
+          <mxGeometry height="36" width="240" x="170" y="378" as="geometry" />
+        </mxCell>
+        <mxCell id="ov-r3c3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;" value="否(独立应用)" vertex="1">
+          <mxGeometry height="36" width="120" x="410" y="378" as="geometry" />
+        </mxCell>
+        <mxCell id="ov-r3c4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=middle;spacingLeft=8;" value="被关注/聊天对象，非当前登录用户" vertex="1">
+          <mxGeometry height="36" width="380" x="530" y="378" as="geometry" />
+        </mxCell>
+        <mxCell id="ov-r4c1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E8F8F7;fontStyle=1;align=left;verticalAlign=middle;spacingLeft=8;" value="管理员 Admin" vertex="1">
+          <mxGeometry height="36" width="130" x="40" y="414" as="geometry" />
+        </mxCell>
+        <mxCell id="ov-r4c2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=middle;spacingLeft=8;" value="全库无 admin 相关代码" vertex="1">
+          <mxGeometry height="36" width="240" x="170" y="414" as="geometry" />
+        </mxCell>
+        <mxCell id="ov-r4c3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;" value="否" vertex="1">
+          <mxGeometry height="36" width="120" x="410" y="414" as="geometry" />
+        </mxCell>
+        <mxCell id="ov-r4c4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=middle;spacingLeft=8;" value="本仓库未实现" vertex="1">
+          <mxGeometry height="36" width="380" x="530" y="414" as="geometry" />
+        </mxCell>
+        <mxCell id="ov-r5c1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E8F8F7;fontStyle=1;align=left;verticalAlign=middle;spacingLeft=8;" value="商家 Merchant" vertex="1">
+          <mxGeometry height="36" width="130" x="40" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="ov-r5c2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=middle;spacingLeft=8;" value="全库无 merchant 相关代码" vertex="1">
+          <mxGeometry height="36" width="240" x="170" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="ov-r5c3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;" value="否" vertex="1">
+          <mxGeometry height="36" width="120" x="410" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="ov-r5c4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=middle;spacingLeft=8;" value="本仓库未实现（Header 购物车外链至 WordPress 商城）" vertex="1">
+          <mxGeometry height="36" width="380" x="530" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="ov-env-title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=18;fontStyle=1;fontColor=#333333;" value="部署环境差异（非用户角色）" vertex="1">
+          <mxGeometry height="28" width="320" x="40" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="ov-eh1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#39BCBE;fontColor=#FFFFFF;fontStyle=1;align=center;verticalAlign=middle;" value="维度" vertex="1">
+          <mxGeometry height="32" width="120" x="40" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="ov-eh2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#39BCBE;fontColor=#FFFFFF;fontStyle=1;align=center;verticalAlign=middle;" value="国内 CN (aihnet.cn)" vertex="1">
+          <mxGeometry height="32" width="300" x="160" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="ov-eh3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#39BCBE;fontColor=#FFFFFF;fontStyle=1;align=center;verticalAlign=middle;" value="国外 EN (medical.aihnet.com)" vertex="1">
+          <mxGeometry height="32" width="300" x="460" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="ov-e1c1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E8F8F7;fontStyle=1;align=left;verticalAlign=middle;spacingLeft=8;" value="认证" vertex="1">
+          <mxGeometry height="32" width="120" x="40" y="592" as="geometry" />
+        </mxCell>
+        <mxCell id="ov-e1c2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=middle;spacingLeft=8;" value="Authing Guard" vertex="1">
+          <mxGeometry height="32" width="300" x="160" y="592" as="geometry" />
+        </mxCell>
+        <mxCell id="ov-e1c3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=middle;spacingLeft=8;" value="Auth0" vertex="1">
+          <mxGeometry height="32" width="300" x="460" y="592" as="geometry" />
+        </mxCell>
+        <mxCell id="ov-e2c1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E8F8F7;fontStyle=1;align=left;verticalAlign=middle;spacingLeft=8;" value="AI 助手" vertex="1">
+          <mxGeometry height="32" width="120" x="40" y="624" as="geometry" />
+        </mxCell>
+        <mxCell id="ov-e2c2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=middle;spacingLeft=8;" value="DeepSeek" vertex="1">
+          <mxGeometry height="32" width="300" x="160" y="624" as="geometry" />
+        </mxCell>
+        <mxCell id="ov-e2c3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=middle;spacingLeft=8;" value="GPT" vertex="1">
+          <mxGeometry height="32" width="300" x="460" y="624" as="geometry" />
+        </mxCell>
+        <mxCell id="ov-e3c1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E8F8F7;fontStyle=1;align=left;verticalAlign=middle;spacingLeft=8;" value="登出跳转" vertex="1">
+          <mxGeometry height="32" width="120" x="40" y="656" as="geometry" />
+        </mxCell>
+        <mxCell id="ov-e3c2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=middle;spacingLeft=8;" value="aihnet.cn" vertex="1">
+          <mxGeometry height="32" width="300" x="160" y="656" as="geometry" />
+        </mxCell>
+        <mxCell id="ov-e3c3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=middle;spacingLeft=8;" value="medical.aihnet.com" vertex="1">
+          <mxGeometry height="32" width="300" x="460" y="656" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="1-角色概览" id="j90YR5WnI5Nz48ptWL3G">
+    <mxGraphModel dx="994" dy="686" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ov-title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=22;fontStyle=1;fontColor=#333333;" value="AIHNET-User 用户角色与权限矩阵" vertex="1">
+          <mxGeometry height="36" width="520" x="40" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="ov-sub" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=13;fontColor=#666666;" value="基于 src/router、Index.vue、stores、Auth0/Authing 代码审计 | 2026-06-10" vertex="1">
+          <mxGeometry height="24" width="680" x="40" y="58" as="geometry" />
+        </mxCell>
+        <mxCell id="ov-note" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF9E6;strokeColor=#D6B656;align=left;verticalAlign=top;spacing=10;fontSize=12;" value="重要结论&#xa;&#xa;本仓库为【患者端 User App】&#xa;无 Admin / 商家 / Provider 登录角色&#xa;前端仅区分：未登录 vs 已登录&#xa;VIP / membership 字段未用于权限门控" vertex="1">
+          <mxGeometry height="140" width="280" x="40" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="ov-guest-box" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F8CECC;strokeColor=#B85450;align=center;verticalAlign=middle;fontStyle=1;" value="访客 Guest&#xa;未登录" vertex="1">
+          <mxGeometry height="70" width="130" x="360" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="ov-patient-box" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;align=center;verticalAlign=middle;fontStyle=1;" value="已登录用户 Patient&#xa;唯一应用角色" vertex="1">
+          <mxGeometry height="70" width="170" x="520" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="ov-provider-box" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;align=center;verticalAlign=middle;fontStyle=1;" value="指导者 Provider&#xa;非本应用登录角色&#xa;(被关注/聊天对象)" vertex="1">
+          <mxGeometry height="70" width="190" x="720" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="ov-h1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#39BCBE;fontColor=#FFFFFF;fontStyle=1;align=center;verticalAlign=middle;" value="角色" vertex="1">
+          <mxGeometry height="36" width="130" x="40" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="ov-h2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#39BCBE;fontColor=#FFFFFF;fontStyle=1;align=center;verticalAlign=middle;" value="代码证据" vertex="1">
+          <mxGeometry height="36" width="240" x="170" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="ov-h3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#39BCBE;fontColor=#FFFFFF;fontStyle=1;align=center;verticalAlign=middle;" value="可登录本应用" vertex="1">
+          <mxGeometry height="36" width="120" x="410" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="ov-h4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#39BCBE;fontColor=#FFFFFF;fontStyle=1;align=center;verticalAlign=middle;" value="权限范围" vertex="1">
+          <mxGeometry height="36" width="380" x="530" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="ov-r1c1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E8F8F7;fontStyle=1;align=left;verticalAlign=middle;spacingLeft=8;" value="访客 Guest" vertex="1">
+          <mxGeometry height="36" width="130" x="40" y="306" as="geometry" />
+        </mxCell>
+        <mxCell id="ov-r1c2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=middle;spacingLeft=8;" value="router whiteList + !isAuthenticated" vertex="1">
+          <mxGeometry height="36" width="240" x="170" y="306" as="geometry" />
+        </mxCell>
+        <mxCell id="ov-r1c3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;" value="否" vertex="1">
+          <mxGeometry height="36" width="120" x="410" y="306" as="geometry" />
+        </mxCell>
+        <mxCell id="ov-r1c4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=middle;spacingLeft=8;" value="仅 /login；其余路由重定向到登录页" vertex="1">
+          <mxGeometry height="36" width="380" x="530" y="306" as="geometry" />
+        </mxCell>
+        <mxCell id="ov-r2c1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E8F8F7;fontStyle=1;align=left;verticalAlign=middle;spacingLeft=8;" value="已登录用户 Patient" vertex="1">
+          <mxGeometry height="36" width="130" x="40" y="342" as="geometry" />
+        </mxCell>
+        <mxCell id="ov-r2c2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=middle;spacingLeft=8;" value="userStore.isAuthenticated, 注册 type=0" vertex="1">
+          <mxGeometry height="36" width="240" x="170" y="342" as="geometry" />
+        </mxCell>
+        <mxCell id="ov-r2c3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;" value="是" vertex="1">
+          <mxGeometry height="36" width="120" x="410" y="342" as="geometry" />
+        </mxCell>
+        <mxCell id="ov-r2c4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=middle;spacingLeft=8;" value="全部菜单 + 路由 + 功能（无 VIP/角色分级）" vertex="1">
+          <mxGeometry height="36" width="380" x="530" y="342" as="geometry" />
+        </mxCell>
+        <mxCell id="ov-r3c1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E8F8F7;fontStyle=1;align=left;verticalAlign=middle;spacingLeft=8;" value="指导者 Provider" vertex="1">
+          <mxGeometry height="36" width="130" x="40" y="378" as="geometry" />
+        </mxCell>
+        <mxCell id="ov-r3c2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=middle;spacingLeft=8;" value="postFollowApi, chat API (type=1 搜索)" vertex="1">
+          <mxGeometry height="36" width="240" x="170" y="378" as="geometry" />
+        </mxCell>
+        <mxCell id="ov-r3c3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;" value="否(独立应用)" vertex="1">
+          <mxGeometry height="36" width="120" x="410" y="378" as="geometry" />
+        </mxCell>
+        <mxCell id="ov-r3c4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=middle;spacingLeft=8;" value="被关注/聊天对象，非当前登录用户" vertex="1">
+          <mxGeometry height="36" width="380" x="530" y="378" as="geometry" />
+        </mxCell>
+        <mxCell id="ov-r4c1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E8F8F7;fontStyle=1;align=left;verticalAlign=middle;spacingLeft=8;" value="管理员 Admin" vertex="1">
+          <mxGeometry height="36" width="130" x="40" y="414" as="geometry" />
+        </mxCell>
+        <mxCell id="ov-r4c2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=middle;spacingLeft=8;" value="全库无 admin 相关代码" vertex="1">
+          <mxGeometry height="36" width="240" x="170" y="414" as="geometry" />
+        </mxCell>
+        <mxCell id="ov-r4c3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;" value="否" vertex="1">
+          <mxGeometry height="36" width="120" x="410" y="414" as="geometry" />
+        </mxCell>
+        <mxCell id="ov-r4c4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=middle;spacingLeft=8;" value="本仓库未实现" vertex="1">
+          <mxGeometry height="36" width="380" x="530" y="414" as="geometry" />
+        </mxCell>
+        <mxCell id="ov-r5c1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E8F8F7;fontStyle=1;align=left;verticalAlign=middle;spacingLeft=8;" value="商家 Merchant" vertex="1">
+          <mxGeometry height="36" width="130" x="40" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="ov-r5c2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=middle;spacingLeft=8;" value="全库无 merchant 相关代码" vertex="1">
+          <mxGeometry height="36" width="240" x="170" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="ov-r5c3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;" value="否" vertex="1">
+          <mxGeometry height="36" width="120" x="410" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="ov-r5c4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=middle;spacingLeft=8;" value="本仓库未实现（Header 购物车外链至 WordPress 商城）" vertex="1">
+          <mxGeometry height="36" width="380" x="530" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="ov-env-title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=18;fontStyle=1;fontColor=#333333;" value="部署环境差异（非用户角色）" vertex="1">
+          <mxGeometry height="28" width="320" x="40" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="ov-eh1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#39BCBE;fontColor=#FFFFFF;fontStyle=1;align=center;verticalAlign=middle;" value="维度" vertex="1">
+          <mxGeometry height="32" width="120" x="40" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="ov-eh2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#39BCBE;fontColor=#FFFFFF;fontStyle=1;align=center;verticalAlign=middle;" value="国内 CN (aihnet.cn)" vertex="1">
+          <mxGeometry height="32" width="300" x="160" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="ov-eh3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#39BCBE;fontColor=#FFFFFF;fontStyle=1;align=center;verticalAlign=middle;" value="国外 EN (medical.aihnet.com)" vertex="1">
+          <mxGeometry height="32" width="300" x="460" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="ov-e1c1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E8F8F7;fontStyle=1;align=left;verticalAlign=middle;spacingLeft=8;" value="认证" vertex="1">
+          <mxGeometry height="32" width="120" x="40" y="592" as="geometry" />
+        </mxCell>
+        <mxCell id="ov-e1c2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=middle;spacingLeft=8;" value="Authing Guard" vertex="1">
+          <mxGeometry height="32" width="300" x="160" y="592" as="geometry" />
+        </mxCell>
+        <mxCell id="ov-e1c3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=middle;spacingLeft=8;" value="Auth0" vertex="1">
+          <mxGeometry height="32" width="300" x="460" y="592" as="geometry" />
+        </mxCell>
+        <mxCell id="ov-e2c1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E8F8F7;fontStyle=1;align=left;verticalAlign=middle;spacingLeft=8;" value="AI 助手" vertex="1">
+          <mxGeometry height="32" width="120" x="40" y="624" as="geometry" />
+        </mxCell>
+        <mxCell id="ov-e2c2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=middle;spacingLeft=8;" value="DeepSeek" vertex="1">
+          <mxGeometry height="32" width="300" x="160" y="624" as="geometry" />
+        </mxCell>
+        <mxCell id="ov-e2c3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=middle;spacingLeft=8;" value="GPT" vertex="1">
+          <mxGeometry height="32" width="300" x="460" y="624" as="geometry" />
+        </mxCell>
+        <mxCell id="ov-e3c1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E8F8F7;fontStyle=1;align=left;verticalAlign=middle;spacingLeft=8;" value="登出跳转" vertex="1">
+          <mxGeometry height="32" width="120" x="40" y="656" as="geometry" />
+        </mxCell>
+        <mxCell id="ov-e3c2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=middle;spacingLeft=8;" value="aihnet.cn" vertex="1">
+          <mxGeometry height="32" width="300" x="160" y="656" as="geometry" />
+        </mxCell>
+        <mxCell id="ov-e3c3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=middle;spacingLeft=8;" value="medical.aihnet.com" vertex="1">
+          <mxGeometry height="32" width="300" x="460" y="656" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="2-页面访问矩阵" id="7bugjngArN-YVywqvLa1">
+    <mxGraphModel dx="939" dy="648" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="pg-title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=20;fontStyle=1;fontColor=#333333;" value="页面 / 路由访问矩阵" vertex="1">
+          <mxGeometry height="32" width="400" x="40" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-legend" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=13;fontColor=#666666;" value="✅ 可访问  |  ❌ 不可访问  |  ⚠️ 路由白名单但 Index.vue 强制登录  |  ↩️ 已登录重定向" vertex="1">
+          <mxGeometry height="22" width="720" x="40" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-h1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#39BCBE;fontColor=#FFFFFF;fontStyle=1;align=center;verticalAlign=middle;" value="路由 Path" vertex="1">
+          <mxGeometry height="34" width="180" x="40" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-h2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#39BCBE;fontColor=#FFFFFF;fontStyle=1;align=center;verticalAlign=middle;" value="页面名称" vertex="1">
+          <mxGeometry height="34" width="140" x="220" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-h3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#39BCBE;fontColor=#FFFFFF;fontStyle=1;align=center;verticalAlign=middle;" value="Guest" vertex="1">
+          <mxGeometry height="34" width="70" x="360" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-h4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#39BCBE;fontColor=#FFFFFF;fontStyle=1;align=center;verticalAlign=middle;" value="Patient" vertex="1">
+          <mxGeometry height="34" width="80" x="430" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-h5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#39BCBE;fontColor=#FFFFFF;fontStyle=1;align=center;verticalAlign=middle;" value="侧栏菜单" vertex="1">
+          <mxGeometry height="34" width="80" x="510" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-h6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#39BCBE;fontColor=#FFFFFF;fontStyle=1;align=center;verticalAlign=middle;" value="代码位置" vertex="1">
+          <mxGeometry height="34" width="220" x="590" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r01" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E8F8F7;fontStyle=1;align=left;spacingLeft=8;" value="/login" vertex="1">
+          <mxGeometry height="34" width="180" x="40" y="124" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r01n" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;" value="登录页" vertex="1">
+          <mxGeometry height="34" width="140" x="220" y="124" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r01g" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#D5E8D4;align=center;fontStyle=1;fontColor=#2D7600;" value="✅" vertex="1">
+          <mxGeometry height="34" width="70" x="360" y="124" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r01p" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFF2CC;align=center;fontStyle=1;fontColor=#996600;" value="↩️→/" vertex="1">
+          <mxGeometry height="34" width="80" x="430" y="124" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r01m" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;" value="—" vertex="1">
+          <mxGeometry height="34" width="80" x="510" y="124" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r01c" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;" value="views/Other/Login.vue" vertex="1">
+          <mxGeometry height="34" width="220" x="590" y="124" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r02" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E8F8F7;fontStyle=1;align=left;spacingLeft=8;" value="/" vertex="1">
+          <mxGeometry height="34" width="180" x="40" y="158" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r02n" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;" value="个人资料" vertex="1">
+          <mxGeometry height="34" width="140" x="220" y="158" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r02g" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFF2CC;align=center;fontStyle=1;fontColor=#996600;" value="⚠️" vertex="1">
+          <mxGeometry height="34" width="70" x="360" y="158" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r02p" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#D5E8D4;align=center;fontStyle=1;fontColor=#2D7600;" value="✅" vertex="1">
+          <mxGeometry height="34" width="80" x="430" y="158" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r02m" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#D5E8D4;align=center;fontStyle=1;fontColor=#2D7600;" value="✅" vertex="1">
+          <mxGeometry height="34" width="80" x="510" y="158" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r02c" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;" value="Menu/Profile/index.vue" vertex="1">
+          <mxGeometry height="34" width="220" x="590" y="158" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r03" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E8F8F7;fontStyle=1;align=left;spacingLeft=8;" value="/visual-focus" vertex="1">
+          <mxGeometry height="34" width="180" x="40" y="192" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r03n" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;" value="视觉专注" vertex="1">
+          <mxGeometry height="34" width="140" x="220" y="192" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r03g" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F8CECC;align=center;fontStyle=1;fontColor=#B85450;" value="❌" vertex="1">
+          <mxGeometry height="34" width="70" x="360" y="192" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r03p" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#D5E8D4;align=center;fontStyle=1;fontColor=#2D7600;" value="✅" vertex="1">
+          <mxGeometry height="34" width="80" x="430" y="192" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r03m" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#D5E8D4;align=center;fontStyle=1;fontColor=#2D7600;" value="✅" vertex="1">
+          <mxGeometry height="34" width="80" x="510" y="192" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r03c" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;" value="Menu/visualFocus/index.vue" vertex="1">
+          <mxGeometry height="34" width="220" x="590" y="192" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r04" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E8F8F7;fontStyle=1;align=left;spacingLeft=8;" value="/equipment" vertex="1">
+          <mxGeometry height="34" width="180" x="40" y="226" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r04n" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;" value="设备管理" vertex="1">
+          <mxGeometry height="34" width="140" x="220" y="226" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r04g" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F8CECC;align=center;fontStyle=1;fontColor=#B85450;" value="❌" vertex="1">
+          <mxGeometry height="34" width="70" x="360" y="226" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r04p" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#D5E8D4;align=center;fontStyle=1;fontColor=#2D7600;" value="✅" vertex="1">
+          <mxGeometry height="34" width="80" x="430" y="226" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r04m" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#D5E8D4;align=center;fontStyle=1;fontColor=#2D7600;" value="✅" vertex="1">
+          <mxGeometry height="34" width="80" x="510" y="226" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r04c" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;" value="Menu/DeviceManagement/index.vue" vertex="1">
+          <mxGeometry height="34" width="220" x="590" y="226" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r05" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E8F8F7;fontStyle=1;align=left;spacingLeft=8;" value="/report" vertex="1">
+          <mxGeometry height="34" width="180" x="40" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r05n" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;" value="我的报告" vertex="1">
+          <mxGeometry height="34" width="140" x="220" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r05g" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F8CECC;align=center;fontStyle=1;fontColor=#B85450;" value="❌" vertex="1">
+          <mxGeometry height="34" width="70" x="360" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r05p" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#D5E8D4;align=center;fontStyle=1;fontColor=#2D7600;" value="✅" vertex="1">
+          <mxGeometry height="34" width="80" x="430" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r05m" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#D5E8D4;align=center;fontStyle=1;fontColor=#2D7600;" value="✅" vertex="1">
+          <mxGeometry height="34" width="80" x="510" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r05c" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;" value="Menu/Report/index.vue" vertex="1">
+          <mxGeometry height="34" width="220" x="590" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r06" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E8F8F7;fontStyle=1;align=left;spacingLeft=8;" value="/promis-detail" vertex="1">
+          <mxGeometry height="34" width="180" x="40" y="294" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r06n" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;" value="PROMIS 详情" vertex="1">
+          <mxGeometry height="34" width="140" x="220" y="294" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r06g" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F8CECC;align=center;fontStyle=1;fontColor=#B85450;" value="❌" vertex="1">
+          <mxGeometry height="34" width="70" x="360" y="294" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r06p" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#D5E8D4;align=center;fontStyle=1;fontColor=#2D7600;" value="✅" vertex="1">
+          <mxGeometry height="34" width="80" x="430" y="294" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r06m" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;" value="—" vertex="1">
+          <mxGeometry height="34" width="80" x="510" y="294" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r06c" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;" value="Menu/Report/PromisDetail.vue" vertex="1">
+          <mxGeometry height="34" width="220" x="590" y="294" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r07" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E8F8F7;fontStyle=1;align=left;spacingLeft=8;" value="/odi-detail" vertex="1">
+          <mxGeometry height="34" width="180" x="40" y="328" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r07n" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;" value="ODI 详情" vertex="1">
+          <mxGeometry height="34" width="140" x="220" y="328" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r07g" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F8CECC;align=center;fontStyle=1;fontColor=#B85450;" value="❌" vertex="1">
+          <mxGeometry height="34" width="70" x="360" y="328" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r07p" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#D5E8D4;align=center;fontStyle=1;fontColor=#2D7600;" value="✅" vertex="1">
+          <mxGeometry height="34" width="80" x="430" y="328" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r07m" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;" value="—" vertex="1">
+          <mxGeometry height="34" width="80" x="510" y="328" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r07c" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;" value="Menu/Report/ODIDetail.vue" vertex="1">
+          <mxGeometry height="34" width="220" x="590" y="328" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r08" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E8F8F7;fontStyle=1;align=left;spacingLeft=8;" value="/basicInformationHistory" vertex="1">
+          <mxGeometry height="34" width="180" x="40" y="362" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r08n" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;" value="生命体征历史" vertex="1">
+          <mxGeometry height="34" width="140" x="220" y="362" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r08g" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F8CECC;align=center;fontStyle=1;fontColor=#B85450;" value="❌" vertex="1">
+          <mxGeometry height="34" width="70" x="360" y="362" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r08p" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#D5E8D4;align=center;fontStyle=1;fontColor=#2D7600;" value="✅" vertex="1">
+          <mxGeometry height="34" width="80" x="430" y="362" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r08m" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;" value="—" vertex="1">
+          <mxGeometry height="34" width="80" x="510" y="362" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r08c" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;" value="Menu/Report/history.vue" vertex="1">
+          <mxGeometry height="34" width="220" x="590" y="362" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r09" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E8F8F7;fontStyle=1;align=left;spacingLeft=8;" value="/attention" vertex="1">
+          <mxGeometry height="34" width="180" x="40" y="396" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r09n" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;" value="我的关注" vertex="1">
+          <mxGeometry height="34" width="140" x="220" y="396" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r09g" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F8CECC;align=center;fontStyle=1;fontColor=#B85450;" value="❌" vertex="1">
+          <mxGeometry height="34" width="70" x="360" y="396" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r09p" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#D5E8D4;align=center;fontStyle=1;fontColor=#2D7600;" value="✅" vertex="1">
+          <mxGeometry height="34" width="80" x="430" y="396" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r09m" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#D5E8D4;align=center;fontStyle=1;fontColor=#2D7600;" value="✅" vertex="1">
+          <mxGeometry height="34" width="80" x="510" y="396" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r09c" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;" value="Menu/FollowedUsers/index.vue" vertex="1">
+          <mxGeometry height="34" width="220" x="590" y="396" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r10" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E8F8F7;fontStyle=1;align=left;spacingLeft=8;" value="/consultation" vertex="1">
+          <mxGeometry height="34" width="180" x="40" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r10n" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;" value="我的咨询" vertex="1">
+          <mxGeometry height="34" width="140" x="220" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r10g" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F8CECC;align=center;fontStyle=1;fontColor=#B85450;" value="❌" vertex="1">
+          <mxGeometry height="34" width="70" x="360" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r10p" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#D5E8D4;align=center;fontStyle=1;fontColor=#2D7600;" value="✅" vertex="1">
+          <mxGeometry height="34" width="80" x="430" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r10m" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#D5E8D4;align=center;fontStyle=1;fontColor=#2D7600;" value="✅" vertex="1">
+          <mxGeometry height="34" width="80" x="510" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r10c" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;" value="Menu/MyConsultation/index.vue" vertex="1">
+          <mxGeometry height="34" width="220" x="590" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r11" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E8F8F7;fontStyle=1;align=left;spacingLeft=8;" value="/reminder" vertex="1">
+          <mxGeometry height="34" width="180" x="40" y="464" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r11n" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;" value="提醒设置" vertex="1">
+          <mxGeometry height="34" width="140" x="220" y="464" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r11g" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F8CECC;align=center;fontStyle=1;fontColor=#B85450;" value="❌" vertex="1">
+          <mxGeometry height="34" width="70" x="360" y="464" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r11p" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#D5E8D4;align=center;fontStyle=1;fontColor=#2D7600;" value="✅" vertex="1">
+          <mxGeometry height="34" width="80" x="430" y="464" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r11m" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#D5E8D4;align=center;fontStyle=1;fontColor=#2D7600;" value="✅" vertex="1">
+          <mxGeometry height="34" width="80" x="510" y="464" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r11c" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;" value="Menu/ReminderSettings/index.vue" vertex="1">
+          <mxGeometry height="34" width="220" x="590" y="464" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r12" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E8F8F7;fontStyle=1;align=left;spacingLeft=8;" value="/adverse-event-record" vertex="1">
+          <mxGeometry height="34" width="180" x="40" y="498" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r12n" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;" value="不良事件" vertex="1">
+          <mxGeometry height="34" width="140" x="220" y="498" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r12g" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F8CECC;align=center;fontStyle=1;fontColor=#B85450;" value="❌" vertex="1">
+          <mxGeometry height="34" width="70" x="360" y="498" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r12p" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#D5E8D4;align=center;fontStyle=1;fontColor=#2D7600;" value="✅" vertex="1">
+          <mxGeometry height="34" width="80" x="430" y="498" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r12m" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#D5E8D4;align=center;fontStyle=1;fontColor=#2D7600;" value="✅" vertex="1">
+          <mxGeometry height="34" width="80" x="510" y="498" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r12c" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;" value="Menu/AdverseEventRecord/index.vue" vertex="1">
+          <mxGeometry height="34" width="220" x="590" y="498" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r13" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E8F8F7;fontStyle=1;align=left;spacingLeft=8;" value="/download" vertex="1">
+          <mxGeometry height="34" width="180" x="40" y="532" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r13n" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;" value="下载 App" vertex="1">
+          <mxGeometry height="34" width="140" x="220" y="532" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r13g" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F8CECC;align=center;fontStyle=1;fontColor=#B85450;" value="❌" vertex="1">
+          <mxGeometry height="34" width="70" x="360" y="532" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r13p" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#D5E8D4;align=center;fontStyle=1;fontColor=#2D7600;" value="✅" vertex="1">
+          <mxGeometry height="34" width="80" x="430" y="532" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r13m" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#D5E8D4;align=center;fontStyle=1;fontColor=#2D7600;" value="✅" vertex="1">
+          <mxGeometry height="34" width="80" x="510" y="532" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r13c" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;" value="views/Other/Download.vue" vertex="1">
+          <mxGeometry height="34" width="220" x="590" y="532" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r14" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E8F8F7;fontStyle=1;align=left;spacingLeft=8;" value="/cpt-code" vertex="1">
+          <mxGeometry height="34" width="180" x="40" y="566" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r14n" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;" value="Web-CPT" vertex="1">
+          <mxGeometry height="34" width="140" x="220" y="566" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r14g" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F8CECC;align=center;fontStyle=1;fontColor=#B85450;" value="❌" vertex="1">
+          <mxGeometry height="34" width="70" x="360" y="566" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r14p" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#D5E8D4;align=center;fontStyle=1;fontColor=#2D7600;" value="✅" vertex="1">
+          <mxGeometry height="34" width="80" x="430" y="566" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r14m" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFF2CC;align=center;fontStyle=1;fontColor=#996600;" value="❌(菜单已注释)" vertex="1">
+          <mxGeometry height="34" width="80" x="510" y="566" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r14c" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;" value="Menu/CPT-Codes/index.vue" vertex="1">
+          <mxGeometry height="34" width="220" x="590" y="566" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r15" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E8F8F7;fontStyle=1;align=left;spacingLeft=8;" value="/:catchAll" vertex="1">
+          <mxGeometry height="34" width="180" x="40" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r15n" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;" value="404" vertex="1">
+          <mxGeometry height="34" width="140" x="220" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r15g" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F8CECC;align=center;fontStyle=1;fontColor=#B85450;" value="❌" vertex="1">
+          <mxGeometry height="34" width="70" x="360" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r15p" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#D5E8D4;align=center;fontStyle=1;fontColor=#2D7600;" value="✅" vertex="1">
+          <mxGeometry height="34" width="80" x="430" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r15m" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;" value="—" vertex="1">
+          <mxGeometry height="34" width="80" x="510" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r15c" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;" value="views/Other/404.vue" vertex="1">
+          <mxGeometry height="34" width="220" x="590" y="600" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="3-功能操作矩阵" id="v96VuWeAg_gq_tltqYNI">
+    <mxGraphModel dx="994" dy="686" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="fn-title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=20;fontStyle=1;fontColor=#333333;" value="功能操作权限矩阵" vertex="1">
+          <mxGeometry height="32" width="360" x="40" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="fn-h1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#39BCBE;fontColor=#FFFFFF;fontStyle=1;align=center;" value="功能模块" vertex="1">
+          <mxGeometry height="36" width="110" x="40" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="fn-h2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#39BCBE;fontColor=#FFFFFF;fontStyle=1;align=center;" value="具体操作" vertex="1">
+          <mxGeometry height="36" width="240" x="150" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="fn-h3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#39BCBE;fontColor=#FFFFFF;fontStyle=1;align=center;" value="Guest" vertex="1">
+          <mxGeometry height="36" width="80" x="390" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="fn-h4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#39BCBE;fontColor=#FFFFFF;fontStyle=1;align=center;" value="Patient" vertex="1">
+          <mxGeometry height="36" width="90" x="470" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="fn-h5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#39BCBE;fontColor=#FFFFFF;fontStyle=1;align=center;" value="API / 组件" vertex="1">
+          <mxGeometry height="36" width="250" x="560" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="fn-r01" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E8F8F7;fontStyle=1;align=left;spacingLeft=8;" value="认证" vertex="1">
+          <mxGeometry height="36" width="110" x="40" y="106" as="geometry" />
+        </mxCell>
+        <mxCell id="fn-r01o" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;" value="登录 / 登出" vertex="1">
+          <mxGeometry height="36" width="240" x="150" y="106" as="geometry" />
+        </mxCell>
+        <mxCell id="fn-r01g" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFF2CC;align=center;fontStyle=1;fontColor=#996600;" value="登录✅" vertex="1">
+          <mxGeometry height="36" width="80" x="390" y="106" as="geometry" />
+        </mxCell>
+        <mxCell id="fn-r01p" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#D5E8D4;align=center;fontStyle=1;fontColor=#2D7600;" value="✅" vertex="1">
+          <mxGeometry height="36" width="90" x="470" y="106" as="geometry" />
+        </mxCell>
+        <mxCell id="fn-r01c" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;" value="Auth0 / Authing, userStore" vertex="1">
+          <mxGeometry height="36" width="250" x="560" y="106" as="geometry" />
+        </mxCell>
+        <mxCell id="fn-r02" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E8F8F7;fontStyle=1;align=left;spacingLeft=8;" value="个人资料" vertex="1">
+          <mxGeometry height="36" width="110" x="40" y="142" as="geometry" />
+        </mxCell>
+        <mxCell id="fn-r02o" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;" value="查看 / 编辑信息、上传头像" vertex="1">
+          <mxGeometry height="36" width="240" x="150" y="142" as="geometry" />
+        </mxCell>
+        <mxCell id="fn-r02g" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F8CECC;align=center;fontStyle=1;fontColor=#B85450;" value="❌" vertex="1">
+          <mxGeometry height="36" width="80" x="390" y="142" as="geometry" />
+        </mxCell>
+        <mxCell id="fn-r02p" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#D5E8D4;align=center;fontStyle=1;fontColor=#2D7600;" value="✅" vertex="1">
+          <mxGeometry height="36" width="90" x="470" y="142" as="geometry" />
+        </mxCell>
+        <mxCell id="fn-r02c" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;" value="api/user.ts, Profile/index.vue" vertex="1">
+          <mxGeometry height="36" width="250" x="560" y="142" as="geometry" />
+        </mxCell>
+        <mxCell id="fn-r03" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E8F8F7;fontStyle=1;align=left;spacingLeft=8;" value="视觉专注" vertex="1">
+          <mxGeometry height="36" width="110" x="40" y="178" as="geometry" />
+        </mxCell>
+        <mxCell id="fn-r03o" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;" value="摄像头姿态监测、实时角度" vertex="1">
+          <mxGeometry height="36" width="240" x="150" y="178" as="geometry" />
+        </mxCell>
+        <mxCell id="fn-r03g" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F8CECC;align=center;fontStyle=1;fontColor=#B85450;" value="❌" vertex="1">
+          <mxGeometry height="36" width="80" x="390" y="178" as="geometry" />
+        </mxCell>
+        <mxCell id="fn-r03p" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#D5E8D4;align=center;fontStyle=1;fontColor=#2D7600;" value="✅" vertex="1">
+          <mxGeometry height="36" width="90" x="470" y="178" as="geometry" />
+        </mxCell>
+        <mxCell id="fn-r03c" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;" value="visualFocus/, MediaPipe" vertex="1">
+          <mxGeometry height="36" width="250" x="560" y="178" as="geometry" />
+        </mxCell>
+        <mxCell id="fn-r04" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E8F8F7;fontStyle=1;align=left;spacingLeft=8;" value="设备管理" vertex="1">
+          <mxGeometry height="36" width="110" x="40" y="214" as="geometry" />
+        </mxCell>
+        <mxCell id="fn-r04o" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;" value="查看 aiNeck / aiJoint 设备" vertex="1">
+          <mxGeometry height="36" width="240" x="150" y="214" as="geometry" />
+        </mxCell>
+        <mxCell id="fn-r04g" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F8CECC;align=center;fontStyle=1;fontColor=#B85450;" value="❌" vertex="1">
+          <mxGeometry height="36" width="80" x="390" y="214" as="geometry" />
+        </mxCell>
+        <mxCell id="fn-r04p" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#D5E8D4;align=center;fontStyle=1;fontColor=#2D7600;" value="✅" vertex="1">
+          <mxGeometry height="36" width="90" x="470" y="214" as="geometry" />
+        </mxCell>
+        <mxCell id="fn-r04c" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;" value="DeviceManagement/index.vue" vertex="1">
+          <mxGeometry height="36" width="250" x="560" y="214" as="geometry" />
+        </mxCell>
+        <mxCell id="fn-r05" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E8F8F7;fontStyle=1;align=left;spacingLeft=8;" value="健康报告" vertex="1">
+          <mxGeometry height="36" width="110" x="40" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="fn-r05o" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;" value="PROMIS / ODI / 疼痛 / 体征 / 步数" vertex="1">
+          <mxGeometry height="36" width="240" x="150" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="fn-r05g" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F8CECC;align=center;fontStyle=1;fontColor=#B85450;" value="❌" vertex="1">
+          <mxGeometry height="36" width="80" x="390" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="fn-r05p" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#D5E8D4;align=center;fontStyle=1;fontColor=#2D7600;" value="✅" vertex="1">
+          <mxGeometry height="36" width="90" x="470" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="fn-r05c" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;" value="api/record.ts, api/vital_signs.ts" vertex="1">
+          <mxGeometry height="36" width="250" x="560" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="fn-r06" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E8F8F7;fontStyle=1;align=left;spacingLeft=8;" value="报告" vertex="1">
+          <mxGeometry height="36" width="110" x="40" y="286" as="geometry" />
+        </mxCell>
+        <mxCell id="fn-r06o" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;" value="下载 PDF 报告" vertex="1">
+          <mxGeometry height="36" width="240" x="150" y="286" as="geometry" />
+        </mxCell>
+        <mxCell id="fn-r06g" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F8CECC;align=center;fontStyle=1;fontColor=#B85450;" value="❌" vertex="1">
+          <mxGeometry height="36" width="80" x="390" y="286" as="geometry" />
+        </mxCell>
+        <mxCell id="fn-r06p" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#D5E8D4;align=center;fontStyle=1;fontColor=#2D7600;" value="✅" vertex="1">
+          <mxGeometry height="36" width="90" x="470" y="286" as="geometry" />
+        </mxCell>
+        <mxCell id="fn-r06c" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;" value="Report/index.vue (html2canvas+jsPDF)" vertex="1">
+          <mxGeometry height="36" width="250" x="560" y="286" as="geometry" />
+        </mxCell>
+        <mxCell id="fn-r07" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E8F8F7;fontStyle=1;align=left;spacingLeft=8;" value="我的关注" vertex="1">
+          <mxGeometry height="36" width="110" x="40" y="322" as="geometry" />
+        </mxCell>
+        <mxCell id="fn-r07o" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;" value="搜索 / 关注 Provider" vertex="1">
+          <mxGeometry height="36" width="240" x="150" y="322" as="geometry" />
+        </mxCell>
+        <mxCell id="fn-r07g" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F8CECC;align=center;fontStyle=1;fontColor=#B85450;" value="❌" vertex="1">
+          <mxGeometry height="36" width="80" x="390" y="322" as="geometry" />
+        </mxCell>
+        <mxCell id="fn-r07p" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#D5E8D4;align=center;fontStyle=1;fontColor=#2D7600;" value="✅" vertex="1">
+          <mxGeometry height="36" width="90" x="470" y="322" as="geometry" />
+        </mxCell>
+        <mxCell id="fn-r07c" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;" value="searchUserApi(type=1), postFollowApi" vertex="1">
+          <mxGeometry height="36" width="250" x="560" y="322" as="geometry" />
+        </mxCell>
+        <mxCell id="fn-r08" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E8F8F7;fontStyle=1;align=left;spacingLeft=8;" value="我的咨询" vertex="1">
+          <mxGeometry height="36" width="110" x="40" y="358" as="geometry" />
+        </mxCell>
+        <mxCell id="fn-r08o" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;" value="与 Provider 聊天 / 接受会议" vertex="1">
+          <mxGeometry height="36" width="240" x="150" y="358" as="geometry" />
+        </mxCell>
+        <mxCell id="fn-r08g" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F8CECC;align=center;fontStyle=1;fontColor=#B85450;" value="❌" vertex="1">
+          <mxGeometry height="36" width="80" x="390" y="358" as="geometry" />
+        </mxCell>
+        <mxCell id="fn-r08p" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#D5E8D4;align=center;fontStyle=1;fontColor=#2D7600;" value="✅" vertex="1">
+          <mxGeometry height="36" width="90" x="470" y="358" as="geometry" />
+        </mxCell>
+        <mxCell id="fn-r08c" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;" value="api/chat.ts, MyConsultation/" vertex="1">
+          <mxGeometry height="36" width="250" x="560" y="358" as="geometry" />
+        </mxCell>
+        <mxCell id="fn-r09" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E8F8F7;fontStyle=1;align=left;spacingLeft=8;" value="AI 助手" vertex="1">
+          <mxGeometry height="36" width="110" x="40" y="394" as="geometry" />
+        </mxCell>
+        <mxCell id="fn-r09o" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;" value="AI 对话（DeepSeek / GPT）" vertex="1">
+          <mxGeometry height="36" width="240" x="150" y="394" as="geometry" />
+        </mxCell>
+        <mxCell id="fn-r09g" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F8CECC;align=center;fontStyle=1;fontColor=#B85450;" value="❌" vertex="1">
+          <mxGeometry height="36" width="80" x="390" y="394" as="geometry" />
+        </mxCell>
+        <mxCell id="fn-r09p" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#D5E8D4;align=center;fontStyle=1;fontColor=#2D7600;" value="✅" vertex="1">
+          <mxGeometry height="36" width="90" x="470" y="394" as="geometry" />
+        </mxCell>
+        <mxCell id="fn-r09c" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;" value="AIChat.vue, isForeign 分支" vertex="1">
+          <mxGeometry height="36" width="250" x="560" y="394" as="geometry" />
+        </mxCell>
+        <mxCell id="fn-r10" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E8F8F7;fontStyle=1;align=left;spacingLeft=8;" value="提醒设置" vertex="1">
+          <mxGeometry height="36" width="110" x="40" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="fn-r10o" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;" value="增 / 删 / 改 / 查提醒" vertex="1">
+          <mxGeometry height="36" width="240" x="150" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="fn-r10g" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F8CECC;align=center;fontStyle=1;fontColor=#B85450;" value="❌" vertex="1">
+          <mxGeometry height="36" width="80" x="390" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="fn-r10p" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#D5E8D4;align=center;fontStyle=1;fontColor=#2D7600;" value="✅" vertex="1">
+          <mxGeometry height="36" width="90" x="470" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="fn-r10c" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;" value="api/reminder.ts, ReminderSettings/" vertex="1">
+          <mxGeometry height="36" width="250" x="560" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="fn-r11" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E8F8F7;fontStyle=1;align=left;spacingLeft=8;" value="不良事件" vertex="1">
+          <mxGeometry height="36" width="110" x="40" y="466" as="geometry" />
+        </mxCell>
+        <mxCell id="fn-r11o" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;" value="上报 / 查看不良事件" vertex="1">
+          <mxGeometry height="36" width="240" x="150" y="466" as="geometry" />
+        </mxCell>
+        <mxCell id="fn-r11g" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F8CECC;align=center;fontStyle=1;fontColor=#B85450;" value="❌" vertex="1">
+          <mxGeometry height="36" width="80" x="390" y="466" as="geometry" />
+        </mxCell>
+        <mxCell id="fn-r11p" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#D5E8D4;align=center;fontStyle=1;fontColor=#2D7600;" value="✅" vertex="1">
+          <mxGeometry height="36" width="90" x="470" y="466" as="geometry" />
+        </mxCell>
+        <mxCell id="fn-r11c" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;" value="api/intervention.ts, AdverseEventRecord/" vertex="1">
+          <mxGeometry height="36" width="250" x="560" y="466" as="geometry" />
+        </mxCell>
+        <mxCell id="fn-r12" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E8F8F7;fontStyle=1;align=left;spacingLeft=8;" value="Header" vertex="1">
+          <mxGeometry height="36" width="110" x="40" y="502" as="geometry" />
+        </mxCell>
+        <mxCell id="fn-r12o" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;" value="购物车图标（外链商城）" vertex="1">
+          <mxGeometry height="36" width="240" x="150" y="502" as="geometry" />
+        </mxCell>
+        <mxCell id="fn-r12g" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F8CECC;align=center;fontStyle=1;fontColor=#B85450;" value="❌" vertex="1">
+          <mxGeometry height="36" width="80" x="390" y="502" as="geometry" />
+        </mxCell>
+        <mxCell id="fn-r12p" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#D5E8D4;align=center;fontStyle=1;fontColor=#2D7600;" value="✅" vertex="1">
+          <mxGeometry height="36" width="90" x="470" y="502" as="geometry" />
+        </mxCell>
+        <mxCell id="fn-r12c" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;" value="Header.vue v-if isAuthenticated" vertex="1">
+          <mxGeometry height="36" width="250" x="560" y="502" as="geometry" />
+        </mxCell>
+        <mxCell id="fn-r13" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E8F8F7;fontStyle=1;align=left;spacingLeft=8;" value="AI 浮动窗" vertex="1">
+          <mxGeometry height="36" width="110" x="40" y="538" as="geometry" />
+        </mxCell>
+        <mxCell id="fn-r13o" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;" value="PC 端右下角机器人入口" vertex="1">
+          <mxGeometry height="36" width="240" x="150" y="538" as="geometry" />
+        </mxCell>
+        <mxCell id="fn-r13g" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F8CECC;align=center;fontStyle=1;fontColor=#B85450;" value="❌" vertex="1">
+          <mxGeometry height="36" width="80" x="390" y="538" as="geometry" />
+        </mxCell>
+        <mxCell id="fn-r13p" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#D5E8D4;align=center;fontStyle=1;fontColor=#2D7600;" value="✅(PC)" vertex="1">
+          <mxGeometry height="36" width="90" x="470" y="538" as="geometry" />
+        </mxCell>
+        <mxCell id="fn-r13c" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;" value="Index.vue v-if isPC" vertex="1">
+          <mxGeometry height="36" width="250" x="560" y="538" as="geometry" />
+        </mxCell>
+        <mxCell id="fn-guard" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF9E6;strokeColor=#D6B656;align=left;verticalAlign=top;spacing=10;fontSize=12;" value="路由守卫 src/router/index.ts&#xa;whiteList = [/login, /]&#xa;未登录 + 非白名单 → 重定向 /login&#xa;无 meta.roles / meta.permissions / RBAC" vertex="1">
+          <mxGeometry height="80" width="770" x="40" y="590" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="4-认证流程" id="b6J1y5jQ4m2gMd3Mj02o">
+    <mxGraphModel dx="845" dy="583" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="af-title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=20;fontStyle=1;fontColor=#333333;" value="认证与权限控制流程" vertex="1">
+          <mxGeometry height="32" width="400" x="40" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="af-start" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontStyle=1;" value="用户访问页面" vertex="1">
+          <mxGeometry height="50" width="160" x="340" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="af-guard" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;fontStyle=1;" value="router.beforeEach&#xa;检查 isAuthenticated" vertex="1">
+          <mxGeometry height="100" width="200" x="320" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="af-login" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F8CECC;strokeColor=#B85450;" value="/login 登录页&#xa;Guest 可访问" vertex="1">
+          <mxGeometry height="60" width="160" x="80" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="af-auth" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E1D5E7;strokeColor=#9673A6;" value="Auth0 (国外)&#xa;Authing (国内)" vertex="1">
+          <mxGeometry height="60" width="160" x="80" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="af-store" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;" value="userStore.setLoginInfo(token)&#xa;localStorage: AIH_User" vertex="1">
+          <mxGeometry height="60" width="200" x="80" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="af-app" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;fontStyle=1;" value="Index.vue 主布局&#xa;全部菜单 + 全部功能" vertex="1">
+          <mxGeometry height="60" width="200" x="560" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="af-api" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;" value="API 请求&#xa;Bearer Token (request.ts)" vertex="1">
+          <mxGeometry height="60" width="200" x="560" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="af-note" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF9E6;strokeColor=#D6B656;align=left;verticalAlign=top;spacing=10;fontSize=12;" value="权限粒度：仅 isAuthenticated 二元判断&#xa;无角色字段 / 无 VIP 门控 / 无 meta.roles" vertex="1">
+          <mxGeometry height="60" width="440" x="320" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="af-e1" edge="1" parent="1" source="af-start" style="edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=block;" target="af-guard">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="af-e2" edge="1" parent="1" source="af-guard" style="edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=block;" target="af-login" value="未登录">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="af-e3" edge="1" parent="1" source="af-login" style="edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=block;" target="af-auth">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="af-e4" edge="1" parent="1" source="af-auth" style="edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=block;" target="af-store">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="af-e5" edge="1" parent="1" source="af-guard" style="edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=block;" target="af-app" value="已登录">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="af-e6" edge="1" parent="1" source="af-app" style="edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=block;" target="af-api">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="HnkfeQLPhTb5tWeffO-H" name="第 12 页">
+    <mxGraphModel grid="0" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="2-页面访问矩阵" id="vDM2DdyeMRoHdyEBTI9G">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="pg-title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=20;fontStyle=1;fontColor=#333333;" value="页面 / 路由访问矩阵" vertex="1">
+          <mxGeometry height="32" width="400" x="40" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-legend" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=13;fontColor=#666666;" value="✅ 可访问  |  ❌ 不可访问  |  ⚠️ 路由白名单但 Index.vue 强制登录  |  ↩️ 已登录重定向" vertex="1">
+          <mxGeometry height="22" width="720" x="40" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-h1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#39BCBE;fontColor=#FFFFFF;fontStyle=1;align=center;verticalAlign=middle;" value="路由 Path" vertex="1">
+          <mxGeometry height="34" width="180" x="40" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-h2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#39BCBE;fontColor=#FFFFFF;fontStyle=1;align=center;verticalAlign=middle;" value="页面名称" vertex="1">
+          <mxGeometry height="34" width="140" x="220" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-h3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#39BCBE;fontColor=#FFFFFF;fontStyle=1;align=center;verticalAlign=middle;" value="Guest" vertex="1">
+          <mxGeometry height="34" width="70" x="360" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-h4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#39BCBE;fontColor=#FFFFFF;fontStyle=1;align=center;verticalAlign=middle;" value="Patient" vertex="1">
+          <mxGeometry height="34" width="80" x="430" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-h5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#39BCBE;fontColor=#FFFFFF;fontStyle=1;align=center;verticalAlign=middle;" value="侧栏菜单" vertex="1">
+          <mxGeometry height="34" width="80" x="510" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-h6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#39BCBE;fontColor=#FFFFFF;fontStyle=1;align=center;verticalAlign=middle;" value="代码位置" vertex="1">
+          <mxGeometry height="34" width="220" x="590" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r01" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E8F8F7;fontStyle=1;align=left;spacingLeft=8;" value="/login" vertex="1">
+          <mxGeometry height="34" width="180" x="40" y="124" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r01n" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;" value="登录页" vertex="1">
+          <mxGeometry height="34" width="140" x="220" y="124" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r01g" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#D5E8D4;align=center;fontStyle=1;fontColor=#2D7600;" value="✅" vertex="1">
+          <mxGeometry height="34" width="70" x="360" y="124" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r01p" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFF2CC;align=center;fontStyle=1;fontColor=#996600;" value="↩️→/" vertex="1">
+          <mxGeometry height="34" width="80" x="430" y="124" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r01m" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;" value="—" vertex="1">
+          <mxGeometry height="34" width="80" x="510" y="124" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r01c" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;" value="views/Other/Login.vue" vertex="1">
+          <mxGeometry height="34" width="220" x="590" y="124" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r02" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E8F8F7;fontStyle=1;align=left;spacingLeft=8;" value="/" vertex="1">
+          <mxGeometry height="34" width="180" x="40" y="158" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r02n" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;" value="个人资料" vertex="1">
+          <mxGeometry height="34" width="140" x="220" y="158" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r02g" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFF2CC;align=center;fontStyle=1;fontColor=#996600;" value="⚠️" vertex="1">
+          <mxGeometry height="34" width="70" x="360" y="158" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r02p" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#D5E8D4;align=center;fontStyle=1;fontColor=#2D7600;" value="✅" vertex="1">
+          <mxGeometry height="34" width="80" x="430" y="158" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r02m" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#D5E8D4;align=center;fontStyle=1;fontColor=#2D7600;" value="✅" vertex="1">
+          <mxGeometry height="34" width="80" x="510" y="158" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r02c" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;" value="Menu/Profile/index.vue" vertex="1">
+          <mxGeometry height="34" width="220" x="590" y="158" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r03" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E8F8F7;fontStyle=1;align=left;spacingLeft=8;" value="/visual-focus" vertex="1">
+          <mxGeometry height="34" width="180" x="40" y="192" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r03n" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;" value="视觉专注" vertex="1">
+          <mxGeometry height="34" width="140" x="220" y="192" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r03g" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F8CECC;align=center;fontStyle=1;fontColor=#B85450;" value="❌" vertex="1">
+          <mxGeometry height="34" width="70" x="360" y="192" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r03p" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#D5E8D4;align=center;fontStyle=1;fontColor=#2D7600;" value="✅" vertex="1">
+          <mxGeometry height="34" width="80" x="430" y="192" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r03m" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#D5E8D4;align=center;fontStyle=1;fontColor=#2D7600;" value="✅" vertex="1">
+          <mxGeometry height="34" width="80" x="510" y="192" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r03c" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;" value="Menu/visualFocus/index.vue" vertex="1">
+          <mxGeometry height="34" width="220" x="590" y="192" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r04" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E8F8F7;fontStyle=1;align=left;spacingLeft=8;" value="/equipment" vertex="1">
+          <mxGeometry height="34" width="180" x="40" y="226" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r04n" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;" value="设备管理" vertex="1">
+          <mxGeometry height="34" width="140" x="220" y="226" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r04g" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F8CECC;align=center;fontStyle=1;fontColor=#B85450;" value="❌" vertex="1">
+          <mxGeometry height="34" width="70" x="360" y="226" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r04p" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#D5E8D4;align=center;fontStyle=1;fontColor=#2D7600;" value="✅" vertex="1">
+          <mxGeometry height="34" width="80" x="430" y="226" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r04m" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#D5E8D4;align=center;fontStyle=1;fontColor=#2D7600;" value="✅" vertex="1">
+          <mxGeometry height="34" width="80" x="510" y="226" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r04c" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;" value="Menu/DeviceManagement/index.vue" vertex="1">
+          <mxGeometry height="34" width="220" x="590" y="226" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r05" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E8F8F7;fontStyle=1;align=left;spacingLeft=8;" value="/report" vertex="1">
+          <mxGeometry height="34" width="180" x="40" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r05n" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;" value="我的报告" vertex="1">
+          <mxGeometry height="34" width="140" x="220" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r05g" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F8CECC;align=center;fontStyle=1;fontColor=#B85450;" value="❌" vertex="1">
+          <mxGeometry height="34" width="70" x="360" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r05p" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#D5E8D4;align=center;fontStyle=1;fontColor=#2D7600;" value="✅" vertex="1">
+          <mxGeometry height="34" width="80" x="430" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r05m" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#D5E8D4;align=center;fontStyle=1;fontColor=#2D7600;" value="✅" vertex="1">
+          <mxGeometry height="34" width="80" x="510" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r05c" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;" value="Menu/Report/index.vue" vertex="1">
+          <mxGeometry height="34" width="220" x="590" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r06" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E8F8F7;fontStyle=1;align=left;spacingLeft=8;" value="/promis-detail" vertex="1">
+          <mxGeometry height="34" width="180" x="40" y="294" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r06n" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;" value="PROMIS 详情" vertex="1">
+          <mxGeometry height="34" width="140" x="220" y="294" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r06g" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F8CECC;align=center;fontStyle=1;fontColor=#B85450;" value="❌" vertex="1">
+          <mxGeometry height="34" width="70" x="360" y="294" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r06p" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#D5E8D4;align=center;fontStyle=1;fontColor=#2D7600;" value="✅" vertex="1">
+          <mxGeometry height="34" width="80" x="430" y="294" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r06m" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;" value="—" vertex="1">
+          <mxGeometry height="34" width="80" x="510" y="294" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r06c" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;" value="Menu/Report/PromisDetail.vue" vertex="1">
+          <mxGeometry height="34" width="220" x="590" y="294" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r07" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E8F8F7;fontStyle=1;align=left;spacingLeft=8;" value="/odi-detail" vertex="1">
+          <mxGeometry height="34" width="180" x="40" y="328" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r07n" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;" value="ODI 详情" vertex="1">
+          <mxGeometry height="34" width="140" x="220" y="328" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r07g" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F8CECC;align=center;fontStyle=1;fontColor=#B85450;" value="❌" vertex="1">
+          <mxGeometry height="34" width="70" x="360" y="328" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r07p" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#D5E8D4;align=center;fontStyle=1;fontColor=#2D7600;" value="✅" vertex="1">
+          <mxGeometry height="34" width="80" x="430" y="328" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r07m" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;" value="—" vertex="1">
+          <mxGeometry height="34" width="80" x="510" y="328" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r07c" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;" value="Menu/Report/ODIDetail.vue" vertex="1">
+          <mxGeometry height="34" width="220" x="590" y="328" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r08" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E8F8F7;fontStyle=1;align=left;spacingLeft=8;" value="/basicInformationHistory" vertex="1">
+          <mxGeometry height="34" width="180" x="40" y="362" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r08n" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;" value="生命体征历史" vertex="1">
+          <mxGeometry height="34" width="140" x="220" y="362" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r08g" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F8CECC;align=center;fontStyle=1;fontColor=#B85450;" value="❌" vertex="1">
+          <mxGeometry height="34" width="70" x="360" y="362" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r08p" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#D5E8D4;align=center;fontStyle=1;fontColor=#2D7600;" value="✅" vertex="1">
+          <mxGeometry height="34" width="80" x="430" y="362" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r08m" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;" value="—" vertex="1">
+          <mxGeometry height="34" width="80" x="510" y="362" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r08c" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;" value="Menu/Report/history.vue" vertex="1">
+          <mxGeometry height="34" width="220" x="590" y="362" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r09" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E8F8F7;fontStyle=1;align=left;spacingLeft=8;" value="/attention" vertex="1">
+          <mxGeometry height="34" width="180" x="40" y="396" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r09n" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;" value="我的关注" vertex="1">
+          <mxGeometry height="34" width="140" x="220" y="396" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r09g" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F8CECC;align=center;fontStyle=1;fontColor=#B85450;" value="❌" vertex="1">
+          <mxGeometry height="34" width="70" x="360" y="396" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r09p" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#D5E8D4;align=center;fontStyle=1;fontColor=#2D7600;" value="✅" vertex="1">
+          <mxGeometry height="34" width="80" x="430" y="396" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r09m" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#D5E8D4;align=center;fontStyle=1;fontColor=#2D7600;" value="✅" vertex="1">
+          <mxGeometry height="34" width="80" x="510" y="396" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r09c" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;" value="Menu/FollowedUsers/index.vue" vertex="1">
+          <mxGeometry height="34" width="220" x="590" y="396" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r10" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E8F8F7;fontStyle=1;align=left;spacingLeft=8;" value="/consultation" vertex="1">
+          <mxGeometry height="34" width="180" x="40" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r10n" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;" value="我的咨询" vertex="1">
+          <mxGeometry height="34" width="140" x="220" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r10g" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F8CECC;align=center;fontStyle=1;fontColor=#B85450;" value="❌" vertex="1">
+          <mxGeometry height="34" width="70" x="360" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r10p" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#D5E8D4;align=center;fontStyle=1;fontColor=#2D7600;" value="✅" vertex="1">
+          <mxGeometry height="34" width="80" x="430" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r10m" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#D5E8D4;align=center;fontStyle=1;fontColor=#2D7600;" value="✅" vertex="1">
+          <mxGeometry height="34" width="80" x="510" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r10c" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;" value="Menu/MyConsultation/index.vue" vertex="1">
+          <mxGeometry height="34" width="220" x="590" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r11" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E8F8F7;fontStyle=1;align=left;spacingLeft=8;" value="/reminder" vertex="1">
+          <mxGeometry height="34" width="180" x="40" y="464" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r11n" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;" value="提醒设置" vertex="1">
+          <mxGeometry height="34" width="140" x="220" y="464" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r11g" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F8CECC;align=center;fontStyle=1;fontColor=#B85450;" value="❌" vertex="1">
+          <mxGeometry height="34" width="70" x="360" y="464" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r11p" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#D5E8D4;align=center;fontStyle=1;fontColor=#2D7600;" value="✅" vertex="1">
+          <mxGeometry height="34" width="80" x="430" y="464" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r11m" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#D5E8D4;align=center;fontStyle=1;fontColor=#2D7600;" value="✅" vertex="1">
+          <mxGeometry height="34" width="80" x="510" y="464" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r11c" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;" value="Menu/ReminderSettings/index.vue" vertex="1">
+          <mxGeometry height="34" width="220" x="590" y="464" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r12" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E8F8F7;fontStyle=1;align=left;spacingLeft=8;" value="/adverse-event-record" vertex="1">
+          <mxGeometry height="34" width="180" x="40" y="498" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r12n" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;" value="不良事件" vertex="1">
+          <mxGeometry height="34" width="140" x="220" y="498" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r12g" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F8CECC;align=center;fontStyle=1;fontColor=#B85450;" value="❌" vertex="1">
+          <mxGeometry height="34" width="70" x="360" y="498" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r12p" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#D5E8D4;align=center;fontStyle=1;fontColor=#2D7600;" value="✅" vertex="1">
+          <mxGeometry height="34" width="80" x="430" y="498" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r12m" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#D5E8D4;align=center;fontStyle=1;fontColor=#2D7600;" value="✅" vertex="1">
+          <mxGeometry height="34" width="80" x="510" y="498" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r12c" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;" value="Menu/AdverseEventRecord/index.vue" vertex="1">
+          <mxGeometry height="34" width="220" x="590" y="498" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r13" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E8F8F7;fontStyle=1;align=left;spacingLeft=8;" value="/download" vertex="1">
+          <mxGeometry height="34" width="180" x="40" y="532" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r13n" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;" value="下载 App" vertex="1">
+          <mxGeometry height="34" width="140" x="220" y="532" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r13g" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F8CECC;align=center;fontStyle=1;fontColor=#B85450;" value="❌" vertex="1">
+          <mxGeometry height="34" width="70" x="360" y="532" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r13p" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#D5E8D4;align=center;fontStyle=1;fontColor=#2D7600;" value="✅" vertex="1">
+          <mxGeometry height="34" width="80" x="430" y="532" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r13m" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#D5E8D4;align=center;fontStyle=1;fontColor=#2D7600;" value="✅" vertex="1">
+          <mxGeometry height="34" width="80" x="510" y="532" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r13c" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;" value="views/Other/Download.vue" vertex="1">
+          <mxGeometry height="34" width="220" x="590" y="532" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r14" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E8F8F7;fontStyle=1;align=left;spacingLeft=8;" value="/cpt-code" vertex="1">
+          <mxGeometry height="34" width="180" x="40" y="566" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r14n" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;" value="Web-CPT" vertex="1">
+          <mxGeometry height="34" width="140" x="220" y="566" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r14g" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F8CECC;align=center;fontStyle=1;fontColor=#B85450;" value="❌" vertex="1">
+          <mxGeometry height="34" width="70" x="360" y="566" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r14p" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#D5E8D4;align=center;fontStyle=1;fontColor=#2D7600;" value="✅" vertex="1">
+          <mxGeometry height="34" width="80" x="430" y="566" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r14m" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFF2CC;align=center;fontStyle=1;fontColor=#996600;" value="❌(菜单已注释)" vertex="1">
+          <mxGeometry height="34" width="80" x="510" y="566" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r14c" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;" value="Menu/CPT-Codes/index.vue" vertex="1">
+          <mxGeometry height="34" width="220" x="590" y="566" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r15" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E8F8F7;fontStyle=1;align=left;spacingLeft=8;" value="/:catchAll" vertex="1">
+          <mxGeometry height="34" width="180" x="40" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r15n" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;" value="404" vertex="1">
+          <mxGeometry height="34" width="140" x="220" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r15g" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F8CECC;align=center;fontStyle=1;fontColor=#B85450;" value="❌" vertex="1">
+          <mxGeometry height="34" width="70" x="360" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r15p" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#D5E8D4;align=center;fontStyle=1;fontColor=#2D7600;" value="✅" vertex="1">
+          <mxGeometry height="34" width="80" x="430" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r15m" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;" value="—" vertex="1">
+          <mxGeometry height="34" width="80" x="510" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="pg-r15c" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;" value="views/Other/404.vue" vertex="1">
+          <mxGeometry height="34" width="220" x="590" y="600" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="3-功能操作矩阵" id="_TZQ5V3c59XqgfZYIZkd">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="fn-title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=20;fontStyle=1;fontColor=#333333;" value="功能操作权限矩阵" vertex="1">
+          <mxGeometry height="32" width="360" x="40" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="fn-h1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#39BCBE;fontColor=#FFFFFF;fontStyle=1;align=center;" value="功能模块" vertex="1">
+          <mxGeometry height="36" width="110" x="40" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="fn-h2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#39BCBE;fontColor=#FFFFFF;fontStyle=1;align=center;" value="具体操作" vertex="1">
+          <mxGeometry height="36" width="240" x="150" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="fn-h3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#39BCBE;fontColor=#FFFFFF;fontStyle=1;align=center;" value="Guest" vertex="1">
+          <mxGeometry height="36" width="80" x="390" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="fn-h4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#39BCBE;fontColor=#FFFFFF;fontStyle=1;align=center;" value="Patient" vertex="1">
+          <mxGeometry height="36" width="90" x="470" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="fn-h5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#39BCBE;fontColor=#FFFFFF;fontStyle=1;align=center;" value="API / 组件" vertex="1">
+          <mxGeometry height="36" width="250" x="560" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="fn-r01" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E8F8F7;fontStyle=1;align=left;spacingLeft=8;" value="认证" vertex="1">
+          <mxGeometry height="36" width="110" x="40" y="106" as="geometry" />
+        </mxCell>
+        <mxCell id="fn-r01o" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;" value="登录 / 登出" vertex="1">
+          <mxGeometry height="36" width="240" x="150" y="106" as="geometry" />
+        </mxCell>
+        <mxCell id="fn-r01g" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFF2CC;align=center;fontStyle=1;fontColor=#996600;" value="登录✅" vertex="1">
+          <mxGeometry height="36" width="80" x="390" y="106" as="geometry" />
+        </mxCell>
+        <mxCell id="fn-r01p" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#D5E8D4;align=center;fontStyle=1;fontColor=#2D7600;" value="✅" vertex="1">
+          <mxGeometry height="36" width="90" x="470" y="106" as="geometry" />
+        </mxCell>
+        <mxCell id="fn-r01c" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;" value="Auth0 / Authing, userStore" vertex="1">
+          <mxGeometry height="36" width="250" x="560" y="106" as="geometry" />
+        </mxCell>
+        <mxCell id="fn-r02" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E8F8F7;fontStyle=1;align=left;spacingLeft=8;" value="个人资料" vertex="1">
+          <mxGeometry height="36" width="110" x="40" y="142" as="geometry" />
+        </mxCell>
+        <mxCell id="fn-r02o" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;" value="查看 / 编辑信息、上传头像" vertex="1">
+          <mxGeometry height="36" width="240" x="150" y="142" as="geometry" />
+        </mxCell>
+        <mxCell id="fn-r02g" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F8CECC;align=center;fontStyle=1;fontColor=#B85450;" value="❌" vertex="1">
+          <mxGeometry height="36" width="80" x="390" y="142" as="geometry" />
+        </mxCell>
+        <mxCell id="fn-r02p" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#D5E8D4;align=center;fontStyle=1;fontColor=#2D7600;" value="✅" vertex="1">
+          <mxGeometry height="36" width="90" x="470" y="142" as="geometry" />
+        </mxCell>
+        <mxCell id="fn-r02c" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;" value="api/user.ts, Profile/index.vue" vertex="1">
+          <mxGeometry height="36" width="250" x="560" y="142" as="geometry" />
+        </mxCell>
+        <mxCell id="fn-r03" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E8F8F7;fontStyle=1;align=left;spacingLeft=8;" value="视觉专注" vertex="1">
+          <mxGeometry height="36" width="110" x="40" y="178" as="geometry" />
+        </mxCell>
+        <mxCell id="fn-r03o" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;" value="摄像头姿态监测、实时角度" vertex="1">
+          <mxGeometry height="36" width="240" x="150" y="178" as="geometry" />
+        </mxCell>
+        <mxCell id="fn-r03g" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F8CECC;align=center;fontStyle=1;fontColor=#B85450;" value="❌" vertex="1">
+          <mxGeometry height="36" width="80" x="390" y="178" as="geometry" />
+        </mxCell>
+        <mxCell id="fn-r03p" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#D5E8D4;align=center;fontStyle=1;fontColor=#2D7600;" value="✅" vertex="1">
+          <mxGeometry height="36" width="90" x="470" y="178" as="geometry" />
+        </mxCell>
+        <mxCell id="fn-r03c" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;" value="visualFocus/, MediaPipe" vertex="1">
+          <mxGeometry height="36" width="250" x="560" y="178" as="geometry" />
+        </mxCell>
+        <mxCell id="fn-r04" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E8F8F7;fontStyle=1;align=left;spacingLeft=8;" value="设备管理" vertex="1">
+          <mxGeometry height="36" width="110" x="40" y="214" as="geometry" />
+        </mxCell>
+        <mxCell id="fn-r04o" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;" value="查看 aiNeck / aiJoint 设备" vertex="1">
+          <mxGeometry height="36" width="240" x="150" y="214" as="geometry" />
+        </mxCell>
+        <mxCell id="fn-r04g" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F8CECC;align=center;fontStyle=1;fontColor=#B85450;" value="❌" vertex="1">
+          <mxGeometry height="36" width="80" x="390" y="214" as="geometry" />
+        </mxCell>
+        <mxCell id="fn-r04p" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#D5E8D4;align=center;fontStyle=1;fontColor=#2D7600;" value="✅" vertex="1">
+          <mxGeometry height="36" width="90" x="470" y="214" as="geometry" />
+        </mxCell>
+        <mxCell id="fn-r04c" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;" value="DeviceManagement/index.vue" vertex="1">
+          <mxGeometry height="36" width="250" x="560" y="214" as="geometry" />
+        </mxCell>
+        <mxCell id="fn-r05" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E8F8F7;fontStyle=1;align=left;spacingLeft=8;" value="健康报告" vertex="1">
+          <mxGeometry height="36" width="110" x="40" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="fn-r05o" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;" value="PROMIS / ODI / 疼痛 / 体征 / 步数" vertex="1">
+          <mxGeometry height="36" width="240" x="150" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="fn-r05g" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F8CECC;align=center;fontStyle=1;fontColor=#B85450;" value="❌" vertex="1">
+          <mxGeometry height="36" width="80" x="390" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="fn-r05p" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#D5E8D4;align=center;fontStyle=1;fontColor=#2D7600;" value="✅" vertex="1">
+          <mxGeometry height="36" width="90" x="470" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="fn-r05c" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;" value="api/record.ts, api/vital_signs.ts" vertex="1">
+          <mxGeometry height="36" width="250" x="560" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="fn-r06" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E8F8F7;fontStyle=1;align=left;spacingLeft=8;" value="报告" vertex="1">
+          <mxGeometry height="36" width="110" x="40" y="286" as="geometry" />
+        </mxCell>
+        <mxCell id="fn-r06o" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;" value="下载 PDF 报告" vertex="1">
+          <mxGeometry height="36" width="240" x="150" y="286" as="geometry" />
+        </mxCell>
+        <mxCell id="fn-r06g" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F8CECC;align=center;fontStyle=1;fontColor=#B85450;" value="❌" vertex="1">
+          <mxGeometry height="36" width="80" x="390" y="286" as="geometry" />
+        </mxCell>
+        <mxCell id="fn-r06p" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#D5E8D4;align=center;fontStyle=1;fontColor=#2D7600;" value="✅" vertex="1">
+          <mxGeometry height="36" width="90" x="470" y="286" as="geometry" />
+        </mxCell>
+        <mxCell id="fn-r06c" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;" value="Report/index.vue (html2canvas+jsPDF)" vertex="1">
+          <mxGeometry height="36" width="250" x="560" y="286" as="geometry" />
+        </mxCell>
+        <mxCell id="fn-r07" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E8F8F7;fontStyle=1;align=left;spacingLeft=8;" value="我的关注" vertex="1">
+          <mxGeometry height="36" width="110" x="40" y="322" as="geometry" />
+        </mxCell>
+        <mxCell id="fn-r07o" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;" value="搜索 / 关注 Provider" vertex="1">
+          <mxGeometry height="36" width="240" x="150" y="322" as="geometry" />
+        </mxCell>
+        <mxCell id="fn-r07g" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F8CECC;align=center;fontStyle=1;fontColor=#B85450;" value="❌" vertex="1">
+          <mxGeometry height="36" width="80" x="390" y="322" as="geometry" />
+        </mxCell>
+        <mxCell id="fn-r07p" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#D5E8D4;align=center;fontStyle=1;fontColor=#2D7600;" value="✅" vertex="1">
+          <mxGeometry height="36" width="90" x="470" y="322" as="geometry" />
+        </mxCell>
+        <mxCell id="fn-r07c" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;" value="searchUserApi(type=1), postFollowApi" vertex="1">
+          <mxGeometry height="36" width="250" x="560" y="322" as="geometry" />
+        </mxCell>
+        <mxCell id="fn-r08" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E8F8F7;fontStyle=1;align=left;spacingLeft=8;" value="我的咨询" vertex="1">
+          <mxGeometry height="36" width="110" x="40" y="358" as="geometry" />
+        </mxCell>
+        <mxCell id="fn-r08o" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;" value="与 Provider 聊天 / 接受会议" vertex="1">
+          <mxGeometry height="36" width="240" x="150" y="358" as="geometry" />
+        </mxCell>
+        <mxCell id="fn-r08g" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F8CECC;align=center;fontStyle=1;fontColor=#B85450;" value="❌" vertex="1">
+          <mxGeometry height="36" width="80" x="390" y="358" as="geometry" />
+        </mxCell>
+        <mxCell id="fn-r08p" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#D5E8D4;align=center;fontStyle=1;fontColor=#2D7600;" value="✅" vertex="1">
+          <mxGeometry height="36" width="90" x="470" y="358" as="geometry" />
+        </mxCell>
+        <mxCell id="fn-r08c" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;" value="api/chat.ts, MyConsultation/" vertex="1">
+          <mxGeometry height="36" width="250" x="560" y="358" as="geometry" />
+        </mxCell>
+        <mxCell id="fn-r09" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E8F8F7;fontStyle=1;align=left;spacingLeft=8;" value="AI 助手" vertex="1">
+          <mxGeometry height="36" width="110" x="40" y="394" as="geometry" />
+        </mxCell>
+        <mxCell id="fn-r09o" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;" value="AI 对话（DeepSeek / GPT）" vertex="1">
+          <mxGeometry height="36" width="240" x="150" y="394" as="geometry" />
+        </mxCell>
+        <mxCell id="fn-r09g" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F8CECC;align=center;fontStyle=1;fontColor=#B85450;" value="❌" vertex="1">
+          <mxGeometry height="36" width="80" x="390" y="394" as="geometry" />
+        </mxCell>
+        <mxCell id="fn-r09p" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#D5E8D4;align=center;fontStyle=1;fontColor=#2D7600;" value="✅" vertex="1">
+          <mxGeometry height="36" width="90" x="470" y="394" as="geometry" />
+        </mxCell>
+        <mxCell id="fn-r09c" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;" value="AIChat.vue, isForeign 分支" vertex="1">
+          <mxGeometry height="36" width="250" x="560" y="394" as="geometry" />
+        </mxCell>
+        <mxCell id="fn-r10" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E8F8F7;fontStyle=1;align=left;spacingLeft=8;" value="提醒设置" vertex="1">
+          <mxGeometry height="36" width="110" x="40" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="fn-r10o" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;" value="增 / 删 / 改 / 查提醒" vertex="1">
+          <mxGeometry height="36" width="240" x="150" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="fn-r10g" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F8CECC;align=center;fontStyle=1;fontColor=#B85450;" value="❌" vertex="1">
+          <mxGeometry height="36" width="80" x="390" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="fn-r10p" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#D5E8D4;align=center;fontStyle=1;fontColor=#2D7600;" value="✅" vertex="1">
+          <mxGeometry height="36" width="90" x="470" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="fn-r10c" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;" value="api/reminder.ts, ReminderSettings/" vertex="1">
+          <mxGeometry height="36" width="250" x="560" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="fn-r11" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E8F8F7;fontStyle=1;align=left;spacingLeft=8;" value="不良事件" vertex="1">
+          <mxGeometry height="36" width="110" x="40" y="466" as="geometry" />
+        </mxCell>
+        <mxCell id="fn-r11o" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;" value="上报 / 查看不良事件" vertex="1">
+          <mxGeometry height="36" width="240" x="150" y="466" as="geometry" />
+        </mxCell>
+        <mxCell id="fn-r11g" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F8CECC;align=center;fontStyle=1;fontColor=#B85450;" value="❌" vertex="1">
+          <mxGeometry height="36" width="80" x="390" y="466" as="geometry" />
+        </mxCell>
+        <mxCell id="fn-r11p" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#D5E8D4;align=center;fontStyle=1;fontColor=#2D7600;" value="✅" vertex="1">
+          <mxGeometry height="36" width="90" x="470" y="466" as="geometry" />
+        </mxCell>
+        <mxCell id="fn-r11c" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;" value="api/intervention.ts, AdverseEventRecord/" vertex="1">
+          <mxGeometry height="36" width="250" x="560" y="466" as="geometry" />
+        </mxCell>
+        <mxCell id="fn-r12" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E8F8F7;fontStyle=1;align=left;spacingLeft=8;" value="Header" vertex="1">
+          <mxGeometry height="36" width="110" x="40" y="502" as="geometry" />
+        </mxCell>
+        <mxCell id="fn-r12o" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;" value="购物车图标（外链商城）" vertex="1">
+          <mxGeometry height="36" width="240" x="150" y="502" as="geometry" />
+        </mxCell>
+        <mxCell id="fn-r12g" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F8CECC;align=center;fontStyle=1;fontColor=#B85450;" value="❌" vertex="1">
+          <mxGeometry height="36" width="80" x="390" y="502" as="geometry" />
+        </mxCell>
+        <mxCell id="fn-r12p" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#D5E8D4;align=center;fontStyle=1;fontColor=#2D7600;" value="✅" vertex="1">
+          <mxGeometry height="36" width="90" x="470" y="502" as="geometry" />
+        </mxCell>
+        <mxCell id="fn-r12c" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;" value="Header.vue v-if isAuthenticated" vertex="1">
+          <mxGeometry height="36" width="250" x="560" y="502" as="geometry" />
+        </mxCell>
+        <mxCell id="fn-r13" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E8F8F7;fontStyle=1;align=left;spacingLeft=8;" value="AI 浮动窗" vertex="1">
+          <mxGeometry height="36" width="110" x="40" y="538" as="geometry" />
+        </mxCell>
+        <mxCell id="fn-r13o" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;" value="PC 端右下角机器人入口" vertex="1">
+          <mxGeometry height="36" width="240" x="150" y="538" as="geometry" />
+        </mxCell>
+        <mxCell id="fn-r13g" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F8CECC;align=center;fontStyle=1;fontColor=#B85450;" value="❌" vertex="1">
+          <mxGeometry height="36" width="80" x="390" y="538" as="geometry" />
+        </mxCell>
+        <mxCell id="fn-r13p" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#D5E8D4;align=center;fontStyle=1;fontColor=#2D7600;" value="✅(PC)" vertex="1">
+          <mxGeometry height="36" width="90" x="470" y="538" as="geometry" />
+        </mxCell>
+        <mxCell id="fn-r13c" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;" value="Index.vue v-if isPC" vertex="1">
+          <mxGeometry height="36" width="250" x="560" y="538" as="geometry" />
+        </mxCell>
+        <mxCell id="fn-guard" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF9E6;strokeColor=#D6B656;align=left;verticalAlign=top;spacing=10;fontSize=12;" value="路由守卫 src/router/index.ts&#xa;whiteList = [/login, /]&#xa;未登录 + 非白名单 → 重定向 /login&#xa;无 meta.roles / meta.permissions / RBAC" vertex="1">
+          <mxGeometry height="80" width="770" x="40" y="590" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="4-认证流程" id="be6ujgVhEP5CLSWE63Rm">
+    <mxGraphModel dx="845" dy="583" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="af-title" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=20;fontStyle=1;" value="认证与权限控制流程" vertex="1">
+          <mxGeometry height="32" width="400" x="40" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="af-start" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1;" value="用户访问页面" vertex="1">
+          <mxGeometry height="50" width="160" x="340" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="af-guard" parent="1" style="rhombus;whiteSpace=wrap;html=1;fontStyle=1;" value="router.beforeEach&#xa;检查 isAuthenticated" vertex="1">
+          <mxGeometry height="100" width="200" x="320" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="af-login" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="/login 登录页&#xa;Guest 可访问" vertex="1">
+          <mxGeometry height="60" width="160" x="75" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="af-auth" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Auth0 (国外)&#xa;Authing (国内)" vertex="1">
+          <mxGeometry height="60" width="160" x="75" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="af-store" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="userStore.setLoginInfo(token)&#xa;localStorage: AIH_User" vertex="1">
+          <mxGeometry height="60" width="200" x="55" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="af-app" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1;" value="Index.vue 主布局&#xa;全部菜单 + 全部功能" vertex="1">
+          <mxGeometry height="60" width="200" x="564" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="af-api" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="API 请求&#xa;Bearer Token (request.ts)" vertex="1">
+          <mxGeometry height="60" width="200" x="564" y="287" as="geometry" />
+        </mxCell>
+        <mxCell id="af-note" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=10;fontSize=12;" value="权限粒度：仅 isAuthenticated 二元判断&#xa;无角色字段 / 无 VIP 门控 / 无 meta.roles" vertex="1">
+          <mxGeometry height="60" width="440" x="320" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="af-e1" edge="1" parent="1" source="af-start" style="edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=block;" target="af-guard">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="af-e2" edge="1" parent="1" source="af-guard" style="edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=block;" target="af-login" value="未登录">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="af-e3" edge="1" parent="1" source="af-login" style="edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=block;" target="af-auth">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="af-e4" edge="1" parent="1" source="af-auth" style="edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=block;" target="af-store">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="af-e5" edge="1" parent="1" source="af-guard" style="edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=block;" target="af-app" value="已登录">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="af-e6" edge="1" parent="1" source="af-app" style="edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=block;" target="af-api">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="af-index" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=8;fontSize=11;" value="Index.vue 二次校验&#xa;onMounted: 未登录 → push login&#xa;isPC=false → 仅显示横屏提示" vertex="1">
+          <mxGeometry height="70" width="200" x="564" y="400" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="5-报告子模块" id="cmCVpPr37ZQ9LW91iGF8">
+    <mxGraphModel dx="889" dy="614" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="rt-title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=18;fontStyle=1;fontColor=#333333;" value="/report 我的报告 — 子 Tab 矩阵（Patient 登录后全部可访问）" vertex="1">
+          <mxGeometry height="32" width="700" x="40" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="rt-h1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#39BCBE;fontColor=#FFFFFF;fontStyle=1;align=center;" value="Tab 名称" vertex="1">
+          <mxGeometry height="32" width="160" x="40" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="rt-h2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#39BCBE;fontColor=#FFFFFF;fontStyle=1;align=center;" value="路由 query" vertex="1">
+          <mxGeometry height="32" width="120" x="200" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="rt-h3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#39BCBE;fontColor=#FFFFFF;fontStyle=1;align=center;" value="主要功能" vertex="1">
+          <mxGeometry height="32" width="280" x="320" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="rt-h4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#39BCBE;fontColor=#FFFFFF;fontStyle=1;align=center;" value="API / 组件" vertex="1">
+          <mxGeometry height="32" width="280" x="600" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="rt-r1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E8F8F7;fontStyle=1;align=left;spacingLeft=8;" value="生命体征 Vital Signs" vertex="1">
+          <mxGeometry height="32" width="160" x="40" y="102" as="geometry" />
+        </mxCell>
+        <mxCell id="rt-r1q" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;" value="?tab=vital-signs" vertex="1">
+          <mxGeometry height="32" width="120" x="200" y="102" as="geometry" />
+        </mxCell>
+        <mxCell id="rt-r1f" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;" value="血压/心率/体温/血氧等历史曲线" vertex="1">
+          <mxGeometry height="32" width="280" x="320" y="102" as="geometry" />
+        </mxCell>
+        <mxCell id="rt-r1c" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;" value="VitalSigns.vue, api/vital_signs.ts" vertex="1">
+          <mxGeometry height="32" width="280" x="600" y="102" as="geometry" />
+        </mxCell>
+        <mxCell id="rt-r2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E8F8F7;fontStyle=1;align=left;spacingLeft=8;" value="疼痛记录 Pain Record" vertex="1">
+          <mxGeometry height="32" width="160" x="40" y="134" as="geometry" />
+        </mxCell>
+        <mxCell id="rt-r2q" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;" value="?tab=pain-record" vertex="1">
+          <mxGeometry height="32" width="120" x="200" y="134" as="geometry" />
+        </mxCell>
+        <mxCell id="rt-r2f" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;" value="颈部/手部疼痛记录图表" vertex="1">
+          <mxGeometry height="32" width="280" x="320" y="134" as="geometry" />
+        </mxCell>
+        <mxCell id="rt-r2c" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;" value="PainRecord.vue, neck_pain/hand" vertex="1">
+          <mxGeometry height="32" width="280" x="600" y="134" as="geometry" />
+        </mxCell>
+        <mxCell id="rt-r3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E8F8F7;fontStyle=1;align=left;spacingLeft=8;" value="神经记录 Neural Record" vertex="1">
+          <mxGeometry height="32" width="160" x="40" y="166" as="geometry" />
+        </mxCell>
+        <mxCell id="rt-r3q" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;" value="?tab=neural-record" vertex="1">
+          <mxGeometry height="32" width="120" x="200" y="166" as="geometry" />
+        </mxCell>
+        <mxCell id="rt-r3f" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;" value="颈部/背部神经记录" vertex="1">
+          <mxGeometry height="32" width="280" x="320" y="166" as="geometry" />
+        </mxCell>
+        <mxCell id="rt-r3c" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;" value="NeuralRecord.vue, neck_neural" vertex="1">
+          <mxGeometry height="32" width="280" x="600" y="166" as="geometry" />
+        </mxCell>
+        <mxCell id="rt-r4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E8F8F7;fontStyle=1;align=left;spacingLeft=8;" value="步数/卡路里 Step Calorie" vertex="1">
+          <mxGeometry height="32" width="160" x="40" y="198" as="geometry" />
+        </mxCell>
+        <mxCell id="rt-r4q" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;" value="?tab=step-calorie" vertex="1">
+          <mxGeometry height="32" width="120" x="200" y="198" as="geometry" />
+        </mxCell>
+        <mxCell id="rt-r4f" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;" value="步数与卡路里统计" vertex="1">
+          <mxGeometry height="32" width="280" x="320" y="198" as="geometry" />
+        </mxCell>
+        <mxCell id="rt-r4c" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;" value="StepCalorie.vue, api/record.ts" vertex="1">
+          <mxGeometry height="32" width="280" x="600" y="198" as="geometry" />
+        </mxCell>
+        <mxCell id="rt-r5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E8F8F7;fontStyle=1;align=left;spacingLeft=8;" value="PROMIS 量表" vertex="1">
+          <mxGeometry height="32" width="160" x="40" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="rt-r5q" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;" value="?tab=promis" vertex="1">
+          <mxGeometry height="32" width="120" x="200" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="rt-r5f" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;" value="PROMIS 健康量表趋势" vertex="1">
+          <mxGeometry height="32" width="280" x="320" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="rt-r5c" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;" value="PromisODI.vue → /promis-detail" vertex="1">
+          <mxGeometry height="32" width="280" x="600" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="rt-r6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E8F8F7;fontStyle=1;align=left;spacingLeft=8;" value="ODI 量表" vertex="1">
+          <mxGeometry height="32" width="160" x="40" y="262" as="geometry" />
+        </mxCell>
+        <mxCell id="rt-r6q" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;" value="?tab=odi" vertex="1">
+          <mxGeometry height="32" width="120" x="200" y="262" as="geometry" />
+        </mxCell>
+        <mxCell id="rt-r6f" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;" value="ODI 功能障碍指数趋势" vertex="1">
+          <mxGeometry height="32" width="280" x="320" y="262" as="geometry" />
+        </mxCell>
+        <mxCell id="rt-r6c" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;" value="PromisODI.vue → /odi-detail" vertex="1">
+          <mxGeometry height="32" width="280" x="600" y="262" as="geometry" />
+        </mxCell>
+        <mxCell id="rt-r7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E8F8F7;fontStyle=1;align=left;spacingLeft=8;" value="体态监测 Report" vertex="1">
+          <mxGeometry height="32" width="160" x="40" y="294" as="geometry" />
+        </mxCell>
+        <mxCell id="rt-r7q" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;" value="?tab=report" vertex="1">
+          <mxGeometry height="32" width="120" x="200" y="294" as="geometry" />
+        </mxCell>
+        <mxCell id="rt-r7f" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;" value="颈部角度/佩戴时长/下载 PDF/发邮件" vertex="1">
+          <mxGeometry height="32" width="280" x="320" y="294" as="geometry" />
+        </mxCell>
+        <mxCell id="rt-r7c" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;" value="Report.vue, getRecordNeckApi, html2canvas" vertex="1">
+          <mxGeometry height="32" width="280" x="600" y="294" as="geometry" />
+        </mxCell>
+        <mxCell id="rt-note" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF9E6;strokeColor=#D6B656;align=left;spacingLeft=10;fontSize=12;" value="子页面 /basicInformationHistory 生命体征历史 — 从 VitalSigns 跳转，无侧栏菜单项" vertex="1">
+          <mxGeometry height="40" width="840" x="40" y="350" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="6-平台与系统关系" id="_-7bMXNJ4enPS6bZTB3g">
+    <mxGraphModel dx="994" dy="686" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="pl-title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=18;fontStyle=1;fontColor=#333333;" value="AIH 生态系统 — 角色与系统边界" vertex="1">
+          <mxGeometry height="32" width="480" x="40" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="pl-user-app" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;fontStyle=1;align=center;" value="AIHNET-User（本仓库）&#xa;患者端 Web App&#xa;Hash 路由 Vue3&#xa;唯一登录角色: Patient" vertex="1">
+          <mxGeometry height="90" width="220" x="80" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="pl-provider-app" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontStyle=1;align=center;" value="AIH Provider App（独立仓库）&#xa;指导者/医生端&#xa;Header 外链: aih-providers&#xa;不可登录 User App" vertex="1">
+          <mxGeometry height="90" width="240" x="420" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="pl-wp" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;fontStyle=1;align=center;" value="WordPress 官网/商城&#xa;Shop / Cart / CPT&#xa;Header 外链跳转&#xa;非本 App 权限范围" vertex="1">
+          <mxGeometry height="90" width="220" x="760" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="pl-api" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E1D5E7;strokeColor=#9673A6;align=center;" value="后端 API&#xa;Bearer Token 鉴权&#xa;profiles/search type=0|1|2&#xa;RBAC 由服务端控制" vertex="1">
+          <mxGeometry height="90" width="240" x="420" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="pl-patient" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;align=center;" value="Patient 患者&#xa;type=0 注册&#xa;关注/聊天 Provider" vertex="1">
+          <mxGeometry height="70" width="180" x="80" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="pl-provider" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;align=center;" value="Provider 指导者&#xa;type=1 搜索目标&#xa;被关注/被咨询" vertex="1">
+          <mxGeometry height="70" width="180" x="760" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="pl-e1" edge="1" parent="1" source="pl-patient" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;" target="pl-user-app">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pl-e2" edge="1" parent="1" source="pl-user-app" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;dashed=1;" target="pl-provider" value="postFollowApi&#xa;chat API">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pl-e3" edge="1" parent="1" source="pl-user-app" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;" target="pl-api">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pl-e4" edge="1" parent="1" source="pl-provider-app" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;" target="pl-api">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pl-e5" edge="1" parent="1" source="pl-user-app" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;dashed=1;" target="pl-wp" value="Header 外链">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pl-table-title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=14;fontStyle=1;" value="后端用户 type 参数（api/user.ts searchUserApi）" vertex="1">
+          <mxGeometry height="24" width="400" x="40" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="pl-th1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#39BCBE;fontColor=#FFFFFF;fontStyle=1;align=center;" value="type" vertex="1">
+          <mxGeometry height="28" width="80" x="40" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="pl-th2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#39BCBE;fontColor=#FFFFFF;fontStyle=1;align=center;" value="含义" vertex="1">
+          <mxGeometry height="28" width="160" x="120" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="pl-th3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#39BCBE;fontColor=#FFFFFF;fontStyle=1;align=center;" value="前端使用场景" vertex="1">
+          <mxGeometry height="28" width="400" x="280" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="pl-t0" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E8F8F7;fontStyle=1;align=center;" value="0" vertex="1">
+          <mxGeometry height="28" width="80" x="40" y="418" as="geometry" />
+        </mxCell>
+        <mxCell id="pl-t0m" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;" value="普通用户/患者" vertex="1">
+          <mxGeometry height="28" width="160" x="120" y="418" as="geometry" />
+        </mxCell>
+        <mxCell id="pl-t0u" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;" value="postUserInfoApi 注册时硬编码 type=0" vertex="1">
+          <mxGeometry height="28" width="400" x="280" y="418" as="geometry" />
+        </mxCell>
+        <mxCell id="pl-t1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E8F8F7;fontStyle=1;align=center;" value="1" vertex="1">
+          <mxGeometry height="28" width="80" x="40" y="446" as="geometry" />
+        </mxCell>
+        <mxCell id="pl-t1m" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;" value="医生/指导者 Provider" vertex="1">
+          <mxGeometry height="28" width="160" x="120" y="446" as="geometry" />
+        </mxCell>
+        <mxCell id="pl-t1u" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;" value="FollowedUsers 搜索指导者 searchUserApi(type=1)" vertex="1">
+          <mxGeometry height="28" width="400" x="280" y="446" as="geometry" />
+        </mxCell>
+        <mxCell id="pl-t2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E8F8F7;fontStyle=1;align=center;" value="2" vertex="1">
+          <mxGeometry height="28" width="80" x="40" y="474" as="geometry" />
+        </mxCell>
+        <mxCell id="pl-t2m" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;" value="全局搜索" vertex="1">
+          <mxGeometry height="28" width="160" x="120" y="474" as="geometry" />
+        </mxCell>
+        <mxCell id="pl-t2u" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;" value="前端未使用" vertex="1">
+          <mxGeometry height="28" width="400" x="280" y="474" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="7-Header与设备限制" id="-Sel4uEoFmHA0PhoeFLo">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="hm-title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=18;fontStyle=1;" value="Header 导航与设备访问限制（components/Header.vue + Index.vue）" vertex="1">
+          <mxGeometry height="32" width="720" x="40" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="hm-h1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#39BCBE;fontColor=#FFFFFF;fontStyle=1;align=center;" value="Header 菜单项" vertex="1">
+          <mxGeometry height="32" width="180" x="40" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="hm-h2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#39BCBE;fontColor=#FFFFFF;fontStyle=1;align=center;" value="Guest 可见" vertex="1">
+          <mxGeometry height="32" width="90" x="220" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="hm-h3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#39BCBE;fontColor=#FFFFFF;fontStyle=1;align=center;" value="Patient 可见" vertex="1">
+          <mxGeometry height="32" width="90" x="310" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="hm-h4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#39BCBE;fontColor=#FFFFFF;fontStyle=1;align=center;" value="说明" vertex="1">
+          <mxGeometry height="32" width="480" x="400" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="hm-r1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E8F8F7;align=left;spacingLeft=8;" value="Home / aiSpine / RTM / Shop / Company / FAQ" vertex="1">
+          <mxGeometry height="32" width="180" x="40" y="102" as="geometry" />
+        </mxCell>
+        <mxCell id="hm-r1g" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#D5E8D4;align=center;fontStyle=1;" value="✅" vertex="1">
+          <mxGeometry height="32" width="90" x="220" y="102" as="geometry" />
+        </mxCell>
+        <mxCell id="hm-r1p" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#D5E8D4;align=center;fontStyle=1;" value="✅" vertex="1">
+          <mxGeometry height="32" width="90" x="310" y="102" as="geometry" />
+        </mxCell>
+        <mxCell id="hm-r1d" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;" value="外链 WordPress，isForeign 决定 URL 路径（非 App 内路由）" vertex="1">
+          <mxGeometry height="32" width="480" x="400" y="102" as="geometry" />
+        </mxCell>
+        <mxCell id="hm-r2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E8F8F7;align=left;spacingLeft=8;" value="Login 按钮" vertex="1">
+          <mxGeometry height="32" width="180" x="40" y="134" as="geometry" />
+        </mxCell>
+        <mxCell id="hm-r2g" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#D5E8D4;align=center;fontStyle=1;" value="✅" vertex="1">
+          <mxGeometry height="32" width="90" x="220" y="134" as="geometry" />
+        </mxCell>
+        <mxCell id="hm-r2p" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F8CECC;align=center;fontStyle=1;" value="❌" vertex="1">
+          <mxGeometry height="32" width="90" x="310" y="134" as="geometry" />
+        </mxCell>
+        <mxCell id="hm-r2d" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;" value="v-if !isAuthenticated → 显示 Login" vertex="1">
+          <mxGeometry height="32" width="480" x="400" y="134" as="geometry" />
+        </mxCell>
+        <mxCell id="hm-r3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E8F8F7;align=left;spacingLeft=8;" value="Logout + 购物车图标" vertex="1">
+          <mxGeometry height="32" width="180" x="40" y="166" as="geometry" />
+        </mxCell>
+        <mxCell id="hm-r3g" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F8CECC;align=center;fontStyle=1;" value="❌" vertex="1">
+          <mxGeometry height="32" width="90" x="220" y="166" as="geometry" />
+        </mxCell>
+        <mxCell id="hm-r3p" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#D5E8D4;align=center;fontStyle=1;" value="✅" vertex="1">
+          <mxGeometry height="32" width="90" x="310" y="166" as="geometry" />
+        </mxCell>
+        <mxCell id="hm-r3d" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;" value="v-if isAuthenticated；购物车链至 medical.aihnet.com/cart-2/" vertex="1">
+          <mxGeometry height="32" width="480" x="400" y="166" as="geometry" />
+        </mxCell>
+        <mxCell id="hm-dev-title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=14;fontStyle=1;" value="设备访问限制（非角色权限，但影响可用功能）" vertex="1">
+          <mxGeometry height="24" width="480" x="40" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="hm-dev-pc" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;align=left;spacingLeft=10;" value="PC 端 (isPC=true)&#xa;landscape 或 width&gt;768&#xa;✅ 侧栏菜单 + 主内容 + AI 浮动窗" vertex="1">
+          <mxGeometry height="70" width="340" x="40" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="hm-dev-mobile" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F8CECC;strokeColor=#B85450;align=left;spacingLeft=10;" value="移动端 (isPC=false)&#xa;仅显示「请横屏」提示&#xa;❌ 无法使用侧栏与业务功能" vertex="1">
+          <mxGeometry height="70" width="340" x="420" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="hm-vip" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF9E6;strokeColor=#D6B656;align=left;spacingLeft=10;fontSize=12;" value="IUser 中已定义但未用于门控的字段&#xa;vip_status / membership_name / certification_status / doctor_title&#xa;注册默认: free / false / false / 空 — 无 v-if 权限控制" vertex="1">
+          <mxGeometry height="60" width="720" x="40" y="360" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
