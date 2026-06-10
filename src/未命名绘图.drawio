@@ -239,7 +239,7 @@
         <mxCell id="JdGcYcFYTGOI5KtyWxkD-57" parent="JdGcYcFYTGOI5KtyWxkD-53" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1E3A5F;fontColor=#FFFFFF;" value="电话直拨&#xa;绕过表单" vertex="1">
           <mxGeometry height="90" width="140" x="1060" y="55" as="geometry" />
         </mxCell>
-        <mxCell id="JdGcYcFYTGOI5KtyWxkD-58" parent="JdGcYcFYTGOI5KtyWxkD-53" style="shape=note;whiteSpace=wrap;html=1;fillColor=#FFCDD2;strokeColor=#C62828;size=14;align=left;fontColor=#111111;" value="当前状态：@submit.prevent&#xa;表单前端展示，后端 API 待对接" vertex="1">
+        <mxCell id="JdGcYcFYTGOI5KtyWxkD-58" parent="JdGcYcFYTGOI5KtyWxkD-53" style="shape=note;whiteSpace=wrap;html=1;fillColor=#FFCDD2;strokeColor=#C62828;size=14;align=left;fontColor=#111111;" value="当前状态：@submit.prevent&lt;br&gt;表单前端展示&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="70" width="220" x="1240" y="50" as="geometry" />
         </mxCell>
         <mxCell id="JdGcYcFYTGOI5KtyWxkD-59" parent="1" style="swimlane;horizontal=0;whiteSpace=wrap;html=1;fillColor=#F3E5F5;strokeColor=#7B1FA2;fontStyle=1;fontSize=13;startSize=36;" value="⑥ 线下法务履约（站外业务，本站不实现）" vertex="1">
