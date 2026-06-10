@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" pages="5">
+<mxfile host="app.diagrams.net" pages="4">
   <diagram name="UML-User-Auth-Standard" id="0IMGFxw8vKXIOmN5F7gW">
     <mxGraphModel dx="1536" dy="1060" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -116,7 +116,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="B8Zpl01IWZUZ4LaHp8hz" name="第 2 页">
-    <mxGraphModel dx="2208" dy="1772" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2490" dy="1966" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -127,7 +127,7 @@
           <mxGeometry height="130" width="1520" x="-494" y="-366" as="geometry" />
         </mxCell>
         <mxCell id="JdGcYcFYTGOI5KtyWxkD-21" parent="JdGcYcFYTGOI5KtyWxkD-20" style="ellipse;whiteSpace=wrap;html=1;fillColor=#1E2761;fontColor=#FFFFFF;fontStyle=1;" value="开始&#xa;用户访问站点" vertex="1">
-          <mxGeometry height="60" width="120" x="30" y="45" as="geometry" />
+          <mxGeometry height="60" width="120" x="43" y="43" as="geometry" />
         </mxCell>
         <mxCell id="JdGcYcFYTGOI5KtyWxkD-22" parent="JdGcYcFYTGOI5KtyWxkD-20" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#0066CC;" value="搜索引擎 / SEO&#xa;（业务领域页、博客）" vertex="1">
           <mxGeometry height="80" width="170" x="200" y="35" as="geometry" />
@@ -322,9 +322,6 @@
         <mxCell id="JdGcYcFYTGOI5KtyWxkD-84" edge="1" parent="1" source="JdGcYcFYTGOI5KtyWxkD-55" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#2E7D32;" target="JdGcYcFYTGOI5KtyWxkD-54">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="JdGcYcFYTGOI5KtyWxkD-85" parent="1" style="shape=note;whiteSpace=wrap;html=1;fillColor=#E3F2FD;strokeColor=#1565C0;size=16;align=left;fontStyle=1;" value="核心闭环一句话：&#xa;流量进入 → 事故场景内容承接 → 信任建立 → CTA 触发 → SiteLeadFeeSection 线索收集 → 线下案件评估与办案 → 获赔" vertex="1">
-          <mxGeometry height="60" width="1520" x="-494" y="824" as="geometry" />
-        </mxCell>
         <mxCell id="JdGcYcFYTGOI5KtyWxkD-87" edge="1" parent="1" source="JdGcYcFYTGOI5KtyWxkD-39" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#90A4AE;dashed=1;" target="JdGcYcFYTGOI5KtyWxkD-29" value="">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
@@ -355,94 +352,8 @@
       </root>
     </mxGraphModel>
   </diagram>
-  <diagram id="W277bfBAk4ysf5QdQzsU" name="第 4 页">
-    <mxGraphModel dx="1690" dy="1166" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
-      <root>
-        <mxCell id="0" />
-        <mxCell id="1" parent="0" />
-        <mxCell id="64DdK1o1a5TkSCLU2JJ7-1" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=16;fontStyle=1;fontColor=#1E2761;" value="摩根与摩根官网 — 核心业务闭环（基于当前代码）" vertex="1">
-          <mxGeometry height="40" width="700" x="502" y="201" as="geometry" />
-        </mxCell>
-        <mxCell id="64DdK1o1a5TkSCLU2JJ7-2" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;fontStyle=1;" value="用户发生事故&#xa;或有法律咨询需求" vertex="1">
-          <mxGeometry height="70" width="260" x="722" y="251" as="geometry" />
-        </mxCell>
-        <mxCell id="64DdK1o1a5TkSCLU2JJ7-3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=11;" value="进入官网（流量入口）&#xa;首页 / 业务领域 / 博客&#xa;办公地点 / 判决结果 / 关于" vertex="1">
-          <mxGeometry height="80" width="320" x="692" y="351" as="geometry" />
-        </mxCell>
-        <mxCell id="64DdK1o1a5TkSCLU2JJ7-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=11;" value="浏览内容与建立信任&#xa;案件流程 · FAQ · 客户评价&#xa;How It Works · 大额判决 · 业务领域详情" vertex="1">
-          <mxGeometry height="80" width="320" x="692" y="461" as="geometry" />
-        </mxCell>
-        <mxCell id="64DdK1o1a5TkSCLU2JJ7-5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=11;" value="触发转化动作（CTA）&#xa;See if you qualify · Start your claim&#xa;滚动至 #contact · 电话咨询" vertex="1">
-          <mxGeometry height="80" width="320" x="692" y="571" as="geometry" />
-        </mxCell>
-        <mxCell id="64DdK1o1a5TkSCLU2JJ7-6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;fontStyle=1;" value="填写线索表单 SiteLeadFeeSection&#xa;姓名 · 电话 · 邮编 · 邮箱&#xa;案件类型 · 事故描述" vertex="1">
-          <mxGeometry height="80" width="320" x="692" y="681" as="geometry" />
-        </mxCell>
-        <mxCell id="64DdK1o1a5TkSCLU2JJ7-7" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;" value="提交免费咨询申请&#xa;（前端表单，当前 @submit.prevent）" vertex="1">
-          <mxGeometry height="60" width="320" x="692" y="791" as="geometry" />
-        </mxCell>
-        <mxCell id="64DdK1o1a5TkSCLU2JJ7-8" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=11;dashed=1;" value="线索进入律所系统&#xa;（待对接 CRM / 呼叫中心）" vertex="1">
-          <mxGeometry height="60" width="300" x="702" y="881" as="geometry" />
-        </mxCell>
-        <mxCell id="64DdK1o1a5TkSCLU2JJ7-9" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#1E2761;strokeColor=#0066CC;fontColor=#ffffff;fontSize=11;fontStyle=1;" value="线下业务闭环&#xa;案件评估 → 签约委托 → 办案谈判 → 获赔结案&#xa;（The Fee Is Free®：胜诉才收费）" vertex="1">
-          <mxGeometry height="80" width="380" x="662" y="971" as="geometry" />
-        </mxCell>
-        <mxCell id="64DdK1o1a5TkSCLU2JJ7-10" edge="1" parent="1" source="64DdK1o1a5TkSCLU2JJ7-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#333333;" target="64DdK1o1a5TkSCLU2JJ7-3">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="64DdK1o1a5TkSCLU2JJ7-11" edge="1" parent="1" source="64DdK1o1a5TkSCLU2JJ7-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#333333;" target="64DdK1o1a5TkSCLU2JJ7-4">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="64DdK1o1a5TkSCLU2JJ7-12" edge="1" parent="1" source="64DdK1o1a5TkSCLU2JJ7-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#333333;" target="64DdK1o1a5TkSCLU2JJ7-5">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="64DdK1o1a5TkSCLU2JJ7-13" edge="1" parent="1" source="64DdK1o1a5TkSCLU2JJ7-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#333333;" target="64DdK1o1a5TkSCLU2JJ7-6">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="64DdK1o1a5TkSCLU2JJ7-14" edge="1" parent="1" source="64DdK1o1a5TkSCLU2JJ7-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#333333;" target="64DdK1o1a5TkSCLU2JJ7-7">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="64DdK1o1a5TkSCLU2JJ7-15" edge="1" parent="1" source="64DdK1o1a5TkSCLU2JJ7-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#333333;dashed=1;" target="64DdK1o1a5TkSCLU2JJ7-8">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="64DdK1o1a5TkSCLU2JJ7-16" edge="1" parent="1" source="64DdK1o1a5TkSCLU2JJ7-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#333333;dashed=1;" target="64DdK1o1a5TkSCLU2JJ7-9">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="64DdK1o1a5TkSCLU2JJ7-17" parent="1" style="shape=note;whiteSpace=wrap;html=1;size=14;fillColor=#ffffcc;strokeColor=#999999;fontSize=10;align=left;spacingLeft=8;" value="代码对应：&#xa;app/pages/index.vue&#xa;app/pages/practice-areas/*&#xa;app/pages/blog&#xa;app/pages/Location/locations.vue&#xa;app/pages/ourResult/our-results.vue" vertex="1">
-          <mxGeometry height="110" width="220" x="342" y="351" as="geometry" />
-        </mxCell>
-        <mxCell id="64DdK1o1a5TkSCLU2JJ7-18" parent="1" style="shape=note;whiteSpace=wrap;html=1;size=14;fillColor=#ffffcc;strokeColor=#999999;fontSize=10;align=left;spacingLeft=8;" value="代码对应：&#xa;the-case-process&#xa;about/faq&#xa;about/testimonials&#xa;HomeHowWorks&#xa;HomeIntroBigWins" vertex="1">
-          <mxGeometry height="100" width="220" x="342" y="481" as="geometry" />
-        </mxCell>
-        <mxCell id="64DdK1o1a5TkSCLU2JJ7-19" parent="1" style="shape=note;whiteSpace=wrap;html=1;size=14;fillColor=#ffffcc;strokeColor=#999999;fontSize=10;align=left;spacingLeft=8;" value="代码对应：&#xa;useScrollToSection&#xa;anchor-scroll.client.ts&#xa;#contact 锚点&#xa;tel: 电话拨号" vertex="1">
-          <mxGeometry height="90" width="220" x="342" y="601" as="geometry" />
-        </mxCell>
-        <mxCell id="64DdK1o1a5TkSCLU2JJ7-20" parent="1" style="shape=note;whiteSpace=wrap;html=1;size=14;fillColor=#ffffcc;strokeColor=#999999;fontSize=10;align=left;spacingLeft=8;" value="代码对应：&#xa;SiteLeadFeeSection.vue&#xa;presetCaseType 预设案件类型&#xa;全站多页复用底部表单" vertex="1">
-          <mxGeometry height="90" width="220" x="342" y="711" as="geometry" />
-        </mxCell>
-        <mxCell id="64DdK1o1a5TkSCLU2JJ7-21" parent="1" style="shape=note;whiteSpace=wrap;html=1;size=14;fillColor=#fff4e6;strokeColor=#d79b00;fontSize=10;align=left;spacingLeft=8;" value="现状：前端原型&#xa;表单无后端 API&#xa;后续需对接 CRM" vertex="1">
-          <mxGeometry height="70" width="180" x="1082" y="791" as="geometry" />
-        </mxCell>
-        <mxCell id="64DdK1o1a5TkSCLU2JJ7-22" edge="1" parent="1" source="64DdK1o1a5TkSCLU2JJ7-17" style="dashed=1;strokeColor=#999999;endArrow=none;html=1;" target="64DdK1o1a5TkSCLU2JJ7-3">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="64DdK1o1a5TkSCLU2JJ7-23" edge="1" parent="1" source="64DdK1o1a5TkSCLU2JJ7-18" style="dashed=1;strokeColor=#999999;endArrow=none;html=1;" target="64DdK1o1a5TkSCLU2JJ7-4">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="64DdK1o1a5TkSCLU2JJ7-24" edge="1" parent="1" source="64DdK1o1a5TkSCLU2JJ7-19" style="dashed=1;strokeColor=#999999;endArrow=none;html=1;" target="64DdK1o1a5TkSCLU2JJ7-5">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="64DdK1o1a5TkSCLU2JJ7-25" edge="1" parent="1" source="64DdK1o1a5TkSCLU2JJ7-20" style="dashed=1;strokeColor=#999999;endArrow=none;html=1;" target="64DdK1o1a5TkSCLU2JJ7-6">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="64DdK1o1a5TkSCLU2JJ7-26" edge="1" parent="1" source="64DdK1o1a5TkSCLU2JJ7-21" style="dashed=1;strokeColor=#999999;endArrow=none;html=1;" target="64DdK1o1a5TkSCLU2JJ7-7">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-      </root>
-    </mxGraphModel>
-  </diagram>
   <diagram id="ZQvae15LXkW1j0ZmGv_t" name="第 5 页">
-    <mxGraphModel dx="1536" dy="1060" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2113" dy="1458" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
