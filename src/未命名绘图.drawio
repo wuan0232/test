@@ -631,13 +631,13 @@
         <mxCell id="kzQoymH5NH3FHjtcJcsb-98" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=11;fontColor=#333333;" value="isAuthenticated?&#xa;（组件级 v-if）" vertex="1">
           <mxGeometry height="80" width="140" x="742" y="1252" as="geometry" />
         </mxCell>
-        <mxCell id="kzQoymH5NH3FHjtcJcsb-99" edge="1" parent="1" source="kzQoymH5NH3FHjtcJcsb-98" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#666666;fontColor=#28a745;fillColor=#f5f5f5;" target="kzQoymH5NH3FHjtcJcsb-100" value="是">
+        <mxCell id="kzQoymH5NH3FHjtcJcsb-99" edge="1" parent="1" source="kzQoymH5NH3FHjtcJcsb-98" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#666666;fontColor=light-dark(#000000, #2b9844);fillColor=#f5f5f5;" target="kzQoymH5NH3FHjtcJcsb-100" value="是">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="kzQoymH5NH3FHjtcJcsb-100" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=11;fontColor=#333333;" value="显示用户信息&#xa;调用需 uuid 的 API" vertex="1">
           <mxGeometry height="50" width="150" x="922" y="1247" as="geometry" />
         </mxCell>
-        <mxCell id="kzQoymH5NH3FHjtcJcsb-101" edge="1" parent="1" source="kzQoymH5NH3FHjtcJcsb-98" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#666666;fontColor=#dc3545;fillColor=#f5f5f5;" target="kzQoymH5NH3FHjtcJcsb-102" value="否">
+        <mxCell id="kzQoymH5NH3FHjtcJcsb-101" edge="1" parent="1" source="kzQoymH5NH3FHjtcJcsb-98" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#666666;fontColor=light-dark(#000000, #2b9844);fillColor=#f5f5f5;" target="kzQoymH5NH3FHjtcJcsb-102" value="否">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="kzQoymH5NH3FHjtcJcsb-102" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=11;fontColor=#333333;" value="显示占位数据&#xa;或跳过 API" vertex="1">
